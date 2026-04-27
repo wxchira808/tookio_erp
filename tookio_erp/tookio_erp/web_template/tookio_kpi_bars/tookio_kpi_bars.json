@@ -1,0 +1,136 @@
+{
+ "creation": "2026-04-27 17:52:12.856787",
+ "docstatus": 0,
+ "doctype": "Web Template",
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 0
+  },
+  {
+   "fieldname": "subtitle",
+   "fieldtype": "Small Text",
+   "label": "Subtitle",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_1_label",
+   "fieldtype": "Data",
+   "label": "KPI 1 Label",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_1_note",
+   "fieldtype": "Small Text",
+   "label": "KPI 1 Note",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_1_before_label",
+   "fieldtype": "Data",
+   "label": "KPI 1 Before Label",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_1_before_value",
+   "fieldtype": "Int",
+   "label": "KPI 1 Before Value",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_1_after_label",
+   "fieldtype": "Data",
+   "label": "KPI 1 After Label",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_1_after_value",
+   "fieldtype": "Int",
+   "label": "KPI 1 After Value",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_2_label",
+   "fieldtype": "Data",
+   "label": "KPI 2 Label",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_2_note",
+   "fieldtype": "Small Text",
+   "label": "KPI 2 Note",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_2_before_label",
+   "fieldtype": "Data",
+   "label": "KPI 2 Before Label",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_2_before_value",
+   "fieldtype": "Int",
+   "label": "KPI 2 Before Value",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_2_after_label",
+   "fieldtype": "Data",
+   "label": "KPI 2 After Label",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_2_after_value",
+   "fieldtype": "Int",
+   "label": "KPI 2 After Value",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_3_label",
+   "fieldtype": "Data",
+   "label": "KPI 3 Label",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_3_note",
+   "fieldtype": "Small Text",
+   "label": "KPI 3 Note",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_3_before_label",
+   "fieldtype": "Data",
+   "label": "KPI 3 Before Label",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_3_before_value",
+   "fieldtype": "Int",
+   "label": "KPI 3 Before Value",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_3_after_label",
+   "fieldtype": "Data",
+   "label": "KPI 3 After Label",
+   "reqd": 0
+  },
+  {
+   "fieldname": "kpi_3_after_value",
+   "fieldtype": "Int",
+   "label": "KPI 3 After Value",
+   "reqd": 0
+  }
+ ],
+ "idx": 0,
+ "modified": "2026-04-27 17:52:12.856787",
+ "modified_by": "Administrator",
+ "module": "Tookio Erp",
+ "name": "Tookio KPI Bars",
+ "owner": "Administrator",
+ "standard": 0,
+ "template": "\n<section class=\"tookio-kpi-wrap\">\n  <div class=\"tookio-kpi-head\">\n    <h2>{{ title }}</h2>\n    {% if subtitle %}<p>{{ subtitle }}</p>{% endif %}\n  </div>\n\n  <div class=\"tookio-kpi-grid\">\n    <article class=\"tookio-kpi-card\">\n      <h3>{{ kpi_1_label }}</h3>\n      <p>{{ kpi_1_note }}</p>\n      <div class=\"kpi-row\"><span>{{ kpi_1_before_label }}</span><div class=\"bar\"><i style=\"width: {{ kpi_1_before_value }}%\"></i></div></div>\n      <div class=\"kpi-row\"><span>{{ kpi_1_after_label }}</span><div class=\"bar bar-after\"><i style=\"width: {{ kpi_1_after_value }}%\"></i></div></div>\n    </article>\n\n    <article class=\"tookio-kpi-card\">\n      <h3>{{ kpi_2_label }}</h3>\n      <p>{{ kpi_2_note }}</p>\n      <div class=\"kpi-row\"><span>{{ kpi_2_before_label }}</span><div class=\"bar\"><i style=\"width: {{ kpi_2_before_value }}%\"></i></div></div>\n      <div class=\"kpi-row\"><span>{{ kpi_2_after_label }}</span><div class=\"bar bar-after\"><i style=\"width: {{ kpi_2_after_value }}%\"></i></div></div>\n    </article>\n\n    <article class=\"tookio-kpi-card\">\n      <h3>{{ kpi_3_label }}</h3>\n      <p>{{ kpi_3_note }}</p>\n      <div class=\"kpi-row\"><span>{{ kpi_3_before_label }}</span><div class=\"bar\"><i style=\"width: {{ kpi_3_before_value }}%\"></i></div></div>\n      <div class=\"kpi-row\"><span>{{ kpi_3_after_label }}</span><div class=\"bar bar-after\"><i style=\"width: {{ kpi_3_after_value }}%\"></i></div></div>\n    </article>\n  </div>\n</section>\n\n<style>\n  .tookio-kpi-wrap { padding: 12px 0; }\n  .tookio-kpi-head h2 { margin: 0; font-size: 1.8rem; }\n  .tookio-kpi-head p { margin: 10px 0 24px; opacity: .82; }\n  .tookio-kpi-grid {\n    display: grid;\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n    gap: 16px;\n  }\n  .tookio-kpi-card {\n    border: 1px solid rgba(255,255,255,.16);\n    border-radius: 14px;\n    padding: 14px;\n    background: rgba(0,0,0,.18);\n  }\n  .tookio-kpi-card h3 { margin: 0 0 8px; font-size: 1.06rem; }\n  .tookio-kpi-card p { margin: 0 0 14px; opacity: .85; }\n  .kpi-row { margin-bottom: 12px; }\n  .kpi-row span { display: block; font-size: .82rem; margin-bottom: 5px; opacity: .9; }\n  .bar {\n    height: 10px;\n    width: 100%;\n    background: rgba(255,255,255,.1);\n    border-radius: 999px;\n    overflow: hidden;\n  }\n  .bar i {\n    display: block;\n    height: 100%;\n    background: linear-gradient(90deg, #6cc4ff, #42b883);\n    border-radius: 999px;\n  }\n  .bar-after i {\n    background: linear-gradient(90deg, #f1d37a, #f8a054);\n  }\n  @media (max-width: 980px) {\n    .tookio-kpi-grid { grid-template-columns: 1fr; }\n  }\n</style>\n",
+ "type": "Section"
+}

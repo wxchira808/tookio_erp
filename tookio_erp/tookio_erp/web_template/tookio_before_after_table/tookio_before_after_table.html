@@ -1,0 +1,75 @@
+
+<section class="tookio-table-wrap">
+  <div class="tookio-table-head">
+    <h2>{{ title }}</h2>
+    {% if subtitle %}<p>{{ subtitle }}</p>{% endif %}
+  </div>
+  <div class="tookio-table-shell">
+    <table class="tookio-before-after-table">
+      <thead>
+        <tr>
+          <th>Function</th>
+          <th>Before</th>
+          <th>After Tookio ERPNext</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ row_1_function }}</td>
+          <td>{{ row_1_before }}</td>
+          <td>{{ row_1_after }}</td>
+        </tr>
+        <tr>
+          <td>{{ row_2_function }}</td>
+          <td>{{ row_2_before }}</td>
+          <td>{{ row_2_after }}</td>
+        </tr>
+        <tr>
+          <td>{{ row_3_function }}</td>
+          <td>{{ row_3_before }}</td>
+          <td>{{ row_3_after }}</td>
+        </tr>
+        <tr>
+          <td>{{ row_4_function }}</td>
+          <td>{{ row_4_before }}</td>
+          <td>{{ row_4_after }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<style>
+  .tookio-table-wrap { padding: 10px 0; }
+  .tookio-table-head h2 { margin: 0; font-size: 1.8rem; }
+  .tookio-table-head p { margin: 10px 0 22px; opacity: .8; }
+  .tookio-table-shell {
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 14px;
+    overflow: hidden;
+    background: rgba(0,0,0,.2);
+    backdrop-filter: blur(4px);
+  }
+  .tookio-before-after-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .tookio-before-after-table th,
+  .tookio-before-after-table td {
+    text-align: left;
+    padding: 14px 16px;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  .tookio-before-after-table th {
+    font-size: .84rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    background: rgba(255,255,255,.06);
+  }
+  .tookio-before-after-table tbody tr:last-child td { border-bottom: 0; }
+  @media (max-width: 900px) {
+    .tookio-before-after-table th,
+    .tookio-before-after-table td { padding: 10px 12px; font-size: .92rem; }
+  }
+</style>

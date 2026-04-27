@@ -1,0 +1,166 @@
+"ID","Type","Standard","Module","Template","ID (Fields)","Default (Fields)","Fieldname (Fields)","Fieldtype (Fields)","Label (Fields)","Mandatory (Fields)","Options (Fields)"
+"Experience","Section",0,"","<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Experience</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #6a6a6a;
+            --text-light: #999999;
+            --accent-black: #000000;
+            --accent-gray: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .experience {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+        }
+
+        .section-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: var(--accent-black);
+            text-align: center;
+            letter-spacing: -0.5px;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: var(--accent-gray);
+        }
+
+        .timeline-item {
+            margin-bottom: 3rem;
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -13px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-black);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 1px var(--accent-gray);
+        }
+
+        .timeline-date {
+            font-family: 'Syne', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--accent-black);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-company {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .timeline-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <section class=""experience"">
+        <h2 class=""section-title"">Professional Timeline</h2>
+        <div class=""timeline"">
+            <div class=""timeline-item"">
+                <div class=""timeline-date"">Jul 2025 – Present</div>
+                <div class=""timeline-title"">Freelance Frappe/ERPNext Developer</div>
+                <div class=""timeline-company"">Self-Employed</div>
+                <div class=""timeline-desc"">
+                    • End-to-end ERPNext implementations for SME clients across Kenya<br>
+                    • Custom M-PESA payment integration and e-commerce sync development<br>
+                    • Full server stack management (Google Cloud VPS, Nginx, SSL)<br>
+                    • Founder of Tookio Shop SaaS platform
+                </div>
+            </div>
+
+            <div class=""timeline-item"">
+                <div class=""timeline-date"">Mar 2025 – Jul 2025</div>
+                <div class=""timeline-title"">ERPNext Associate</div>
+                <div class=""timeline-company"">Upande</div>
+                <div class=""timeline-desc"">
+                    • Implemented ERPNext modules (Stock, Procurement, Manufacturing, HR)<br>
+                    • Biometric systems integration for automated attendance<br>
+                    • Business requirements analysis and workflow configuration<br>
+                    • Data migration and end-user training
+                </div>
+            </div>
+
+            <div class=""timeline-item"">
+                <div class=""timeline-date"">Mar 2024 – Dec 2024</div>
+                <div class=""timeline-title"">Software Developer</div>
+                <div class=""timeline-company"">Netcom Information Systems</div>
+                <div class=""timeline-desc"">
+                    • Full-stack Incident Management System (Java, JSF, Oracle DB)<br>
+                    • Interactive HR dashboards using Eclipse BIRT<br>
+                    • PAM software deployment and Linux server management<br>
+                    • Nginx configuration and SSL certificate management
+                </div>
+            </div>
+
+            <div class=""timeline-item"">
+                <div class=""timeline-date"">2019 – 2023</div>
+                <div class=""timeline-title"">BSc Computer Science</div>
+                <div class=""timeline-company"">The Catholic University of Eastern Africa</div>
+                <div class=""timeline-desc"">
+                    • Graduated with strong foundation in software engineering<br>
+                    • Focus on enterprise systems and database design
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>","","","","","","",""

@@ -29,7 +29,7 @@ app_license = "mit"
 # app_include_js = "/assets/tookio_erp/js/tookio_erp.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/tookio_erp/css/tookio_erp.css"
+web_include_css = "/assets/tookio_erp/css/tookio_site.css"
 # web_include_js = "/assets/tookio_erp/js/tookio_erp.js"
 
 # include custom scss in every website theme (without file extension ".scss")
@@ -68,7 +68,7 @@ app_license = "mit"
 # ----------
 
 # automatically create page for each record of this doctype
-# website_generators = ["Web Page"]
+website_generators = ["Web Page"]
 
 # automatically load and sync documents of this doctype from downstream apps
 # importable_doctypes = [doctype_1]

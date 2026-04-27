@@ -1,0 +1,173 @@
+:root {
+  --tookio-ink: #1e293b;
+  --tookio-muted: #475569;
+  --tookio-border: #dbe3ea;
+  --tookio-bg-soft: #f8fafc;
+  --tookio-bg-mint: #ecfeff;
+  --tookio-bg-sun: #fffbeb;
+  --tookio-bg-rose: #fff1f2;
+  --tookio-brand: #0f766e;
+  --tookio-brand-dark: #115e59;
+  --tookio-brand-blue: #0369a1;
+  --tookio-brand-green: #15803d;
+  --tookio-accent: #f59e0b;
+}
+
+body {
+  color: var(--tookio-ink);
+}
+
+.page-content-wrapper {
+  background: linear-gradient(180deg, #ffffff 0%, var(--tookio-bg-soft) 100%);
+}
+
+.web-page-content .website-section {
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  margin-bottom: 16px;
+}
+
+.web-page-content .website-section:nth-of-type(3n + 1) {
+  background: linear-gradient(180deg, #ffffff 0%, var(--tookio-bg-mint) 100%);
+}
+
+.web-page-content .website-section:nth-of-type(3n + 2) {
+  background: linear-gradient(180deg, #ffffff 0%, var(--tookio-bg-sun) 100%);
+}
+
+.web-page-content .website-section:nth-of-type(3n) {
+  background: linear-gradient(180deg, #ffffff 0%, var(--tookio-bg-rose) 100%);
+}
+
+.web-page-content h1,
+.web-page-content h2,
+.web-page-content h3 {
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+
+.web-page-content p,
+.web-page-content li {
+  color: var(--tookio-muted);
+  line-height: 1.7;
+}
+
+.section-head,
+.section-title {
+  color: #0b1324;
+}
+
+.btn-primary,
+.btn.btn-primary {
+  background-color: var(--tookio-brand);
+  border-color: var(--tookio-brand);
+}
+
+.btn-primary:hover,
+.btn.btn-primary:hover {
+  background-color: var(--tookio-brand-dark);
+  border-color: var(--tookio-brand-dark);
+}
+
+.btn-secondary,
+.btn.btn-secondary,
+.btn-default,
+.btn.btn-default {
+  border-color: var(--tookio-border);
+}
+
+.card,
+.shadow-card,
+.website-section .card {
+  border: 1px solid var(--tookio-border);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+}
+
+.web-page-content .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.web-page-content .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+}
+
+.web-page-content table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--tookio-border);
+  background: #ffffff;
+}
+
+.web-page-content table th {
+  background: linear-gradient(90deg, var(--tookio-brand) 0%, var(--tookio-brand-blue) 100%);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.web-page-content table th,
+.web-page-content table td {
+  padding: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.web-page-content table tr:nth-child(even) td {
+  background: #f8fafc;
+}
+
+.web-page-content strong {
+  color: #0f172a;
+}
+
+.web-page-content .btn,
+.web-page-content .btn.btn-primary {
+  box-shadow: 0 8px 20px rgba(15, 118, 110, 0.25);
+}
+
+.web-page-content .website-section.tookio-dark-hero,
+.web-page-content .tookio-dark-hero {
+  background: linear-gradient(120deg, #0b1324 0%, #0f2a4a 45%, #115e59 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.web-page-content .tookio-dark-hero h1,
+.web-page-content .tookio-dark-hero h2,
+.web-page-content .tookio-dark-hero h3,
+.web-page-content .tookio-dark-hero p,
+.web-page-content .tookio-dark-hero .section-title,
+.web-page-content .tookio-dark-hero .section-head {
+  color: #f8fafc;
+}
+
+.web-page-content .tookio-dark-hero .btn.btn-primary {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  box-shadow: 0 10px 24px rgba(245, 158, 11, 0.25);
+}
+
+.web-page-content .tookio-dark-hero .btn.btn-secondary,
+.web-page-content .tookio-dark-hero .btn.btn-default {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #f8fafc;
+}
+
+.website-footer,
+.footer {
+  border-top: 1px solid var(--tookio-border);
+  background: #ffffff;
+}
+
+.website-footer a,
+.footer a,
+.navbar a {
+  color: #1f2937;
+}
+
+.website-footer a:hover,
+.footer a:hover,
+.navbar a:hover {
+  color: var(--tookio-brand);
+}
