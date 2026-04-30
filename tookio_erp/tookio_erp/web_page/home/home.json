@@ -9,10 +9,10 @@
  "full_width": 1,
  "idx": 0,
  "insert_style": 0,
- "meta_description": "Kenyan ERP implementation partner for manufacturing, procurement and supply chain companies. Integrate finance, inventory, production and machine-linked workflows.",
+ "meta_description": "Centralized ERP for Kenyan manufacturing, procurement and supply chain companies. Integrate production, stock, purchasing, HR, payroll and finance in one system.",
  "meta_image": "/files/erpnext-logo.png",
- "meta_title": "ERP for Manufacturing in Kenya | Procurement & Supply Chain Systems | Tookio",
- "modified": "2026-04-27 18:46:47.582944",
+ "meta_title": "ERP For Manufacturing and Procurement Companies Kenya | Tookio",
+ "modified": "2026-04-30 23:30:13.406225",
  "modified_by": "Administrator",
  "module": "Tookio Erp",
  "name": "home",
@@ -31,7 +31,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 1,
-   "modified": "2026-04-27 18:46:47.582944",
+   "modified": "2026-04-30 23:30:13.406225",
    "modified_by": "Administrator",
    "name": "o06ds9fvai",
    "owner": "Administrator",
@@ -39,7 +39,7 @@
    "parentfield": "page_blocks",
    "parenttype": "Web Page",
    "web_template": "Hero with Right Image",
-   "web_template_values": "{\"title\": \"ERP for Manufacturing, Procurement and Supply Chain in Kenya\", \"subtitle\": \"Replace spreadsheet chaos with one integrated operating system for Kenyan and East African operations.\\n\\nTookio implements ERPNext for manufacturers, distributors and procurement-heavy teams.\\n\\nConnect inventory, production, purchasing, finance and machine-adjacent workflows in one platform.\", \"image\": \"/files/Gemini_Generated_Image_qm0fwdqm0fwdqm0f.png\", \"contain_image\": 0, \"primary_action_label\": \"Free Consultation\", \"primary_action\": \"/contact\"}"
+   "web_template_values": "{\"title\": \"Centralized ERP for Manufacturing and Procurement Companies in Kenya\", \"subtitle\": \"Run production, stock, procurement, sales, assets, HR and accounting from one connected operating system.\\n\\nTookio helps Kenyan and East African teams replace disconnected tools with one reliable ERP backbone.\\n\\nIntegrate machines, payment rails, banking workflows and business apps without operational silos.\", \"image\": \"/files/Gemini_Generated_Image_qm0fwdqm0fwdqm0f.png\", \"contain_image\": 0, \"primary_action_label\": \"Free Consultation\", \"primary_action\": \"/contact\"}"
   },
   {
    "add_background_image": 0,
@@ -54,7 +54,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 2,
-   "modified": "2026-04-27 18:46:47.582944",
+   "modified": "2026-04-30 23:30:13.406225",
    "modified_by": "Administrator",
    "name": "o06fa3luep",
    "owner": "Administrator",
@@ -77,7 +77,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 3,
-   "modified": "2026-04-27 18:46:47.582944",
+   "modified": "2026-04-30 23:30:13.406225",
    "modified_by": "Administrator",
    "name": "o06a8il7sc",
    "owner": "Administrator",
@@ -85,7 +85,7 @@
    "parentfield": "page_blocks",
    "parenttype": "Web Page",
    "web_template": "Section with Features",
-   "web_template_values": "{\"title\": \"Built for Manufacturing and Procurement Teams in East Africa\", \"subtitle\": \"Deploy ERP, automation and compliance controls designed for factory operations, supply chain teams and procurement leaders.\", \"columns\": \"3\", \"features\": [{\"idx\": 1, \"__islocal\": true, \"title\": \"ERPNext Foundation\", \"content\": \"Built on Frappe/ERPNext\\u2014the same system powering 10,000+ global businesses.\\n\\nLocally customized for Kenya.\\n\\nNo licensing fees.\\n\\nNo per-user charges.\\n\\nNo surprise bills.\", \"icon\": \"/files/erpnext-logo.png\", \"name\": \"7pz4tww9\"}, {\"idx\": 2, \"__islocal\": true, \"title\": \"AI + Automation\", \"content\": \"Automate invoicing, payment confirmations, customer emails, supplier follow-ups.\\n\\nSet workflows once, save 30 hours/month per person.\\n\\nIntegrate anything: Gmail, WhatsApp, Google Workspace & more!\", \"icon\": \"/files/n8n icon.png\", \"name\": \"ilmkbbn7\"}, {\"idx\": 3, \"__islocal\": true, \"title\": \"ARC Compliance\", \"content\": \"Track audit trails, manage risks, prove compliance.\\n\\nNo Kenyan business has a local compliance system built for KRA, NSSF, NHIF rules.\\n\\nWe do.\", \"icon\": \"/files/shield-checkmark.png\", \"name\": \"stlhzhfi\"}]}"
+   "web_template_values": "{\"title\": \"Built for Executive-Grade Manufacturing Operations\", \"subtitle\": \"Deploy ERP, automation and compliance controls designed for factory leadership, supply chain execution and procurement governance.\", \"columns\": \"3\", \"features\": [{\"idx\": 1, \"__islocal\": true, \"title\": \"ERPNext Foundation\", \"content\": \"Built on Frappe/ERPNext\\u2014the same system powering 10,000+ global businesses.\\n\\nLocally customized for Kenya.\\n\\nNo licensing fees.\\n\\nNo per-user charges.\\n\\nNo surprise bills.\", \"icon\": \"/files/erpnext-logo.png\", \"name\": \"7pz4tww9\"}, {\"idx\": 2, \"__islocal\": true, \"title\": \"AI + Automation\", \"content\": \"Automate invoicing, payment confirmations, customer emails, supplier follow-ups.\\n\\nSet workflows once, save 30 hours/month per person.\\n\\nIntegrate anything: Gmail, WhatsApp, Google Workspace & more!\", \"icon\": \"/files/n8n icon.png\", \"name\": \"ilmkbbn7\"}, {\"idx\": 3, \"__islocal\": true, \"title\": \"ARC Compliance\", \"content\": \"Track audit trails, manage risks, prove compliance.\\n\\nNo Kenyan business has a local compliance system built for KRA, NSSF, NHIF rules.\\n\\nWe do.\", \"icon\": \"/files/shield-checkmark.png\", \"name\": \"stlhzhfi\"}]}"
   },
   {
    "add_background_image": 0,
@@ -100,7 +100,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 4,
-   "modified": "2026-04-27 18:46:47.582944",
+   "modified": "2026-04-30 23:30:13.406225",
    "modified_by": "Administrator",
    "name": "o06jm4r56s",
    "owner": "Administrator",
@@ -108,7 +108,7 @@
    "parentfield": "page_blocks",
    "parenttype": "Web Page",
    "web_template": "Section with Testimonials",
-   "web_template_values": "{\"title\":\"Testimonials\",\"subtitle\":\"Trusted by Kenya's Growing Businesses\",\"columns\":\"3\",\"testimonials\":[{\"idx\":1,\"__islocal\":true,\"full_name\":\"Naftali Mwangi\",\"name\":\"ldi5yi7t\",\"content\":\"Within 2 weeks of going live on ERPNext, we cut invoice processing time by 60%. Our finance team finally sleeps at night\",\"designation\":\"Finance Manager\",\"image\":\"/files/african-man-7398921_1280.jpg\"},{\"idx\":2,\"__islocal\":true,\"content\":\"The custom Manufacturing module helped cater to our plastics manufacturing and were able to cut down on repetitive tasks\",\"name\":\"9p0zgoyy\",\"full_name\":\"Jeff Ngatia\",\"designation\":\"Manufacturing & Operations Manager\"},{\"idx\":3,\"__islocal\":true,\"content\":\"Multi-tenant SaaS for Instagram sellers sounds complex. Tookio made it simple. Our sellers now track inventory across channels\",\"full_name\":\"Punk Paradise\",\"designation\":\"Retail\",\"image\":\"/files/punk paradise logo.jpeg\",\"name\":\"2pc3oj48\"}]}"
+   "web_template_values": "{\"title\": \"Case Studies with Real Operational Metrics\", \"subtitle\": \"Measured impact from manufacturing and operations teams in Kenya\", \"columns\": \"3\", \"testimonials\": [{\"idx\": 1, \"full_name\": \"Finance Lead\", \"designation\": \"Finerate Plastics LTD\", \"content\": \"We centralized production, procurement, stock and invoicing in one ERP. Reconciliation cycle time dropped by over 80%, and month-end reporting became predictable.\", \"image\": \"/files/african-man-7398921_1280.jpg\"}, {\"idx\": 2, \"full_name\": \"Operations Manager\", \"designation\": \"Manufacturing Client\", \"content\": \"Before Tookio we ran blind across stock and production handoffs. Now BOM execution, purchasing and fulfillment are synchronized with live KPI visibility.\"}, {\"idx\": 3, \"full_name\": \"Commercial Lead\", \"designation\": \"Distribution Team\", \"content\": \"Invoice automation and payment matching removed manual delays. Sales, warehouse and finance now work from one version of operational truth.\", \"image\": \"/files/punk paradise logo.jpeg\"}]}"
   },
   {
    "add_background_image": 0,
@@ -123,7 +123,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 5,
-   "modified": "2026-04-27 18:46:47.582944",
+   "modified": "2026-04-30 23:30:13.406225",
    "modified_by": "Administrator",
    "name": "o06559anj7",
    "owner": "Administrator",
@@ -146,7 +146,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 6,
-   "modified": "2026-04-27 18:46:47.582944",
+   "modified": "2026-04-30 23:30:13.406225",
    "modified_by": "Administrator",
    "name": "o06qrp83lg",
    "owner": "Administrator",
@@ -154,7 +154,7 @@
    "parentfield": "page_blocks",
    "parenttype": "Web Page",
    "web_template": "Section with Tabs",
-   "web_template_values": "{\"title\": \"Pricing Preview\", \"subtitle\": \"No Surprises.\\n\\nJust Solutions\", \"tab_1_title\": \"Starter | $500 - $1,000\", \"tab_1_content\": \"For small customizations & integrations.\\n\\nSingle module setup (Sales, Inventory, or Accounting).\\n\\nOne custom script or integration.\\n\\nData import.\\n\\nBasic training (1 session).\\n\\nEmail support for 1 month.\\n\\nPerfect for: New ERPNext setups, quick fixes.\", \"tab_2_title\": \"Growth | $1,500 - $3,500\", \"tab_2_content\": \"Multi-module setup (Sales, Inventory, Accounting, Manufacturing).\\n\\nCustom workflows & automations (n8n).\\n\\nPayment integration.\\n\\nData migration & cleanup.\\n\\nFull team training (5 sessions).\\n\\n30 days of priority support.\\n\\nPerfect for: Growing SMEs, full system overhaul.\", \"tab_3_title\": \"Enterprise | Custom\", \"tab_3_content\": \"Unlimited modules & customizations.\\n\\nAdvanced AI workflows & integrations.\\n\\nARC compliance module.\\n\\nCustom reporting & dashboards.\\n\\nDedicated support & optimization.\\n\\nPerfect for: Manufacturing chains, retail networks, corporates.\"}"
+   "web_template_values": "{\"title\": \"KSh Pricing Preview\", \"subtitle\": \"Implementation tiers built for Kenyan SME and mid-market operators\", \"tab_1_title\": \"Starter | KSh 80,000 - 180,000\", \"tab_1_content\": \"For small customizations & integrations.\\n\\nSingle module setup (Sales, Inventory, or Accounting).\\n\\nOne custom script or integration.\\n\\nData import.\\n\\nBasic training (1 session).\\n\\nEmail support for 1 month.\\n\\nPerfect for: New ERPNext setups, quick fixes.\", \"tab_2_title\": \"Growth | KSh 220,000 - 520,000\", \"tab_2_content\": \"Multi-module setup (Sales, Inventory, Accounting, Manufacturing).\\n\\nCustom workflows & automations (n8n).\\n\\nPayment integration.\\n\\nData migration & cleanup.\\n\\nFull team training (5 sessions).\\n\\n30 days of priority support.\\n\\nPerfect for: Growing SMEs, full system overhaul.\", \"tab_3_title\": \"Enterprise | From KSh 800,000\", \"tab_3_content\": \"Unlimited modules & customizations.\\n\\nAdvanced AI workflows & integrations.\\n\\nARC compliance module.\\n\\nCustom reporting & dashboards.\\n\\nDedicated support & optimization.\\n\\nPerfect for: Manufacturing chains, retail networks, corporates.\"}"
   },
   {
    "add_background_image": 0,
@@ -169,7 +169,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 7,
-   "modified": "2026-04-27 18:46:47.582944",
+   "modified": "2026-04-30 23:30:13.406225",
    "modified_by": "Administrator",
    "name": "o06o36k8ee",
    "owner": "Administrator",
@@ -192,7 +192,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 8,
-   "modified": "2026-04-27 18:46:47.582944",
+   "modified": "2026-04-30 23:30:13.406225",
    "modified_by": "Administrator",
    "name": "o069ja71om",
    "owner": "Administrator",
@@ -215,7 +215,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 9,
-   "modified": "2026-04-27 18:46:47.582944",
+   "modified": "2026-04-30 23:30:13.406225",
    "modified_by": "Administrator",
    "name": "o06llcs8o5",
    "owner": "Administrator",
