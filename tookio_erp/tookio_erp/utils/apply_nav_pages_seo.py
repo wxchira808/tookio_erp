@@ -140,7 +140,7 @@ def _set_seo():
         },
         "pricing": {
             "meta_title": "ERP Pricing Kenya | Manufacturing ERP Implementation Costs | Tookio",
-            "meta_description": "Pricing for ERPNext implementation, automation and compliance solutions for manufacturers and procurement-heavy businesses in Kenya.",
+            "meta_description": "KSh pricing for ERPNext implementation, automation and compliance solutions for manufacturers and procurement-heavy businesses in Kenya.",
             "meta_image": "/files/erpnext-logo.png",
         },
         "case-studies": {
@@ -228,7 +228,7 @@ def _set_homepage_industry_copy():
 
     if len(home.page_blocks) > 5:
         vals = json.loads(home.page_blocks[5].web_template_values or "{}")
-        vals["title"] = "Pricing Preview"
+        vals["title"] = "KSh Pricing Preview"
         vals["subtitle"] = "Implementation tiers built for Kenyan SME and mid-market operators"
         vals["tab_1_title"] = "Starter | KSh 80,000 - 180,000"
         vals["tab_2_title"] = "Growth | KSh 220,000 - 520,000"
@@ -299,7 +299,7 @@ def _enhance_pricing_page_ksh():
         _update_block_values(
             page.page_blocks[0],
             {
-                "title": "Pricing for ERP Implementation in Kenya",
+                "title": "KSh Pricing for ERP Implementation in Kenya",
                 "subtitle": "Executive-grade systems delivered by a focused implementation partner.\n\nNo per-user licensing surprises.",
             },
         )
@@ -308,7 +308,7 @@ def _enhance_pricing_page_ksh():
         _update_block_values(
             page.page_blocks[2],
             {
-                "title": "ERPNext Implementation Packages",
+                "title": "ERPNext Implementation Packages (KSh)",
                 "tab_1_title": "Starter | KSh 80,000 - 180,000",
                 "tab_1_content": "Ideal for a focused first rollout.\n\n• 1-2 modules (Sales, Inventory, Accounting)\n\n• One critical custom workflow\n\n• Data migration from Excel\n\n• Team onboarding sessions\n\n• Post-go-live support\n\n• Timeline: 2-4 weeks",
                 "tab_2_title": "Growth | KSh 220,000 - 520,000",
@@ -322,7 +322,7 @@ def _enhance_pricing_page_ksh():
         _update_block_values(
             page.page_blocks[3],
             {
-                "title": "Automation Packages",
+                "title": "Automation Packages (KSh)",
                 "features": [
                     {
                         "idx": 1,
@@ -347,7 +347,7 @@ def _enhance_pricing_page_ksh():
         _update_block_values(
             page.page_blocks[4],
             {
-                "title": "ARC Compliance Packages",
+                "title": "ARC Compliance Packages (KSh)",
                 "features": [
                     {
                         "idx": 1,
