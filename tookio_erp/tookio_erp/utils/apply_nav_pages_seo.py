@@ -9,11 +9,14 @@ def _set_nav():
     ws.append("top_bar_items", {"label": "ERPNext", "url": "/erpnext"})
     ws.append("top_bar_items", {"label": "ARC System", "url": "/arc-system"})
     ws.append("top_bar_items", {"label": "Automation & AI", "url": "/automation-hub"})
+    ws.append("top_bar_items", {"label": "Custom Development", "url": "/custom-development"})
 
     ws.append("top_bar_items", {"label": "Resources", "url": ""})
     ws.append("top_bar_items", {"label": "Blog", "url": "/blog", "parent_label": "Resources"})
     ws.append("top_bar_items", {"label": "Case Studies", "url": "/case-studies", "parent_label": "Resources"})
     ws.append("top_bar_items", {"label": "About", "url": "/about", "parent_label": "Resources"})
+    ws.append("top_bar_items", {"label": "Privacy Policy", "url": "/privacy-policy", "parent_label": "Resources"})
+    ws.append("top_bar_items", {"label": "Terms", "url": "/terms", "parent_label": "Resources"})
 
     ws.append("top_bar_items", {"label": "Pricing", "url": "/pricing"})
     ws.append("top_bar_items", {"label": "Contact", "url": "/contact"})
@@ -54,6 +57,39 @@ def _set_nav():
         "}"
         "</script>"
     )
+    ws.save()
+
+
+def _set_footer():
+    ws = frappe.get_doc("Website Settings", "Website Settings")
+    ws.footer_items = []
+
+    footer_items = [
+        {"label": "Services", "parent_label": None, "url": None, "right": 0},
+        {"label": "ERPNext Solutions", "parent_label": "Services", "url": "/erpnext", "right": 0},
+        {"label": "n8n Automation", "parent_label": "Services", "url": "/automation-hub", "right": 0},
+        {"label": "ARC Compliance", "parent_label": "Services", "url": "/arc-system", "right": 0},
+        {"label": "Custom Development", "parent_label": "Services", "url": "/custom-development", "right": 0},
+        {"label": "Resources", "parent_label": None, "url": None, "right": 0},
+        {"label": "Blog", "parent_label": "Resources", "url": "/blog", "right": 0},
+        {"label": "Case Studies", "parent_label": "Resources", "url": "/case-studies", "right": 0},
+        {"label": "Pricing", "parent_label": "Resources", "url": "/pricing", "right": 0},
+        {"label": "Privacy Policy", "parent_label": "Resources", "url": "/privacy-policy", "right": 0},
+        {"label": "Terms", "parent_label": "Resources", "url": "/terms", "right": 0},
+        {"label": "Company", "parent_label": None, "url": None, "right": 0},
+        {"label": "About", "parent_label": "Company", "url": "/about", "right": 0},
+        {"label": "Contact", "parent_label": "Company", "url": "/contact", "right": 0},
+        {"label": "For Enterprises", "parent_label": "Company", "url": "/for-enterprises", "right": 0},
+        {"label": "Get Started", "parent_label": None, "url": None, "right": 0},
+        {"label": "Free Consultation", "parent_label": "Get Started", "url": "/contact", "right": 0},
+        {"label": "Demo Request", "parent_label": "Get Started", "url": "/contact", "right": 0},
+        {"label": "Pricing Guide", "parent_label": "Get Started", "url": "/pricing", "right": 0},
+        {"label": "Contact", "parent_label": "Get Started", "url": "/contact", "right": 0},
+    ]
+
+    for item in footer_items:
+        ws.append("footer_items", item)
+
     ws.save()
 
 
@@ -161,6 +197,21 @@ def _set_seo():
         "contact": {
             "meta_title": "Contact Tookio | ERPNext for Manufacturing and Supply Chain in Kenya",
             "meta_description": "Talk to Tookio about ERP implementation, procurement process automation and supply chain integration for Kenyan operations.",
+            "meta_image": "/files/erpnext-logo.png",
+        },
+        "custom-development": {
+            "meta_title": "Custom Software Development Kenya | Tookio",
+            "meta_description": "Custom ERP extensions, business apps, integrations and workflow software built for Kenyan and East African operations.",
+            "meta_image": "/files/erpnext-logo.png",
+        },
+        "privacy-policy": {
+            "meta_title": "Privacy Policy | Tookio",
+            "meta_description": "How Tookio collects, uses and protects information when you use our website, consultation forms and services.",
+            "meta_image": "/files/erpnext-logo.png",
+        },
+        "terms-of-service": {
+            "meta_title": "Terms of Service | Tookio",
+            "meta_description": "Terms that apply when you use Tookio's website, consultation services and implementation work.",
             "meta_image": "/files/erpnext-logo.png",
         },
     }
@@ -483,6 +534,489 @@ def _enhance_for_enterprises_and_about():
         page.save(ignore_permissions=True)
 
 
+def _create_or_update_custom_development_page():
+    if frappe.db.exists("Web Page", "custom-development"):
+        page = frappe.get_doc("Web Page", "custom-development")
+    else:
+        page = frappe.new_doc("Web Page")
+        page.name = "custom-development"
+
+    page.title = "Custom Development"
+    page.route = "custom-development"
+    page.module = "Tookio Erp"
+    page.content_type = "Page Builder"
+    page.full_width = 1
+    page.show_title = 0
+    page.show_sidebar = 0
+    page.dynamic_route = 0
+    page.dynamic_template = 0
+    page.enable_comments = 0
+    page.text_align = "Left"
+    page.published = 1
+    page.meta_title = "Custom Software Development Kenya | Tookio"
+    page.meta_description = (
+        "Custom ERP extensions, business apps, integrations and workflow software built for Kenyan and East African operations."
+    )
+    page.meta_image = "/files/erpnext-logo.png"
+
+    page.page_blocks = []
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Hero",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 0,
+            "css_class": "tookio-dark-hero",
+            "web_template_values": json.dumps(
+                {
+                    "title": "Custom Software Built Around How Your Business Actually Works",
+                    "subtitle": "If the process matters to your operation, we can turn it into software. ERP extensions, internal tools, approvals, portals, dashboards and integrations.",
+                    "align": "Center",
+                    "primary_action_label": "Discuss a Build",
+                    "primary_action": "/contact",
+                }
+            ),
+        },
+    )
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Section with Features",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 1,
+            "web_template_values": json.dumps(
+                {
+                    "title": "What We Can Build",
+                    "subtitle": "We design software around the workflow, not around a template.",
+                    "columns": "3",
+                    "features": [
+                        {
+                            "idx": 1,
+                            "title": "Custom ERP Extensions",
+                            "content": "Add business rules, forms, reports, print formats and process controls to ERPNext.",
+                        },
+                        {
+                            "idx": 2,
+                            "title": "Operational Web Apps",
+                            "content": "Build portals, approval apps, customer self-service tools, internal dashboards and team workflows.",
+                        },
+                        {
+                            "idx": 3,
+                            "title": "Automation and Integrations",
+                            "content": "Connect ERP to M-Pesa, email, WhatsApp, banking APIs, spreadsheets and third-party platforms.",
+                        },
+                    ],
+                }
+            ),
+        },
+    )
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Section with Features",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 0,
+            "web_template_values": json.dumps(
+                {
+                    "title": "Examples of Custom Solutions",
+                    "subtitle": "Typical engagements we can design and ship.",
+                    "columns": "3",
+                    "features": [
+                        {
+                            "idx": 1,
+                            "title": "Manufacturing Control Tools",
+                            "content": "Production dashboards, batch traceability, QA checklists, maintenance scheduling and plant reporting.",
+                        },
+                        {
+                            "idx": 2,
+                            "title": "Procurement and Finance Workflows",
+                            "content": "Approval chains, supplier portals, payment checks, budget controls and exception handling.",
+                        },
+                        {
+                            "idx": 3,
+                            "title": "Sales and Customer Systems",
+                            "content": "Quotation portals, CRM automations, order tracking, customer alerts and support workflows.",
+                        },
+                    ],
+                }
+            ),
+        },
+    )
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Section with Features",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 1,
+            "web_template_values": json.dumps(
+                {
+                    "title": "How We Work",
+                    "subtitle": "Clear delivery from idea to deployment.",
+                    "columns": "3",
+                    "features": [
+                        {
+                            "idx": 1,
+                            "title": "Discovery and Scope",
+                            "content": "We map the workflow, identify the pain points and define the smallest useful solution.",
+                        },
+                        {
+                            "idx": 2,
+                            "title": "Design and Build",
+                            "content": "We prototype, implement, test and refine until the software fits the team.",
+                        },
+                        {
+                            "idx": 3,
+                            "title": "Launch and Iterate",
+                            "content": "We deploy, train users and improve the system based on real usage.",
+                        },
+                    ],
+                }
+            ),
+        },
+    )
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Section with Cards",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 0,
+            "web_template_values": json.dumps(
+                {
+                    "title": "Why Build Custom",
+                    "subtitle": "Because your business is not generic.",
+                    "columns": "3",
+                    "cards": [
+                        {
+                            "idx": 1,
+                            "title": "Reduce Manual Work",
+                            "content": "Replace spreadsheets, copy-paste processes and email chasing with controlled workflows.",
+                        },
+                        {
+                            "idx": 2,
+                            "title": "Protect Your Process",
+                            "content": "Software should reflect your approvals, rules and reporting requirements instead of forcing a mismatch.",
+                        },
+                        {
+                            "idx": 3,
+                            "title": "Scale Without Chaos",
+                            "content": "Build tools that stay usable as headcount, sites and order volume grow.",
+                        },
+                    ],
+                }
+            ),
+        },
+    )
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Section with CTA",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 1,
+            "web_template_values": json.dumps(
+                {
+                    "title": "Have a Process Worth Automating?",
+                    "subtitle": "If it touches operations, finance, sales, stock or customers, we can usually build something useful around it.",
+                    "cta_label": "Start a Build Conversation",
+                    "cta_url": "/contact",
+                    "show_confetti": 0,
+                }
+            ),
+        },
+    )
+
+    if page.is_new():
+        page.insert(ignore_permissions=True)
+    else:
+        page.save(ignore_permissions=True)
+
+
+def _create_or_update_privacy_policy_page():
+    if frappe.db.exists("Web Page", "privacy-policy"):
+        page = frappe.get_doc("Web Page", "privacy-policy")
+    else:
+        page = frappe.new_doc("Web Page")
+        page.name = "privacy-policy"
+
+    page.title = "Privacy Policy"
+    page.route = "privacy-policy"
+    page.module = "Tookio Erp"
+    page.content_type = "Page Builder"
+    page.full_width = 1
+    page.show_title = 0
+    page.show_sidebar = 0
+    page.dynamic_route = 0
+    page.dynamic_template = 0
+    page.enable_comments = 0
+    page.text_align = "Left"
+    page.published = 1
+    page.meta_title = "Privacy Policy | Tookio"
+    page.meta_description = "How Tookio collects, uses and protects information when you use our website, consultation forms and services."
+    page.meta_image = "/files/erpnext-logo.png"
+
+    page.page_blocks = []
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Hero",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 0,
+            "web_template_values": json.dumps(
+                {
+                    "title": "Privacy Policy",
+                    "subtitle": "How Tookio handles information collected through our website, consultation forms and service delivery.",
+                    "align": "Center",
+                }
+            ),
+        },
+    )
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Section with Features",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 1,
+            "web_template_values": json.dumps(
+                {
+                    "title": "What We Collect",
+                    "subtitle": "Only the information needed to respond, deliver services and improve the website.",
+                    "columns": "3",
+                    "features": [
+                        {
+                            "idx": 1,
+                            "title": "Contact Details",
+                            "content": "Name, email address, phone number and company details submitted through forms or direct messages.",
+                        },
+                        {
+                            "idx": 2,
+                            "title": "Website Usage",
+                            "content": "Pages visited, browser type and basic analytics data used to improve performance and content relevance.",
+                        },
+                        {
+                            "idx": 3,
+                            "title": "Project Information",
+                            "content": "Requirements, operational context and business details shared during consultations and implementations.",
+                        },
+                    ],
+                }
+            ),
+        },
+    )
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Section with Features",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 0,
+            "web_template_values": json.dumps(
+                {
+                    "title": "How We Use Information",
+                    "subtitle": "We use data to communicate, deliver work, maintain records and operate our services.",
+                    "columns": "2",
+                    "features": [
+                        {
+                            "idx": 1,
+                            "title": "Service Delivery",
+                            "content": "To respond to enquiries, scope work, deliver projects, provide support and maintain business records.",
+                        },
+                        {
+                            "idx": 2,
+                            "title": "Website Improvement",
+                            "content": "To understand traffic, improve content quality, and make the website more useful for visitors.",
+                        },
+                    ],
+                }
+            ),
+        },
+    )
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Section with Features",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 1,
+            "web_template_values": json.dumps(
+                {
+                    "title": "Your Choices and Rights",
+                    "subtitle": "You can contact us if you need access, correction or deletion of your information.",
+                    "columns": "2",
+                    "features": [
+                        {
+                            "idx": 1,
+                            "title": "Request Access or Correction",
+                            "content": "Email hello@tookio.co.ke if you want to review or correct information you shared with us.",
+                        },
+                        {
+                            "idx": 2,
+                            "title": "Cookies and Analytics",
+                            "content": "You may disable cookies in your browser, but some site features may not work as intended.",
+                        },
+                    ],
+                }
+            ),
+        },
+    )
+
+    if page.is_new():
+        page.insert(ignore_permissions=True)
+    else:
+        page.save(ignore_permissions=True)
+
+
+def _create_or_update_terms_page():
+    if frappe.db.exists("Web Page", "terms-of-service"):
+        page = frappe.get_doc("Web Page", "terms-of-service")
+    else:
+        page = frappe.new_doc("Web Page")
+        page.name = "terms-of-service"
+
+    page.title = "Terms of Service"
+    page.route = "terms"
+    page.module = "Tookio Erp"
+    page.content_type = "Page Builder"
+    page.full_width = 1
+    page.show_title = 0
+    page.show_sidebar = 0
+    page.dynamic_route = 0
+    page.dynamic_template = 0
+    page.enable_comments = 0
+    page.text_align = "Left"
+    page.published = 1
+    page.meta_title = "Terms of Service | Tookio"
+    page.meta_description = "Terms that apply when you use Tookio's website, consultation services and implementation work."
+    page.meta_image = "/files/erpnext-logo.png"
+
+    page.page_blocks = []
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Hero",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 0,
+            "web_template_values": json.dumps(
+                {
+                    "title": "Terms of Service",
+                    "subtitle": "The rules that apply when you use Tookio's website, services and project deliverables.",
+                    "align": "Center",
+                }
+            ),
+        },
+    )
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Section with Features",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 1,
+            "web_template_values": json.dumps(
+                {
+                    "title": "Service and Website Use",
+                    "subtitle": "Use the site responsibly and review project scope carefully before we begin work.",
+                    "columns": "3",
+                    "features": [
+                        {
+                            "idx": 1,
+                            "title": "Permitted Use",
+                            "content": "You may browse the website, submit enquiries and use our services within the agreed scope.",
+                        },
+                        {
+                            "idx": 2,
+                            "title": "Project Scope",
+                            "content": "Implementation work, integrations and timelines are defined by the agreed proposal or statement of work.",
+                        },
+                        {
+                            "idx": 3,
+                            "title": "Client Responsibilities",
+                            "content": "Clients are expected to provide timely information, approvals, access and feedback needed to complete the work.",
+                        },
+                    ],
+                }
+            ),
+        },
+    )
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Section with Features",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 0,
+            "web_template_values": json.dumps(
+                {
+                    "title": "Payments, Deliverables and Liability",
+                    "subtitle": "Commercial and legal terms for paid engagements and use of deliverables.",
+                    "columns": "3",
+                    "features": [
+                        {
+                            "idx": 1,
+                            "title": "Payments",
+                            "content": "Invoices are due according to the project agreement. Work may pause if payments are overdue.",
+                        },
+                        {
+                            "idx": 2,
+                            "title": "Deliverables",
+                            "content": "Source files, configurations and documentation are delivered as agreed in the project scope.",
+                        },
+                        {
+                            "idx": 3,
+                            "title": "Liability",
+                            "content": "We provide services with care and professionalism, but liability is limited to the extent allowed by applicable law and the signed agreement.",
+                        },
+                    ],
+                }
+            ),
+        },
+    )
+    page.append(
+        "page_blocks",
+        {
+            "web_template": "Section with CTA",
+            "add_container": 1,
+            "add_top_padding": 1,
+            "add_bottom_padding": 1,
+            "add_shade": 1,
+            "web_template_values": json.dumps(
+                {
+                    "title": "Questions About These Terms?",
+                    "subtitle": "Email hello@tookio.co.ke and we will clarify anything unclear before you start a project.",
+                    "cta_label": "Contact Tookio",
+                    "cta_url": "/contact",
+                    "show_confetti": 0,
+                }
+            ),
+        },
+    )
+
+    if page.is_new():
+        page.insert(ignore_permissions=True)
+    else:
+        page.save(ignore_permissions=True)
+
+
 def _delete_conflicting_custom_pages():
     for page_name in ("blog", "contact"):
         if frappe.db.exists("Web Page", page_name):
@@ -506,6 +1040,9 @@ def _export_tracked_files():
     _export_page_to_tracked_path("case-studies", "tookio_erp/tookio_erp/web_page/case-studies/case-studies.json")
     _export_page_to_tracked_path("about", "tookio_erp/tookio_erp/web_page/about/about.json")
     _export_page_to_tracked_path("for-enterprises", "tookio_erp/tookio_erp/web_page/for-enterprises/for-enterprises.json")
+    _export_page_to_tracked_path("custom-development", "tookio_erp/tookio_erp/web_page/custom-development/custom-development.json")
+    _export_page_to_tracked_path("privacy-policy", "tookio_erp/tookio_erp/web_page/privacy-policy/privacy-policy.json")
+    _export_page_to_tracked_path("terms-of-service", "tookio_erp/tookio_erp/web_page/terms-of-service/terms-of-service.json")
 
 
 def apply_all():
@@ -513,6 +1050,7 @@ def apply_all():
     frappe.enqueue = lambda *args, **kwargs: None
     try:
         _set_nav()
+        _set_footer()
         _create_or_update_erpnext_page()
         _unpublish_services_and_set_seo()
         _set_seo()
@@ -522,6 +1060,9 @@ def apply_all():
         _enhance_erpnext_positioning()
         _enhance_services_ksh_archive()
         _enhance_for_enterprises_and_about()
+        _create_or_update_custom_development_page()
+        _create_or_update_privacy_policy_page()
+        _create_or_update_terms_page()
         _delete_conflicting_custom_pages()
         frappe.db.commit()
         _export_tracked_files()

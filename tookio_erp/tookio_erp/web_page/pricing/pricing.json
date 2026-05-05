@@ -9,10 +9,10 @@
  "full_width": 1,
  "idx": 0,
  "insert_style": 0,
- "meta_description": "Pricing for ERPNext implementation, automation and compliance solutions for manufacturers and procurement-heavy businesses in Kenya.",
+ "meta_description": "KSh pricing for ERPNext implementation, automation and compliance solutions for manufacturers and procurement-heavy businesses in Kenya.",
  "meta_image": "/files/erpnext-logo.png",
  "meta_title": "ERP Pricing Kenya | Manufacturing ERP Implementation Costs | Tookio",
- "modified": "2026-04-30 23:30:13.426482",
+ "modified": "2026-05-05 10:49:33.109450",
  "modified_by": "Administrator",
  "module": "Tookio Erp",
  "name": "pricing",
@@ -32,7 +32,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 1,
-   "modified": "2026-04-30 23:30:13.426482",
+   "modified": "2026-05-05 10:49:33.109450",
    "modified_by": "Administrator",
    "name": "o0661jrh3m",
    "owner": "Administrator",
@@ -40,7 +40,7 @@
    "parentfield": "page_blocks",
    "parenttype": "Web Page",
    "web_template": "Hero",
-    "web_template_values": "{\"title\": \"Pricing for ERP Implementation in Kenya\", \"subtitle\": \"Executive-grade systems delivered by a focused implementation partner.\\n\\nNo per-user licensing surprises.\", \"align\": \"Center\"}"
+   "web_template_values": "{\"title\": \"KSh Pricing for ERP Implementation in Kenya\", \"subtitle\": \"Executive-grade systems delivered by a focused implementation partner.\\n\\nNo per-user licensing surprises.\", \"align\": \"Center\"}"
   },
   {
    "add_background_image": 0,
@@ -55,7 +55,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 2,
-   "modified": "2026-04-30 23:30:13.426482",
+   "modified": "2026-05-05 10:49:33.109450",
    "modified_by": "Administrator",
    "name": "o069lf2e2o",
    "owner": "Administrator",
@@ -78,7 +78,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 3,
-   "modified": "2026-04-30 23:30:13.426482",
+   "modified": "2026-05-05 10:49:33.109450",
    "modified_by": "Administrator",
    "name": "o0632v8ui0",
    "owner": "Administrator",
@@ -86,7 +86,7 @@
    "parentfield": "page_blocks",
    "parenttype": "Web Page",
    "web_template": "Section with Tabs",
-    "web_template_values": "{\"title\": \"ERPNext Implementation Packages\", \"subtitle\": \"Choose based on implementation complexity\", \"tab_1_title\": \"Starter | KSh 80,000 - 180,000\", \"tab_1_content\": \"Ideal for a focused first rollout.\\n\\n\\u2022 1-2 modules (Sales, Inventory, Accounting)\\n\\n\\u2022 One critical custom workflow\\n\\n\\u2022 Data migration from Excel\\n\\n\\u2022 Team onboarding sessions\\n\\n\\u2022 Post-go-live support\\n\\n\\u2022 Timeline: 2-4 weeks\", \"tab_2_title\": \"Growth | KSh 220,000 - 520,000\", \"tab_2_content\": \"For serious operational transformation.\\n\\n\\u2022 Multi-module rollout (Manufacturing, Procurement, Stock, Finance, HR)\\n\\n\\u2022 Approval workflows + automation\\n\\n\\u2022 Integration setup (payments, messaging, banking)\\n\\n\\u2022 Executive dashboarding\\n\\n\\u2022 Priority stabilization support\\n\\n\\u2022 Timeline: 4-8 weeks\", \"tab_3_title\": \"Enterprise | From KSh 800,000\", \"tab_3_content\": \"For multi-entity or high-complexity operations.\\n\\n\\u2022 Full architecture and governance design\\n\\n\\u2022 Advanced automations and compliance controls\\n\\n\\u2022 Dedicated implementation ownership\\n\\n\\u2022 Phased deployment and optimization roadmap\\n\\n\\u2022 Timeline: scoped by complexity\"}"
+   "web_template_values": "{\"title\": \"ERPNext Implementation Packages (KSh)\", \"subtitle\": \"Choose based on implementation complexity\", \"tab_1_title\": \"Starter | KSh 80,000 - 180,000\", \"tab_1_content\": \"Ideal for a focused first rollout.\\n\\n\\u2022 1-2 modules (Sales, Inventory, Accounting)\\n\\n\\u2022 One critical custom workflow\\n\\n\\u2022 Data migration from Excel\\n\\n\\u2022 Team onboarding sessions\\n\\n\\u2022 Post-go-live support\\n\\n\\u2022 Timeline: 2-4 weeks\", \"tab_2_title\": \"Growth | KSh 220,000 - 520,000\", \"tab_2_content\": \"For serious operational transformation.\\n\\n\\u2022 Multi-module rollout (Manufacturing, Procurement, Stock, Finance, HR)\\n\\n\\u2022 Approval workflows + automation\\n\\n\\u2022 Integration setup (payments, messaging, banking)\\n\\n\\u2022 Executive dashboarding\\n\\n\\u2022 Priority stabilization support\\n\\n\\u2022 Timeline: 4-8 weeks\", \"tab_3_title\": \"Enterprise | From KSh 800,000\", \"tab_3_content\": \"For multi-entity or high-complexity operations.\\n\\n\\u2022 Full architecture and governance design\\n\\n\\u2022 Advanced automations and compliance controls\\n\\n\\u2022 Dedicated implementation ownership\\n\\n\\u2022 Phased deployment and optimization roadmap\\n\\n\\u2022 Timeline: scoped by complexity\"}"
   },
   {
    "add_background_image": 0,
@@ -101,7 +101,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 4,
-   "modified": "2026-04-30 23:30:13.426482",
+   "modified": "2026-05-05 10:49:33.109450",
    "modified_by": "Administrator",
    "name": "o06ctr1s37",
    "owner": "Administrator",
@@ -109,7 +109,7 @@
    "parentfield": "page_blocks",
    "parenttype": "Web Page",
    "web_template": "Section with Features",
-    "web_template_values": "{\"title\": \"Automation Packages\", \"subtitle\": \"From single workflow to full intelligent operations\", \"columns\": \"3\", \"features\": [{\"idx\": 1, \"title\": \"Single Workflow | KSh 35,000 - 90,000\", \"content\": \"Design + implementation for one high-impact automation.\\n\\n\\u2022 Integration with core business tools\\n\\n\\u2022 Testing and training\\n\\n\\u2022 Timeline: about 1 week\"}, {\"idx\": 2, \"title\": \"Workflow Bundle | KSh 140,000 - 300,000\", \"content\": \"Up to 5 automation flows across ERP and communication tools.\\n\\n\\u2022 Operational handover + monitoring setup\\n\\n\\u2022 Timeline: 2-4 weeks\"}, {\"idx\": 3, \"title\": \"AI + Automation | KSh 240,000 - 480,000\", \"content\": \"Includes workflow bundle plus AI-assisted operations.\\n\\n\\u2022 Document extraction + response support\\n\\n\\u2022 Predictive alerts and exception routing\\n\\n\\u2022 Timeline: 3-6 weeks\"}]}"
+   "web_template_values": "{\"title\": \"Automation Packages (KSh)\", \"subtitle\": \"From single workflow to full intelligent operations\", \"columns\": \"3\", \"features\": [{\"idx\": 1, \"title\": \"Single Workflow | KSh 35,000 - 90,000\", \"content\": \"Design + implementation for one high-impact automation.\\n\\n\\u2022 Integration with core business tools\\n\\n\\u2022 Testing and training\\n\\n\\u2022 Timeline: about 1 week\"}, {\"idx\": 2, \"title\": \"Workflow Bundle | KSh 140,000 - 300,000\", \"content\": \"Up to 5 automation flows across ERP and communication tools.\\n\\n\\u2022 Operational handover + monitoring setup\\n\\n\\u2022 Timeline: 2-4 weeks\"}, {\"idx\": 3, \"title\": \"AI + Automation | KSh 240,000 - 480,000\", \"content\": \"Includes workflow bundle plus AI-assisted operations.\\n\\n\\u2022 Document extraction + response support\\n\\n\\u2022 Predictive alerts and exception routing\\n\\n\\u2022 Timeline: 3-6 weeks\"}]}"
   },
   {
    "add_background_image": 0,
@@ -124,7 +124,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 5,
-   "modified": "2026-04-30 23:30:13.426482",
+   "modified": "2026-05-05 10:49:33.109450",
    "modified_by": "Administrator",
    "name": "o06jr3kgrj",
    "owner": "Administrator",
@@ -132,7 +132,7 @@
    "parentfield": "page_blocks",
    "parenttype": "Web Page",
    "web_template": "Section with Features",
-    "web_template_values": "{\"title\": \"ARC Compliance Packages\", \"subtitle\": \"Audit, risk, and regulatory control by maturity level\", \"columns\": \"3\", \"features\": [{\"idx\": 1, \"title\": \"Essential | KSh 80,000\", \"content\": \"Incident and audit trail setup.\\n\\n\\u2022 Basic compliance checklists\\n\\n\\u2022 Email support\"}, {\"idx\": 2, \"title\": \"Professional | KSh 220,000\", \"content\": \"Risk module + statutory tracking.\\n\\n\\u2022 Custom checklists and reporting\\n\\n\\u2022 Priority support\"}, {\"idx\": 3, \"title\": \"Enterprise | From KSh 500,000\", \"content\": \"Multi-site control architecture.\\n\\n\\u2022 Advanced dashboards\\n\\n\\u2022 Industry-specific compliance workflows\"}]}"
+   "web_template_values": "{\"title\": \"ARC Compliance Packages (KSh)\", \"subtitle\": \"Audit, risk, and regulatory control by maturity level\", \"columns\": \"3\", \"features\": [{\"idx\": 1, \"title\": \"Essential | KSh 80,000\", \"content\": \"Incident and audit trail setup.\\n\\n\\u2022 Basic compliance checklists\\n\\n\\u2022 Email support\"}, {\"idx\": 2, \"title\": \"Professional | KSh 220,000\", \"content\": \"Risk module + statutory tracking.\\n\\n\\u2022 Custom checklists and reporting\\n\\n\\u2022 Priority support\"}, {\"idx\": 3, \"title\": \"Enterprise | From KSh 500,000\", \"content\": \"Multi-site control architecture.\\n\\n\\u2022 Advanced dashboards\\n\\n\\u2022 Industry-specific compliance workflows\"}]}"
   },
   {
    "add_background_image": 0,
@@ -147,7 +147,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 6,
-   "modified": "2026-04-30 23:30:13.426482",
+   "modified": "2026-05-05 10:49:33.109450",
    "modified_by": "Administrator",
    "name": "o06t9n1uaf",
    "owner": "Administrator",
@@ -155,7 +155,7 @@
    "parentfield": "page_blocks",
    "parenttype": "Web Page",
    "web_template": "Section with Cards",
-    "web_template_values": "{\"title\": \"Bundle Offers\", \"subtitle\": \"Save more with integrated implementation tracks\", \"columns\": \"3\", \"cards\": [{\"idx\": 1, \"title\": \"Operations Core Bundle | KSh 590,000\", \"content\": \"ERP Growth + Workflow Bundle.\\n\\nDesigned for manufacturing and procurement operations that need quick ROI.\"}, {\"idx\": 2, \"title\": \"Control and Scale Bundle | KSh 760,000\", \"content\": \"ERP Growth + Workflow Bundle + ARC Professional.\\n\\nStrong fit for teams scaling with compliance pressure.\"}, {\"idx\": 3, \"title\": \"Executive Transformation Bundle | From KSh 1,500,000\", \"content\": \"Enterprise ERP + AI Automation + ARC Enterprise.\\n\\nBest for multi-plant or multi-entity operations.\"}]}"
+   "web_template_values": "{\"title\": \"Bundle Offers (KSh)\", \"subtitle\": \"Save more with integrated implementation tracks\", \"columns\": \"3\", \"cards\": [{\"idx\": 1, \"title\": \"Operations Core Bundle | KSh 590,000\", \"content\": \"ERP Growth + Workflow Bundle.\\n\\nDesigned for manufacturing and procurement operations that need quick ROI.\"}, {\"idx\": 2, \"title\": \"Control and Scale Bundle | KSh 760,000\", \"content\": \"ERP Growth + Workflow Bundle + ARC Professional.\\n\\nStrong fit for teams scaling with compliance pressure.\"}, {\"idx\": 3, \"title\": \"Executive Transformation Bundle | From KSh 1,500,000\", \"content\": \"Enterprise ERP + AI Automation + ARC Enterprise.\\n\\nBest for multi-plant or multi-entity operations.\"}]}"
   },
   {
    "add_background_image": 0,
@@ -170,7 +170,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 7,
-   "modified": "2026-04-30 23:30:13.426482",
+   "modified": "2026-05-05 10:49:33.109450",
    "modified_by": "Administrator",
    "name": "o06halb20d",
    "owner": "Administrator",
@@ -193,7 +193,7 @@
    "doctype": "Web Page Block",
    "hide_block": 0,
    "idx": 8,
-   "modified": "2026-04-30 23:30:13.426482",
+   "modified": "2026-05-05 10:49:33.109450",
    "modified_by": "Administrator",
    "name": "o061e64ab5",
    "owner": "Administrator",
