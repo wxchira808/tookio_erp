@@ -1,0 +1,84 @@
+{% extends "tookio_erp/templates/tookio_base.html" %}
+
+{% block title %}ERP Resources, Guides & Compliance Knowledge Kenya | Tookio ERP{% endblock %}
+{% block meta_description %}Explore expert guides on manufacturing ERP, multi-level BOM costing, KRA eTIMS V2 compliance, and ERPNext implementation best practices.{% endblock %}
+
+{% block content %}
+<section class="tookio-page-header">
+  <div class="t-container">
+    <h1>Enterprise ERP Guides & Compliance Resources</h1>
+    <p class="lead">In-depth technical guides, regulatory notes, and architectural blueprints written by senior ERP engineers for manufacturing and business leaders in Kenya.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="t-container">
+    <div class="cards-grid-3">
+      <!-- Resource 1 -->
+      <div class="feature-card">
+        <div style="font-size: 0.8125rem; color: var(--t-navy-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">Manufacturing Guide</div>
+        <h3>The Complete Guide to Multi-Level BOMs & MRP</h3>
+        <p>Learn how to structure nested bills of materials, calculate scrap ratios, and automate purchase orders based on real plant floor lead times.</p>
+        <a href="/demo" class="btn btn-sm btn-outline" style="margin-top: auto;">Explore Interactive Sandbox &rarr;</a>
+      </div>
+
+      <!-- Resource 2 -->
+      <div class="feature-card" id="compliance">
+        <div style="font-size: 0.8125rem; color: var(--t-navy-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">Regulatory Compliance</div>
+        <h3>KRA eTIMS V2 Technical Integration Guide</h3>
+        <p>How the direct API integration transmits invoice cryptograms, QR codes, and Control Unit signatures seamlessly during daily billing workflows.</p>
+        <a href="/solutions/finance-accounting#etims" class="btn btn-sm btn-outline" style="margin-top: auto;">Read eTIMS Overview &rarr;</a>
+      </div>
+
+      <!-- Resource 3 -->
+      <div class="feature-card">
+        <div style="font-size: 0.8125rem; color: var(--t-navy-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">Implementation Guide</div>
+        <h3>4-Week ERP Implementation Roadmap</h3>
+        <p>A step-by-step checklist covering process blueprinting, opening balance migration, user acceptance testing, and production cutover hypercare.</p>
+        <a href="/services" class="btn btn-sm btn-outline" style="margin-top: auto;">View Implementation Framework &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENTERPRISE FAQS -->
+<section class="section section-alt" id="faqs">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Frequently Asked Questions About Tookio & ERPNext</h2>
+    </div>
+
+    <div class="accordion-group">
+      <div class="accordion-item open">
+        <button class="accordion-header">
+          <span>What is the difference between open-source ERPNext and proprietary ERPs?</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="accordion-content">
+          <p>ERPNext gives your business complete code and database ownership. There are no expensive recurring per-user license fees. You get full manufacturing, inventory, accounting, and HR capabilities out of the box, while Tookio handles configuration, custom app development, and local SLA support.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Where is our company data hosted?</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="accordion-content">
+          <p>We provide full hosting flexibility: you can host your instance in dedicated Kenyan data centers, on high-performance cloud providers (AWS, DigitalOcean, Hetzner), or entirely on-premise inside your own factory server room with automated encrypted off-site backups.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>How does Tookio support our team after go-live?</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="accordion-content">
+          <p>We provide structured Service Level Agreements (SLAs) with direct access to our Nairobi-based engineering team. Our support contracts include priority incident resolution, daily automated health checks, security patches, and quarterly operational tuning.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Tookio Solutions | Enterprise ERP & Manufacturing Systems Kenya{% endblock %}</title>
+  <meta name="description" content="{% block meta_description %}Tookio Solutions is an enterprise ERP implementation, customization, and business systems partner in Nairobi, Kenya. Specializing in ERPNext, manufacturing operations, inventory control, and KRA eTIMS V2 compliance.{% endblock %}">
+  <meta name="keywords" content="ERPNext Kenya, Manufacturing ERP Nairobi, ERP implementation Kenya, KRA eTIMS V2 ERP, Bill of Materials software Kenya, Inventory management Kenya, Frappe framework developer Nairobi">
+  <meta name="author" content="Tookio Solutions">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://tookio.co.ke{{ frappe.request.path if frappe.request else '' }}">
+
+  <!-- Geo & Regional Meta Tags -->
+  <meta name="geo.region" content="KE-30">
+  <meta name="geo.placename" content="Nairobi">
+  <meta name="geo.position" content="-1.2921;36.8219">
+  <meta name="ICBM" content="-1.2921, 36.8219">
+
+  <!-- OpenGraph & Social Cards -->
+  <meta property="og:site_name" content="Tookio Solutions">
+  <meta property="og:title" content="{% block og_title %}Tookio Solutions — Enterprise ERP & Manufacturing Systems{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}Enterprise ERPNext implementation, customization, and manufacturing systems partner in Kenya.{% endblock %}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tookio.co.ke{{ frappe.request.path if frappe.request else '' }}">
+  <meta property="og:image" content="https://tookio.co.ke/assets/tookio_erp/images/tookio-logo.png">
+  <meta property="og:locale" content="en_KE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% block twitter_title %}Tookio Solutions — Enterprise ERP & Manufacturing Systems{% endblock %}">
+  <meta name="twitter:description" content="{% block twitter_description %}Enterprise ERPNext implementation, customization, and manufacturing systems partner in Kenya.{% endblock %}">
+  <meta name="twitter:image" content="https://tookio.co.ke/assets/tookio_erp/images/tookio-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/tookio_erp/images/favicon.png">
+  
+  <!-- Fonts & Enterprise CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/tookio_erp/css/tookio_enterprise.css?v=2.1.0">
+  
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://tookio.co.ke/#organization",
+        "name": "Tookio Solutions",
+        "url": "https://tookio.co.ke",
+        "logo": "https://tookio.co.ke/assets/tookio_erp/images/tookio-logo.png",
+        "description": "Enterprise ERPNext implementation and manufacturing systems partner in Kenya.",
+        "sameAs": [
+          "https://demo.tookio.co.ke",
+          "https://shop.tookio.co.ke"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://tookio.co.ke/#service",
+        "name": "Tookio ERP & Enterprise Solutions",
+        "url": "https://tookio.co.ke",
+        "parentOrganization": {"@id": "https://tookio.co.ke/#organization"},
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ngong Road",
+          "addressLocality": "Nairobi",
+          "addressCountry": "KE"
+        },
+        "telephone": "+254743169908",
+        "email": "info@tookio.co.ke",
+        "areaServed": [
+          {"@type": "Country", "name": "Kenya"},
+          {"@type": "Country", "name": "Uganda"},
+          {"@type": "Country", "name": "Tanzania"},
+          {"@type": "Country", "name": "Rwanda"}
+        ],
+        "knowsAbout": [
+          "Enterprise Manufacturing ERP Kenya",
+          "ERPNext Implementation Partner",
+          "Bill of Materials & MRP Systems",
+          "Multi-Warehouse Inventory Management",
+          "KRA eTIMS V2 Compliance & Invoicing",
+          "Enterprise System Integrations & Frappe Engineering"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+  <!-- Enterprise Header -->
+  {% include "tookio_erp/templates/includes/header.html" %}
+
+  <!-- Main Content Block -->
+  <main id="main-content">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Pre-Footer CTA Banner -->
+  {% block cta_banner %}
+    {% include "tookio_erp/templates/includes/cta_banner.html" %}
+  {% endblock %}
+
+  <!-- Enterprise Footer -->
+  {% include "tookio_erp/templates/includes/footer.html" %}
+
+  <!-- Enterprise JavaScript -->
+  <script src="/assets/tookio_erp/js/tookio_enterprise.js?v=2.1.0"></script>
+  {% block extra_scripts %}{% endblock %}
+</body>
+</html>

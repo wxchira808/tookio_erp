@@ -1,0 +1,1511 @@
+/**
+ * TOOKIO SOLUTIONS — Master Enterprise Design System (Modeled after SYSPRO ERP)
+ * Clean Corporate Cobalt Architecture: Crisp Typography, Precision Mega Menus,
+ * Strict Zero-Horizontal-Overflow, Fully Responsive Large-Format Imagery, Client Logos.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+  /* SYSPRO Inspired Enterprise Color Palette */
+  --t-cobalt: #002eca;
+  --t-cobalt-hover: #002299;
+  --t-cobalt-light: #eff4fe;
+  --t-cobalt-subtle: #dbe7fd;
+  --t-navy-dark: #0b1329;
+  --t-navy-surface: #111d3d;
+  --t-navy-card: #18284e;
+
+  /* Neutral Surfaces & Canvas */
+  --t-bg-white: #ffffff;
+  --t-bg-canvas: #f8fafc;
+  --t-bg-subtle: #f1f5f9;
+  --t-bg-muted: #e2e8f0;
+
+  /* Typography Colors */
+  --t-text-primary: #111827;
+  --t-text-secondary: #4b5563;
+  --t-text-muted: #6b7280;
+  --t-text-inverse: #ffffff;
+  --t-text-inverse-muted: #cbd5e1;
+
+  /* Hairline Borders */
+  --t-border: #e5e7eb;
+  --t-border-subtle: #f3f4f6;
+  --t-border-dark: rgba(255, 255, 255, 0.12);
+
+  /* Precise Corporate Radii */
+  --t-radius-sm: 4px;
+  --t-radius-md: 6px;
+  --t-radius-lg: 8px;
+  --t-radius-xl: 12px;
+
+  /* Soft Elevation */
+  --t-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --t-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --t-shadow-lg: 0 15px 35px -5px rgba(0, 0, 0, 0.12), 0 5px 15px rgba(0, 0, 0, 0.06);
+
+  /* Font Stacks */
+  --t-font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --t-font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --t-max-width: 1240px;
+}
+
+/* Global Reset with Strict Horizontal Overflow Prevention */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--t-font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--t-text-primary);
+  background-color: var(--t-bg-white);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.18s ease, background-color 0.18s ease;
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--t-font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: var(--t-text-primary);
+}
+
+h1 {
+  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3vw, 2.4rem);
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+p.lead {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--t-text-secondary);
+  max-width: 48rem;
+}
+
+.t-container {
+  width: 100%;
+  max-width: var(--t-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Sections & Structural Layout */
+.section {
+  padding: 4.5rem 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.section-alt {
+  background-color: var(--t-bg-canvas);
+  border-top: 1px solid var(--t-border);
+  border-bottom: 1px solid var(--t-border);
+}
+
+.section-dark {
+  background-color: var(--t-navy-dark);
+  color: var(--t-text-inverse);
+}
+
+.section-header {
+  margin-bottom: 3rem;
+  max-width: 48rem;
+}
+
+.section-header h2 {
+  margin-bottom: 0.75rem;
+}
+
+/* Buttons in SYSPRO Corporate Style */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--t-font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  padding: 0.65rem 1.35rem;
+  border-radius: var(--t-radius-sm);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-sm {
+  padding: 0.45rem 0.95rem;
+  font-size: 0.85rem;
+}
+
+.btn-lg {
+  padding: 0.85rem 1.75rem;
+  font-size: 1.025rem;
+}
+
+.btn-primary {
+  background-color: var(--t-cobalt);
+  color: #ffffff;
+  border-color: var(--t-cobalt);
+}
+
+.btn-primary:hover {
+  background-color: var(--t-cobalt-hover);
+  border-color: var(--t-cobalt-hover);
+  color: #ffffff;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--t-cobalt);
+  border-color: var(--t-cobalt);
+}
+
+.btn-outline:hover {
+  background-color: var(--t-cobalt-light);
+  color: var(--t-cobalt-hover);
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn-outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  color: var(--t-cobalt);
+  border-color: #ffffff;
+}
+
+.btn-white:hover {
+  background-color: #f1f5f9;
+  color: var(--t-cobalt-hover);
+}
+
+/* ==========================================================================
+   CHECKLISTS & BULLETS (Strict Small Vector Size — No Giant SVGs)
+   ========================================================================== */
+
+.card-checklist, .feature-checklist, .phase-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.card-checklist li, .feature-checklist li, .phase-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.925rem;
+  color: var(--t-text-secondary);
+  line-height: 1.5;
+}
+
+.card-checklist li svg, .feature-checklist li svg, .phase-checklist li svg,
+.trust-bullet svg, .hero-trust-bullets svg {
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  max-width: 16px !important;
+  max-height: 16px !important;
+  stroke: var(--t-cobalt) !important;
+  margin-top: 3px !important;
+  flex-shrink: 0 !important;
+  display: inline-block !important;
+}
+
+/* Phase Cards (Services Grid) */
+.cards-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.phase-card {
+  background-color: var(--t-bg-white);
+  border: 1px solid var(--t-border);
+  border-radius: var(--t-radius-md);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.phase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--t-border-subtle);
+}
+
+.phase-tag {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--t-cobalt);
+  text-transform: uppercase;
+}
+
+.phase-timeline {
+  font-size: 0.8125rem;
+  color: var(--t-text-muted);
+}
+
+.phase-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.phase-card p {
+  font-size: 0.875rem;
+  color: var(--t-text-secondary);
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   HEADER & SYSPRO-STYLE MEGA MENU NAVIGATION
+   ========================================================================== */
+
+.tookio-header-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--t-bg-white);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--t-border);
+}
+
+.tookio-top-bar {
+  background-color: var(--t-bg-canvas);
+  border-bottom: 1px solid var(--t-border);
+  font-size: 0.8125rem;
+  color: var(--t-text-secondary);
+  padding: 0.4rem 0;
+  width: 100%;
+}
+
+.tookio-top-bar .t-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tookio-top-bar-left, .tookio-top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.tookio-top-bar a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--t-text-secondary);
+}
+
+.tookio-top-bar a:hover {
+  color: var(--t-cobalt);
+}
+
+.tookio-main-nav-bar {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.tookio-main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tookio-logo-link {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.tookio-logo-img {
+  height: 38px;
+  width: auto;
+  aspect-ratio: 2000 / 375;
+  object-fit: contain;
+  display: block;
+}
+
+.tookio-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  height: 76px;
+}
+
+.nav-item {
+  position: static;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--t-font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--t-text-primary);
+  padding: 0 0.85rem;
+  height: 100%;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover, .nav-item:hover > .nav-link {
+  color: var(--t-cobalt);
+  border-bottom-color: var(--t-cobalt);
+}
+
+.nav-link .chevron {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s ease;
+}
+
+.nav-item:hover > .nav-link .chevron {
+  transform: rotate(180deg);
+}
+
+.mega-menu-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: var(--t-bg-white);
+  border-top: 1px solid var(--t-border);
+  border-bottom: 3px solid var(--t-cobalt);
+  box-shadow: var(--t-shadow-lg);
+  padding: 2.25rem 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 999;
+}
+
+.nav-item:hover .mega-menu-dropdown {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.mega-menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 340px;
+  gap: 2.5rem;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mega-col-heading {
+  font-family: var(--t-font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--t-text-muted);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--t-border);
+}
+
+.mega-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.mega-link-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: var(--t-radius-sm);
+  transition: background-color 0.15s ease;
+}
+
+.mega-link-item:hover {
+  background-color: var(--t-bg-canvas);
+}
+
+.mega-link-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--t-radius-sm);
+  background-color: var(--t-cobalt-light);
+  color: var(--t-cobalt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.mega-link-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--t-cobalt);
+}
+
+.mega-link-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-link-title {
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: var(--t-text-primary);
+  line-height: 1.3;
+}
+
+.mega-link-desc {
+  font-size: 0.8rem;
+  color: var(--t-text-muted);
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+.mega-link-item:hover .mega-link-title {
+  color: var(--t-cobalt);
+}
+
+.mega-featured-card {
+  background-color: var(--t-bg-canvas);
+  border: 1px solid var(--t-border);
+  border-radius: var(--t-radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mega-featured-img {
+  width: 100%;
+  height: 130px;
+  border-radius: var(--t-radius-sm);
+  object-fit: cover;
+  margin-bottom: 0.85rem;
+}
+
+.mega-featured-title {
+  font-family: var(--t-font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--t-text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.mega-featured-desc {
+  font-size: 0.8125rem;
+  color: var(--t-text-secondary);
+  line-height: 1.5;
+  margin-bottom: 0.85rem;
+}
+
+.mega-featured-cta {
+  margin-top: auto;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--t-cobalt);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.mega-featured-cta:hover {
+  text-decoration: underline;
+}
+
+.tookio-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mobile-nav-toggle {
+  display: none;
+  background: var(--t-bg-subtle);
+  border: 1px solid var(--t-border);
+  border-radius: var(--t-radius-sm);
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--t-text-primary);
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 380px;
+  height: 100vh;
+  background-color: var(--t-bg-white);
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
+  z-index: 1001;
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.mobile-nav-drawer.open {
+  right: 0;
+}
+
+.mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--t-border);
+}
+
+.mobile-drawer-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--t-text-muted);
+}
+
+.mobile-drawer-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.mobile-nav-link {
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--t-border-subtle);
+  color: var(--t-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-drawer-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ==========================================================================
+   HERO SECTION (Modeled Exactly After SYSPRO with Responsive Large Images)
+   ========================================================================== */
+
+.tookio-hero {
+  padding: 4.5rem 0 5rem;
+  background-color: var(--t-bg-white);
+  width: 100%;
+  overflow-x: clip;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.hero-content h1 {
+  color: #111827;
+  margin-bottom: 1.25rem;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hero-visual-frame {
+  position: relative;
+  border-radius: var(--t-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--t-shadow-lg);
+  border: 1px solid var(--t-border);
+  background-color: var(--t-bg-canvas);
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero-visual-img {
+  width: 100%;
+  height: 420px;
+  display: block;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   TRUST BAR, CLIENT LOGOS & ECOSYSTEM BANNER
+   ========================================================================== */
+
+.trust-metrics-strip {
+  background-color: var(--t-bg-canvas);
+  border-top: 1px solid var(--t-border);
+  border-bottom: 1px solid var(--t-border);
+  padding: 2.25rem 0;
+  width: 100%;
+}
+
+.trust-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.trust-metric-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.trust-metric-number {
+  font-family: var(--t-font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.25rem);
+  font-weight: 800;
+  color: var(--t-cobalt);
+  line-height: 1.1;
+  word-break: break-word;
+  white-space: nowrap;
+}
+
+.trust-metric-label {
+  font-size: 0.875rem;
+  color: var(--t-text-secondary);
+  font-weight: 500;
+  margin-top: 0.35rem;
+}
+
+/* Trusted Customer Logos Section with Smooth Infinite Marquee */
+.clients-logo-strip {
+  padding: 3.5rem 0;
+  background-color: var(--t-bg-white);
+  border-bottom: 1px solid var(--t-border);
+  width: 100%;
+  overflow: hidden;
+}
+
+.clients-logo-header {
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--t-text-muted);
+  margin-bottom: 2.25rem;
+}
+
+@keyframes logoMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-marquee-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0.5rem 0;
+  mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+}
+
+.logo-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  width: max-content;
+  animation: logoMarquee 32s linear infinite;
+}
+
+.logo-marquee-wrapper:hover .logo-marquee-track {
+  animation-play-state: paused;
+}
+
+.client-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  max-width: 220px;
+  min-width: 140px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  flex-shrink: 0;
+}
+
+.client-logo-item:hover {
+  transform: scale(1.06);
+}
+
+.client-logo-item img {
+  max-height: 68px;
+  max-width: 200px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.erpnext-ecosystem-bar {
+  background-color: var(--t-bg-canvas);
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--t-border);
+  width: 100%;
+}
+
+.erpnext-ecosystem-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* ==========================================================================
+   INDUSTRY VISUAL CARDS (SYSPRO Grid Style)
+   ========================================================================== */
+
+.cards-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.cards-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.industry-card {
+  background-color: var(--t-bg-white);
+  border: 1px solid var(--t-border);
+  border-radius: var(--t-radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.industry-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--t-shadow-md);
+}
+
+.industry-card-media {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--t-bg-muted);
+  width: 100%;
+}
+
+.industry-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.industry-card:hover .industry-card-media img {
+  transform: scale(1.04);
+}
+
+.industry-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.industry-card-body h3 {
+  margin-bottom: 0.5rem;
+  color: var(--t-text-primary);
+}
+
+.industry-card-body p {
+  font-size: 0.925rem;
+  color: var(--t-text-secondary);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+}
+
+.industry-card-cta {
+  margin-top: auto;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--t-cobalt);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.industry-card-cta:hover {
+  text-decoration: underline;
+}
+
+/* Feature & Module Cards */
+.feature-card {
+  background-color: var(--t-bg-white);
+  border: 1px solid var(--t-border);
+  border-radius: var(--t-radius-md);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.feature-card:hover {
+  box-shadow: var(--t-shadow-md);
+}
+
+.card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--t-radius-sm);
+  background-color: var(--t-cobalt-light);
+  color: var(--t-cobalt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  flex-shrink: 0;
+}
+
+.card-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.feature-card h3 {
+  margin-bottom: 0.65rem;
+}
+
+.feature-card p {
+  font-size: 0.9375rem;
+  color: var(--t-text-secondary);
+  line-height: 1.55;
+}
+
+/* ==========================================================================
+   TABS COMPONENT (Segmented Corporate Buttons — Zero Scrollbar Overlap)
+   ========================================================================== */
+
+.tookio-tabs-header {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 0.25rem 0.25rem 0.75rem;
+  max-width: 100%;
+}
+
+.tookio-tabs-header::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.tookio-tab-btn {
+  background-color: var(--t-bg-white);
+  border: 1.5px solid var(--t-border);
+  border-radius: var(--t-radius-md);
+  font-family: var(--t-font-heading);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--t-text-secondary);
+  padding: 0.65rem 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: var(--t-shadow-sm);
+  flex-shrink: 0;
+}
+
+.tookio-tab-btn:hover {
+  color: var(--t-cobalt);
+  border-color: var(--t-cobalt);
+  background-color: var(--t-cobalt-light);
+}
+
+.tookio-tab-btn.active {
+  color: #ffffff;
+  background-color: var(--t-cobalt);
+  border-color: var(--t-cobalt);
+  box-shadow: 0 4px 12px rgba(0, 46, 202, 0.25);
+}
+
+.tookio-tab-pane {
+  display: none;
+  width: 100%;
+}
+
+.tookio-tab-pane.active {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .tookio-tabs-header {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    padding-bottom: 0.25rem;
+  }
+}
+
+/* ==========================================================================
+   CLEAN RESPONSIVE IMAGE FRAMES (Large High-Resolution Industrial Photos)
+   ========================================================================== */
+
+.screenshot-frame {
+  background-color: var(--t-bg-canvas);
+  border-radius: var(--t-radius-md);
+  border: 1px solid var(--t-border);
+  overflow: hidden;
+  box-shadow: var(--t-shadow-md);
+  width: 100%;
+  max-width: 100%;
+}
+
+.screenshot-frame img {
+  width: 100%;
+  height: 380px;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   SPOTLIGHT & CASE STUDY STATS COMPONENTS
+   ========================================================================== */
+
+.spotlight-card {
+  background-color: var(--t-navy-dark);
+  border-radius: var(--t-radius-lg);
+  padding: 3.5rem;
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3.5rem;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.spotlight-stats-row {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.spotlight-stat-item {
+  min-width: 0;
+}
+
+.spotlight-stat-item .stat-num {
+  font-family: var(--t-font-heading);
+  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.spotlight-stat-item .stat-label {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  margin-top: 0.25rem;
+}
+
+.spotlight-capabilities-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--t-radius-md);
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.case-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  background: var(--t-bg-canvas);
+  padding: 1.75rem;
+  border-radius: var(--t-radius-md);
+  border: 1px solid var(--t-border);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.case-stat-box {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.case-stat-num {
+  font-family: var(--t-font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.25rem);
+  font-weight: 800;
+  color: var(--t-cobalt);
+  line-height: 1.1;
+}
+
+.case-stat-label {
+  font-size: 0.85rem;
+  color: var(--t-text-secondary);
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+/* ==========================================================================
+   PRE-FOOTER CTA BANNER (SYSPRO Style)
+   ========================================================================== */
+
+.cta-banner-section {
+  background: linear-gradient(135deg, #002eca 0%, #001f8a 100%);
+  color: #ffffff;
+  padding: 5rem 0;
+  text-align: center;
+  width: 100%;
+  overflow-x: clip;
+}
+
+.cta-banner-inner {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+.cta-banner-inner h2 {
+  color: #ffffff;
+  font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+  margin-bottom: 1rem;
+}
+
+.cta-banner-inner p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  margin-bottom: 2.25rem;
+}
+
+.cta-banner-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ==========================================================================
+   FOOTER (SYSPRO Dark Slate with Pure White Inverted Logo)
+   ========================================================================== */
+
+.tookio-footer {
+  background-color: var(--t-navy-dark);
+  color: var(--t-text-inverse-muted);
+  padding: 4.5rem 0 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.9rem;
+  width: 100%;
+  overflow-x: clip;
+}
+
+.footer-top-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
+  gap: 3rem;
+  margin-bottom: 3.5rem;
+  width: 100%;
+}
+
+.footer-logo {
+  height: 38px;
+  width: auto;
+  aspect-ratio: 2000 / 375;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.footer-brand-desc {
+  font-size: 0.875rem;
+  color: var(--t-text-inverse-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #cbd5e1;
+}
+
+.footer-contact-info a {
+  color: #cbd5e1;
+}
+
+.footer-contact-info a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.footer-links a {
+  color: var(--t-text-inverse-muted);
+  transition: color 0.15s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom-bar {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8125rem;
+  color: #64748b;
+  width: 100%;
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-legal-links a {
+  color: #64748b;
+}
+
+.footer-legal-links a:hover {
+  color: #cbd5e1;
+}
+
+/* ==========================================================================
+   PAGE HEADERS (Sub-pages)
+   ========================================================================== */
+
+.tookio-page-header {
+  background-color: var(--t-bg-canvas);
+  border-bottom: 1px solid var(--t-border);
+  padding: 4.5rem 0;
+  width: 100%;
+}
+
+.tookio-page-header h1 {
+  margin-bottom: 0.75rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS (Fluid Stacking & Mobile Optimization)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .tookio-nav-menu, .header-btn-desktop, .tookio-top-bar {
+    display: none !important;
+  }
+
+  .header-btn-cta {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.825rem;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-visual-img {
+    height: 320px;
+  }
+
+  .screenshot-frame img {
+    height: 300px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .cards-grid-3, .cards-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .trust-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  /* Hide top navbar button on mobile phones — nested inside hamburger drawer */
+  .header-btn-cta {
+    display: none !important;
+  }
+
+  /* HIDE hero/frame images inside Solutions Tabs on mobile */
+  #solutions-tabs .screenshot-frame,
+  #solutions-tabs .tookio-tab-pane .screenshot-frame {
+    display: none !important;
+  }
+
+  #solutions-tabs .tookio-tab-pane > div {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .hero-visual-img {
+    height: 240px;
+  }
+
+  .screenshot-frame img {
+    height: 240px;
+  }
+
+  .cards-grid-3, .cards-grid-2, .cards-grid-4, .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .trust-metrics-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  .trust-metric-number {
+    font-size: 1.75rem;
+  }
+
+  .spotlight-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .spotlight-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .spotlight-stats-row {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .spotlight-capabilities-box {
+    padding: 1.25rem;
+  }
+
+  .case-stat-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.25rem;
+  }
+
+  .hero-actions, .cta-banner-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-actions .btn, .cta-banner-actions .btn {
+    width: 100%;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .tookio-logo-img {
+    height: 30px;
+    max-width: 145px;
+  }
+
+  .logo-marquee-track {
+    gap: 3rem;
+    animation-duration: 24s;
+  }
+
+  .client-logo-item {
+    max-width: 170px;
+    height: 56px;
+    min-width: 110px;
+  }
+
+  .client-logo-item img {
+    max-height: 52px;
+    max-width: 155px;
+  }
+}

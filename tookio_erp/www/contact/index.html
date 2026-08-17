@@ -1,0 +1,80 @@
+{% extends "tookio_erp/templates/tookio_base.html" %}
+
+{% block title %}Contact Tookio Solutions | ERP Scoping Consultation Nairobi, Kenya{% endblock %}
+{% block meta_description %}Get in touch with Tookio Solutions in Nairobi, Kenya. Schedule a 30-minute ERP scoping call or speak with an ERPNext implementation engineer.{% endblock %}
+
+{% block content %}
+<section class="tookio-page-header">
+  <div class="t-container">
+    <h1>Schedule an ERP Scoping Consultation</h1>
+    <p class="lead">Connect directly with our senior ERP architects in Nairobi. We audit your operational bottlenecks, review manufacturing workflows, and outline a clear ERPNext rollout roadmap.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="t-container">
+    <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: flex-start;">
+      <!-- Contact Info -->
+      <div>
+        <h2 style="font-size: 1.75rem; margin-bottom: 1.25rem;">Direct Contact Channels</h2>
+        <p style="margin-bottom: 2rem; font-size: 1.05rem; color: var(--t-text-secondary);">We assist growing manufacturers and distributors with end-to-end ERPNext implementations, custom Frappe apps, KRA eTIMS V2 compliance, and dedicated SLA support.</p>
+
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2.5rem;">
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div class="card-icon" style="margin-bottom: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong style="color: var(--t-text-primary); display: block;">Location:</strong>
+              <span style="color: var(--t-text-secondary);">Ngong Road, Nairobi, Kenya</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div class="card-icon" style="margin-bottom: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong style="color: var(--t-text-primary); display: block;">Email:</strong>
+              <a href="mailto:info@tookio.co.ke" style="color: var(--t-cobalt); font-weight: 600; display: block;">info@tookio.co.ke</a>
+              <a href="mailto:tookiosolutions@gmail.com" style="color: var(--t-text-secondary); font-size: 0.9rem;">tookiosolutions@gmail.com</a>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div class="card-icon" style="margin-bottom: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong style="color: var(--t-text-primary); display: block;">Direct Line:</strong>
+              <a href="tel:+254743169908" style="color: var(--t-cobalt); font-weight: 600;">+254 743 169 908</a>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div class="card-icon" style="margin-bottom: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <div>
+              <strong style="color: var(--t-text-primary); display: block;">Live Sandbox:</strong>
+              <a href="/demo" style="color: var(--t-cobalt); font-weight: 600;">Launch Live Sandbox Instance &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="background-color: var(--t-bg-canvas); border: 1px solid var(--t-border); border-radius: var(--t-radius-md); padding: 1.5rem;">
+          <h4 style="margin-bottom: 0.5rem;">Looking for Live Sandbox Access?</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--t-text-secondary);">You can explore ERPNext yourself before speaking with our engineering team.</p>
+          <a href="/demo" class="btn btn-sm btn-outline">Go to Live Sandbox &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Cal.com Booking Embed -->
+      <div style="background: var(--t-bg-white); border: 1px solid var(--t-border); border-radius: var(--t-radius-md); box-shadow: var(--t-shadow-sm); padding: 1.5rem; overflow: hidden;">
+        <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">Select a Time for Your Consultation</h3>
+        <iframe src="https://cal.com/tookio/erpnext-demo?embedded=true" style="width: 100%; height: 680px; border: none; border-radius: var(--t-radius-sm);" loading="lazy">Loading Cal.com Scheduler…</iframe>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

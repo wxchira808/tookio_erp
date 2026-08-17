@@ -29,35 +29,23 @@ app_license = "mit"
 # app_include_js = "/assets/tookio_erp/js/tookio_erp.js"
 
 # include js, css files in header of web template
-web_include_css = "/assets/tookio_erp/css/tookio_site.css"
-# web_include_js = "/assets/tookio_erp/js/tookio_erp.js"
-
-# include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "tookio_erp/public/scss/website"
-
-# include js, css files in header of web form
-# webform_include_js = {"doctype": "public/js/doctype.js"}
-# webform_include_css = {"doctype": "public/css/doctype.css"}
-
-# include js in page
-# page_js = {"page" : "public/js/file.js"}
-
-# include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
-# doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
-# doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
-
-# Svg Icons
-# ------------------
-# include app icons in desk
-# app_include_icons = "tookio_erp/public/icons.svg"
+web_include_css = "/assets/tookio_erp/css/tookio_enterprise.css"
+web_include_js = "/assets/tookio_erp/js/tookio_enterprise.js"
 
 # Home Pages
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+home_page = "index"
+
+website_route_rules = [
+	{"from_route": "/contacts", "to_route": "contact"},
+	{"from_route": "/get-started", "to_route": "demo"},
+	{"from_route": "/terms-of-service", "to_route": "terms"},
+	{"from_route": "/home", "to_route": "index"},
+	{"from_route": "/pricing", "to_route": "contact"},
+	{"from_route": "/automation-hub", "to_route": "solutions/enterprise-integrations"}
+]
 
 # website user home page (by Role)
 # role_home_page = {

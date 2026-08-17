@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /app/
+Disallow: /api/
+Disallow: /desk
+Disallow: /private/
+Disallow: /backups/
+
+Sitemap: https://tookio.co.ke/sitemap.xml

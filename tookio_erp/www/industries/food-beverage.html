@@ -1,0 +1,55 @@
+{% extends "tookio_erp/templates/tookio_base.html" %}
+
+{% block title %}Food & Beverage ERP Solutions Kenya | Recipe & Batch Control | Tookio{% endblock %}
+{% block meta_description %}ERPNext implementation for food, beverage, and FMCG manufacturers in Kenya. Recipe management, FEFO inventory, cold-chain logistics, and batch recall.{% endblock %}
+
+{% block content %}
+<section class="tookio-page-header">
+  <div class="t-container">
+    <h1>Food, Beverage & FMCG Processing ERP</h1>
+    <p class="lead">Maintain rigorous hygiene, shelf-life governance, and batch-level ingredient traceability from bulk raw material procurement to retail distribution.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="t-container">
+    <div class="cards-grid-3">
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <h3>Recipe & Formulation Governance</h3>
+        <p>Protect proprietary food and beverage formulations with version-controlled master recipes, scaling yields, and automated ingredient substitution rules.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated moisture & shrinkage losses</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Nutritional facts & allergen tagging</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>
+        </div>
+        <h3>FEFO & Expiry Inventory Control</h3>
+        <p>Enforce First-Expired, First-Out picking logic across cold rooms and ambient warehouses, preventing product spoilage and obsolete inventory write-offs.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated shelf-life threshold alerts</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Instant batch recall simulation tests</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>HACCP & Quality Checkpoints</h3>
+        <p>Integrate mandatory microbiological, chemical, and packaging seal quality parameters directly into receiving and production release workflows.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Digital inspection certificates (COA)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated quarantine hold on deviations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

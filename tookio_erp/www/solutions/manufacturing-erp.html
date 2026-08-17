@@ -1,0 +1,159 @@
+{% extends "tookio_erp/templates/tookio_base.html" %}
+
+{% block title %}Manufacturing ERP Solutions Kenya | Multi-Level BOM, MRP & WIP Control{% endblock %}
+{% block meta_description %}End-to-end manufacturing ERP configured on ERPNext for Kenyan factories. Master multi-level BOMs, capacity MRP, workstation job cards, scrap tracking, and batch traceability.{% endblock %}
+
+{% block content %}
+<!-- PAGE HERO -->
+<section class="tookio-hero">
+  <div class="t-container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <h1>Purpose-Built Manufacturing ERP for Modern Plant Floors</h1>
+        <p class="lead">Eliminate production black boxes. Tookio configures ERPNext to give plant managers, production controllers, and finance directors total visibility from raw material requisition to finished goods batch release.</p>
+        
+        <div class="hero-actions">
+          <a href="/demo" class="btn btn-lg btn-primary">Explore Manufacturing Sandbox &rarr;</a>
+          <a href="/contact" class="btn btn-lg btn-outline">Book Technical Scoping Session</a>
+        </div>
+      </div>
+
+      <div class="hero-visual-frame">
+        <img src="/assets/tookio_erp/images/features/production-line.jpg" alt="Industrial Manufacturing Production Line" class="hero-visual-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE 6-STAGE MANUFACTURING PIPELINE -->
+<section class="section section-alt">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>The Complete Plant Floor Operational Cycle</h2>
+      <p class="lead">See how every stage of production is governed, costed, and tracked in real time on ERPNext.</p>
+    </div>
+
+    {% include "tookio_erp/templates/includes/manufacturing_pipeline.html" %}
+  </div>
+</section>
+
+<!-- VISUAL SHOP FLOOR SPOTLIGHT -->
+<section class="section">
+  <div class="t-container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
+      <div>
+        <h2>Built for Industrial Shop Floors & Continuous Operations</h2>
+        <p style="margin-top: 1rem; margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.65; color: var(--t-text-secondary);">Tookio connects physical workstations, extrusion machines, and assembly lines directly to your ERP general ledger. Operators log start/stop times and material consumption using simple tablet interfaces.</p>
+        
+        <ul class="card-checklist" style="margin-top: 1rem;">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Workstation Downtime Logs:</strong> Capture electrical outages, mold changes, and mechanical maintenance.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Regrind & Scrap Accounting:</strong> Automatically calculate scrap ratios and return recycled offcuts back into raw stock.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Actual vs Standard Costing:</strong> Compare theoretical BOM costs with real WIP material and energy consumption.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="screenshot-frame">
+        <img src="/assets/tookio_erp/images/features/plant-workstation.jpg" alt="Plant Floor Workstation Execution" class="screenshot-frame-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEEP TECHNICAL CAPABILITIES -->
+<section class="section section-alt">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Key Capabilities of Tookio Manufacturing ERP</h2>
+      <p class="lead">Designed specifically to resolve operational friction in process and discrete manufacturing.</p>
+    </div>
+
+    <div class="cards-grid-3">
+      <!-- Feature 1 -->
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <h3>Structured Bill of Materials (BOM)</h3>
+        <p>Build hierarchical, multi-level BOMs with precise raw material ratios, packaging components, scrap percentage tolerances, and alternative item substitutes.</p>
+        <ul class="card-checklist" style="margin-top: 1rem;">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span>Variant BOMs for customized product lines</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span>Automated revision history and change control</span></li>
+        </ul>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Material Requirements Planning (MRP)</h3>
+        <p>Analyze upcoming sales orders, safety stock thresholds, and minimum reorder quantities to generate precise purchase requisitions and production orders automatically.</p>
+        <ul class="card-checklist" style="margin-top: 1rem;">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span>Lead-time buffer calculation and supplier POs</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span>Stock shortfall early warning dashboard</span></li>
+        </ul>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Workstations & Job Cards</h3>
+        <p>Assign work orders to dedicated machine workstations, record hourly operational run rates, power consumption, machine downtime, and operator labor hours.</p>
+        <ul class="card-checklist" style="margin-top: 1rem;">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span>Tablet-friendly shop floor terminal view</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span>Real-time Overall Equipment Effectiveness (OEE)</span></li>
+        </ul>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>
+        </div>
+        <h3>Batch & Serial Number Tracking</h3>
+        <p>Maintain total traceability from raw material supplier heat numbers to finished goods batch codes with full genealogy reporting for compliance audits.</p>
+        <ul class="card-checklist" style="margin-top: 1rem;">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span>Granular backward & forward trace genealogy</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span>Automatic barcode and batch label printing</span></li>
+        </ul>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Quality Assurance Checkpoints</h3>
+        <p>Enforce mandatory quality checks at goods receipt, post-extrusion, assembly, and pre-dispatch with automated Certificate of Analysis (COA) generation.</p>
+        <ul class="card-checklist" style="margin-top: 1rem;">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span>Pass/fail tolerance thresholds and scrap logging</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span>Automated quarantine warehouse routing</span></li>
+        </ul>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Preventive Maintenance & Assets</h3>
+        <p>Schedule recurring machine service intervals based on operating hours or elapsed calendar time, automatically triggering maintenance work orders.</p>
+        <ul class="card-checklist" style="margin-top: 1rem;">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span>Spare parts inventory reservation</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span>Unplanned breakdown ticket escalation</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

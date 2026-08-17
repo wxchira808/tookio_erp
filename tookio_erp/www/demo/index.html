@@ -1,0 +1,72 @@
+{% extends "tookio_erp/templates/tookio_base.html" %}
+
+{% block title %}Explore Live ERPNext Sandbox | Interactive Demo | Tookio ERP{% endblock %}
+{% block meta_description %}Explore our live interactive ERPNext sandbox environment. Test real manufacturing work orders, multi-warehouse stock, and eTIMS invoicing.{% endblock %}
+
+{% block content %}
+<section class="tookio-hero">
+  <div class="t-container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <h1>Explore ERPNext Live in Our Interactive Sandbox</h1>
+        <p class="lead">Experience the full power of enterprise ERP before speaking with our team. Log in to our live demonstration instance to review real production BOMs, multi-warehouse stock, and KRA eTIMS-compliant invoicing.</p>
+        
+        <div class="hero-actions">
+          <a href="https://demo.tookio.co.ke/login#signup" target="_blank" rel="noopener" class="btn btn-lg btn-primary">Launch Live Sandbox Now &rarr;</a>
+          <a href="/contact" class="btn btn-lg btn-outline-white">Schedule Guided Engineering Tour</a>
+        </div>
+      </div>
+
+      <!-- Demo Launch Card -->
+      <div class="hero-media-card">
+        <div class="mockup-header">
+          <div class="mockup-title">Sandbox Access Credentials</div>
+          <span style="font-size: 0.8125rem; color: #94a3b8;">Instant Self-Service</span>
+        </div>
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--t-radius-md); padding: 1.5rem; color: #cbd5e1; margin-bottom: 1.5rem; line-height: 1.6;">
+          <div style="margin-bottom: 0.75rem;"><strong>Sandbox URL:</strong> <a href="https://demo.tookio.co.ke" target="_blank" style="color: #60a5fa;">https://demo.tookio.co.ke</a></div>
+          <div style="margin-bottom: 0.75rem;"><strong>Access Mode:</strong> Open self-service sign-up or guest login</div>
+          <div><strong>Environment:</strong> Pre-loaded with Kenyan manufacturing & wholesale operational datasets</div>
+        </div>
+        <a href="https://demo.tookio.co.ke/login#signup" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center;">Open Live Demo in New Window &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT TO EXPLORE IN THE SANDBOX -->
+<section class="section">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Key Operational Workflows to Test</h2>
+      <p class="lead">We have pre-configured sample workflows so you can evaluate how ERPNext handles your specific requirements.</p>
+    </div>
+
+    <div class="cards-grid-3">
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-3 3"/></svg>
+        </div>
+        <h3>1. Multi-Level Manufacturing BOM</h3>
+        <p>Navigate to <em>Manufacturing &rarr; Bill of Materials</em>. Inspect nested raw materials, scrap allowance ratios, and machine hourly operating rates.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3>2. Multi-Warehouse Stock Balance</h3>
+        <p>Open <em>Stock &rarr; Stock Balance Report</em>. Filter inventory across central stores, raw materials, WIP, and transit hubs in real time.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3>3. KRA eTIMS V2 Sales Invoicing</h3>
+        <p>Create a sales invoice under <em>Accounting &rarr; Sales Invoice</em>. Review the direct cryptographic eTIMS QR code and tax breakdown.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

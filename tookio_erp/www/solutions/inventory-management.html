@@ -1,0 +1,87 @@
+{% extends "tookio_erp/templates/tookio_base.html" %}
+
+{% block title %}Inventory & Warehouse Management Solutions Kenya | Tookio ERP{% endblock %}
+{% block meta_description %}Multi-warehouse inventory management on ERPNext for Kenyan enterprises. Real-time stock levels, batch & serial tracking, barcode scanning, and landed cost allocation.{% endblock %}
+
+{% block content %}
+<section class="tookio-page-header">
+  <div class="t-container">
+    <h1>Multi-Warehouse Inventory & Stock Control</h1>
+    <p class="lead">Achieve 100% real-time stock accuracy across central depots, plant stores, and transit hubs. Prevent stockouts, reduce carrying costs, and eliminate inventory discrepancies.</p>
+  </div>
+</section>
+
+<!-- REAL-TIME STOCK LEDGER SHOWCASE -->
+<section class="section">
+  <div class="t-container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
+      <div>
+        <h2>Real-Time Stock Ledger & Multi-Site Valuation</h2>
+        <p style="margin-top: 1rem; margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.65; color: var(--t-text-secondary);">Never wonder what stock is on the floor versus in-transit. ERPNext maintains an immutable perpetual stock ledger that tracks every unit received, moved, consumed in WIP, or dispatched.</p>
+        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
+          <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Automated Landed Cost Allocation:</strong> Distribute shipping freight, customs duties, and clearing costs across item valuation rates accurately.</span>
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Perpetual FIFO & Moving Average:</strong> Automatic inventory valuation synchronized with General Ledger stock asset accounts.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="screenshot-frame">
+        <img src="/assets/tookio_erp/images/features/warehouse-logistics.jpg" alt="Enterprise Warehouse Inventory Operations" class="screenshot-frame-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE INVENTORY CAPABILITIES -->
+<section class="section section-alt">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Engineered for High-Velocity Warehousing</h2>
+      <p class="lead">Built to eliminate manual count discrepancies and establish total accountability across plant and warehouse operations.</p>
+    </div>
+
+    <div class="cards-grid-3">
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3>Multi-Site Warehouse Hierarchy</h3>
+        <p>Organize warehouses into tree hierarchies (Central Stores, Raw Materials, Finished Goods, Transit, Quarantine) with granular per-location stock valuation.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated in-transit stock accounting</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Location-specific access permissions</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>
+        </div>
+        <h3>Batch & Serial Number Tracking</h3>
+        <p>Enforce mandatory serial and batch number capture across receiving, internal transfers, manufacturing job cards, and sales dispatches.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Expiry dates & automated FEFO rules</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> End-to-end recall audit reports</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 7h.01"/><path d="M17 7h.01"/><path d="M7 17h.01"/><path d="M17 17h.01"/></svg>
+        </div>
+        <h3>Barcode Scanning & Mobile Pick/Pack</h3>
+        <p>Equip floor staff with mobile scanner terminals for instant GRN verification, pick-list verification, stock transfers, and rapid cycle counts.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> EAN-13, Code 128 & QR code generation</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Zero pick-error dispatch verification</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

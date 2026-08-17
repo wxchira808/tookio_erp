@@ -1,0 +1,58 @@
+{% extends "tookio_erp/templates/tookio_base.html" %}
+
+{% block title %}Enterprise System Integrations & REST APIs Kenya | Tookio ERP{% endblock %}
+{% block meta_description %}Seamlessly connect ERPNext with external enterprise systems, payment rails, banking APIs, logistics platforms, and plant floor hardware in Kenya.{% endblock %}
+
+{% block content %}
+<section class="tookio-page-header">
+  <div class="t-container">
+    <h1>Enterprise System Integrations & REST API Infrastructure</h1>
+    <p class="lead">Connect ERPNext directly to your broader enterprise ecosystem. Eliminate data silos with native REST APIs, bi-directional webhooks, banking rails, and shop floor equipment connectivity.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="t-container">
+    <div class="cards-grid-3">
+      <!-- Feature 1 -->
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>ERPNext REST & GraphQL APIs</h3>
+        <p>Utilize full CRUD API endpoints across every standard and custom DocType with token and OAuth2 authentication, rate limiting, and granular permission scoping.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated bulk record synchronization</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> JSON-RPC and RESTful request payloads</li>
+        </ul>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3>Payment Rails & Bank Integrations</h3>
+        <p>Bi-directional integration with M-Pesa Daraja C2B/B2C, direct bank host-to-host feeds, and merchant payment gateways with automated ledger reconciliation.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated receipt generation on settlement</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Debtor statement automatic updates</li>
+        </ul>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>Shop Floor Hardware & IoT Sync</h3>
+        <p>Interface digital weight scales, barcode scanners, PLC production counters, and biometric attendance clocks directly with ERPNext job cards and gate registers.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Real-time machine cycle logging</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Weight bridge gross/tare automatic capture</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

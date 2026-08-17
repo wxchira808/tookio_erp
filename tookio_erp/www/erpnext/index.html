@@ -1,0 +1,217 @@
+{% extends "tookio_erp/templates/tookio_base.html" %}
+
+{% block title %}ERPNext Platform Hub Kenya | Architecture, Modules & Implementation | Tookio{% endblock %}
+{% block meta_description %}Comprehensive guide to ERPNext enterprise architecture, manufacturing MRP, multi-warehouse stock, and KRA eTIMS V2 integration by Tookio Solutions Kenya.{% endblock %}
+
+{% block content %}
+<!-- PLATFORM HERO -->
+<section class="tookio-hero">
+  <div class="t-container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <h1>ERPNext: Enterprise Power Without Proprietary Lock-In</h1>
+        <p class="lead">ERPNext is the world's leading open-source ERP platform. Built on the modern Python/MariaDB Frappe framework, it gives growing manufacturers, distributors, and commercial enterprises full software sovereignty without per-user licensing fees.</p>
+        
+        <div class="hero-actions">
+          <a href="/demo" class="btn btn-lg btn-primary">Launch Live Sandbox &rarr;</a>
+          <a href="/contact" class="btn btn-lg btn-outline-white">Schedule Architecture Audit</a>
+        </div>
+      </div>
+
+      <div class="hero-media-card">
+        <div class="mockup-header">
+          <div class="mockup-title">ERPNext Ecosystem Architecture</div>
+          <span style="font-size: 0.8125rem; color: #94a3b8;">Python 3.12 / Frappe V16</span>
+        </div>
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--t-radius-md); padding: 1.5rem; color: #cbd5e1; font-size: 0.95rem; line-height: 1.6;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.08);">
+            <img src="/assets/tookio_erp/images/erpnext/erpnext-full-logo.png" alt="ERPNext Logo" style="height: 28px; width: auto; object-fit: contain;">
+            <div>
+              <strong style="color: #fff; display: block;">The Core ERP Platform</strong>
+              <span style="font-size: 0.85rem; color: #94a3b8;">100% open-source, full-stack ERP engine</span>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <img src="/assets/tookio_erp/images/erpnext/frappe-framework-logo.svg" alt="Frappe Framework" style="height: 24px; width: auto; object-fit: contain;">
+            <div>
+              <strong style="color: #fff; display: block;">Tookio Engineering & SLA Partner</strong>
+              <span style="font-size: 0.85rem; color: #94a3b8;">Architecture, eTIMS V2, custom apps & Nairobi SLA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 CORE ENTERPRISE MODULES MATRIX -->
+<section class="section">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>The 10 Core Functional Modules in ERPNext</h2>
+      <p class="lead">A complete operational ecosystem covering every department from shop floor work centers to balance sheet consolidation.</p>
+    </div>
+
+    <div class="cards-grid-3">
+      <!-- 1. Manufacturing -->
+      <div class="erpnext-module-card">
+        <div class="erpnext-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-3 3"/></svg>
+        </div>
+        <h3>1. Manufacturing & MRP</h3>
+        <p>Hierarchical multi-level BOMs, capacity scheduling, operator job cards, workstation hourly rates, and raw material scrap costing.</p>
+      </div>
+
+      <!-- 2. Stock & Warehousing -->
+      <div class="erpnext-module-card">
+        <div class="erpnext-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3>2. Stock & Warehousing</h3>
+        <p>Multi-location warehouse trees, batch/serial tracking, FEFO/FIFO valuation, landed cost allocation, and barcode receiving.</p>
+      </div>
+
+      <!-- 3. General Ledger & Accounts -->
+      <div class="erpnext-module-card">
+        <div class="erpnext-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3>3. General Ledger & Accounts</h3>
+        <p>Direct KRA eTIMS V2 cryptographic signing, double-entry GL, automated bank/M-Pesa reconciliation, and multi-cost center P&L.</p>
+      </div>
+
+      <!-- 4. Buying & Procurement -->
+      <div class="erpnext-module-card">
+        <div class="erpnext-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <h3>4. Buying & Procurement</h3>
+        <p>Material requisitions, supplier quotation comparisons, automated 3-way matching (PO &rarr; GRN &rarr; Invoice), and vendor scorecards.</p>
+      </div>
+
+      <!-- 5. Selling & Distribution -->
+      <div class="erpnext-module-card">
+        <div class="erpnext-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>5. Selling & Distribution</h3>
+        <p>Customer quotations, sales orders, price list management, debtor credit limit holds, and dispatch route manifests.</p>
+      </div>
+
+      <!-- 6. Quality Management -->
+      <div class="erpnext-module-card">
+        <div class="erpnext-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>6. Quality Assurance (QA)</h3>
+        <p>Mandatory inspection checkpoints for incoming goods, in-process WIP, and finished items with Certificate of Analysis (COA) generation.</p>
+      </div>
+
+      <!-- 7. Asset & Maintenance -->
+      <div class="erpnext-module-card">
+        <div class="erpnext-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        </div>
+        <h3>7. Asset & Maintenance</h3>
+        <p>Automated monthly depreciation schedules, asset tracking, preventive maintenance schedules, and machine breakdown logs.</p>
+      </div>
+
+      <!-- 8. HRMS & Payroll -->
+      <div class="erpnext-module-card">
+        <div class="erpnext-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>8. HRMS & Payroll</h3>
+        <p>Kenyan statutory deductions (PAYE, NHIF/SHA, NSSF, Housing Levy), biometric attendance integration, leave, and expense claims.</p>
+      </div>
+
+      <!-- 9. CRM & Pipeline -->
+      <div class="erpnext-module-card">
+        <div class="erpnext-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>9. CRM & Opportunities</h3>
+        <p>Lead tracking, communication history, quotation conversion tracking, and deal pipeline forecasting.</p>
+      </div>
+
+      <!-- 10. Frappe Custom Extensibility -->
+      <div class="erpnext-module-card">
+        <div class="erpnext-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>10. Custom Apps & REST APIs</h3>
+        <p>Full extensibility with custom Frappe apps, Git versioning, webhooks, and REST/GraphQL APIs for banking and IoT integrations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKFLOW & ARCHITECTURE DIAGRAM SECTION -->
+<section class="section section-alt">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Native Workflow Engine & Operational Logic</h2>
+      <p class="lead">ERPNext features a visual state machine and workflow builder that enforces organizational governance without hardcoded bottlenecks.</p>
+    </div>
+
+    <div class="screenshot-frame" style="max-width: 960px; margin: 0 auto 3rem;">
+      <img src="/assets/tookio_erp/images/features/plant-workstation.jpg" alt="Industrial Manufacturing Workstation" class="screenshot-frame-img">
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON MATRIX: ERPNext vs Proprietary ERP -->
+<section class="section">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>ERPNext vs Legacy Proprietary ERP Systems</h2>
+      <p class="lead">Compare the total cost of ownership, flexibility, and architectural freedom of ERPNext against legacy proprietary ERP suites.</p>
+    </div>
+
+    <div style="overflow-x: auto; background: var(--t-bg-white); border: 1px solid var(--t-border); border-radius: var(--t-radius-lg); margin-bottom: 3rem;">
+      <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem;">
+        <thead>
+          <tr style="background: var(--t-bg-subtle); border-bottom: 2px solid var(--t-border);">
+            <th style="padding: 1.25rem 1.5rem; font-weight: 700;">Evaluation Criteria</th>
+            <th style="padding: 1.25rem 1.5rem; font-weight: 700; color: var(--t-navy-primary);">ERPNext (Tookio)</th>
+            <th style="padding: 1.25rem 1.5rem; font-weight: 700;">SAP Business One</th>
+            <th style="padding: 1.25rem 1.5rem; font-weight: 700;">Microsoft Dynamics 365</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid var(--t-border-subtle);">
+            <td style="padding: 1.25rem 1.5rem; font-weight: 600;">Per-User License Fees</td>
+            <td style="padding: 1.25rem 1.5rem; color: #10b981; font-weight: 700;">$0 / Free & Open Source</td>
+            <td style="padding: 1.25rem 1.5rem; color: var(--t-text-secondary);">$1,500 – $3,000 / user + 20% annual maint.</td>
+            <td style="padding: 1.25rem 1.5rem; color: var(--t-text-secondary);">$70 – $210 / user / month recurring</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--t-border-subtle);">
+            <td style="padding: 1.25rem 1.5rem; font-weight: 600;">Data & Source Sovereignty</td>
+            <td style="padding: 1.25rem 1.5rem; color: #10b981; font-weight: 700;">100% Owned (Private Cloud/On-Prem)</td>
+            <td style="padding: 1.25rem 1.5rem; color: var(--t-text-secondary);">Proprietary Database / Vendor Locked</td>
+            <td style="padding: 1.25rem 1.5rem; color: var(--t-text-secondary);">Microsoft Azure Cloud Locked</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--t-border-subtle);">
+            <td style="padding: 1.25rem 1.5rem; font-weight: 600;">KRA eTIMS V2 Direct API</td>
+            <td style="padding: 1.25rem 1.5rem; color: #10b981; font-weight: 700;">Native Built-in by Tookio</td>
+            <td style="padding: 1.25rem 1.5rem; color: var(--t-text-secondary);">Costly 3rd-party middleware required</td>
+            <td style="padding: 1.25rem 1.5rem; color: var(--t-text-secondary);">Costly 3rd-party middleware required</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--t-border-subtle);">
+            <td style="padding: 1.25rem 1.5rem; font-weight: 600;">Custom App & API Extensibility</td>
+            <td style="padding: 1.25rem 1.5rem; color: #10b981; font-weight: 700;">Python, REST & Frappe DocTypes</td>
+            <td style="padding: 1.25rem 1.5rem; color: var(--t-text-secondary);">Complex SDK / Specialized consultants</td>
+            <td style="padding: 1.25rem 1.5rem; color: var(--t-text-secondary);">Proprietary Power Platform licenses</td>
+          </tr>
+          <tr>
+            <td style="padding: 1.25rem 1.5rem; font-weight: 600;">Deployment Timelines</td>
+            <td style="padding: 1.25rem 1.5rem; color: #10b981; font-weight: 700;">4 – 8 Weeks Structured Rollout</td>
+            <td style="padding: 1.25rem 1.5rem; color: var(--t-text-secondary);">6 – 18 Months</td>
+            <td style="padding: 1.25rem 1.5rem; color: var(--t-text-secondary);">6 – 12 Months</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endblock %}

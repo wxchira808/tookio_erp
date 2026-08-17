@@ -1,0 +1,80 @@
+{% extends "tookio_erp/templates/tookio_base.html" %}
+
+{% block title %}About Tookio Solutions | Enterprise Business Systems Partner Kenya{% endblock %}
+{% block meta_description %}Learn about Tookio Solutions, our engineering philosophy, and our mission to power East African manufacturing and commerce with disciplined ERP systems.{% endblock %}
+
+{% block content %}
+<section class="tookio-page-header">
+  <div class="t-container">
+    <h1>Built for East African Enterprise Operations</h1>
+    <p class="lead">Tookio Solutions is an enterprise business systems and ERP engineering partner based in Nairobi, Kenya. We help ambitious operating businesses transition from disconnected tools to centralized operational control.</p>
+  </div>
+</section>
+
+<!-- MISSION & IDENTITY -->
+<section class="section">
+  <div class="t-container">
+    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center;">
+      <div>
+        <h2>We Understand Operations Before We Write Code</h2>
+        <p style="margin-top: 1rem; margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.7; color: var(--t-text-secondary);">Too many software implementations fail because developers do not understand how a factory floor actually runs, how scrap is accounted for, or why accounts receivable reconciliation breaks down at month-end.</p>
+        <p style="margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.7; color: var(--t-text-secondary);">At Tookio, our engineers study your operational reality first. We walk your plant floor, map your supply chain dependencies, and configure ERPNext around your exact business model, regulatory environment, and team capabilities.</p>
+      </div>
+
+      <div style="background-color: var(--t-bg-white); border: 1px solid var(--t-border); border-radius: var(--t-radius-lg); padding: 2.5rem;">
+        <h3 style="margin-bottom: 1.5rem;">The Tookio Operating Mandate</h3>
+        <ul style="display: flex; flex-direction: column; gap: 1.25rem; color: var(--t-text-secondary); font-size: 0.95rem;">
+          <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 3px; flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Execution Over Buzzwords:</strong> We prioritize proven operational workflows, reliable double-entry bookkeeping, and audited stock controls.</span>
+          </li>
+          <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 3px; flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Local Market Context:</strong> Native KRA eTIMS V2 compliance, local banking rails, and M-Pesa payment settlements built-in by design.</span>
+          </li>
+          <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 3px; flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Transparent Ownership:</strong> Complete code, data, and architectural sovereignty with zero vendor lock-in.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPERATING PRINCIPLES -->
+<section class="section section-alt" id="principles">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Our Core Operating Principles</h2>
+      <p class="lead">How we approach engineering, client relationships, and long-term systems governance.</p>
+    </div>
+
+    <div class="cards-grid-3">
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Total Accountability</h3>
+        <p>We do not hand over half-finished templates. We manage the implementation through data migration, training, and production cutover until your team operates independently.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Engineering Rigor</h3>
+        <p>Every customization is written as clean, modular code, documented thoroughly, and managed under strict Git version control for seamless future upgrades.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>Long-Term Partnership</h3>
+        <p>We treat our clients as long-term operating partners. Our ongoing SLAs ensure your systems scale smoothly as your transaction volume grows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
