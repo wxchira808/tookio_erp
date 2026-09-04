@@ -1,0 +1,59 @@
+# Tookio Solutions — Comprehensive Knowledge Base & System Architecture
+
+## 1. Company Profile
+Tookio Solutions is an enterprise ERP engineering consultancy based in Nairobi, Kenya. We design, implement, and support production-ready enterprise resource planning systems built on the Frappe Framework and ERPNext.
+
+### Geographic Reach
+Kenya (Headquarters), Uganda, Tanzania, Rwanda, and the greater East African Community (EAC).
+
+### Contact Information
+- Website: https://tookio.co.ke
+- Email: info@tookio.co.ke | tookiosolutions@gmail.com
+- Telephone: +254 743 169 908
+- Physical Location: Ngong Road, Nairobi, Kenya
+
+---
+
+## 2. Core Operational Modules
+
+### A. Manufacturing & Production Execution
+- Multi-tier Bill of Materials (BOM) with nested sub-assemblies and scrap percentages.
+- Work Order scheduling against production capacity and machine bottlenecks.
+- Shop floor terminal interfaces for real-time operator work logging and material consumption.
+- Automated variance analysis comparing planned BOM costs versus actual production costs.
+
+### B. Warehouse Management & Stock Ledger
+- Perpetual inventory tracking using Moving Average or FIFO valuation.
+- Multi-location warehouse hierarchy (Raw Materials, WIP, Finished Goods, Transit, Quarantine).
+- Automated batch number management with expiration date tracking.
+- Barcode and QR code scanning for receipt, transfer, pick, pack, and ship operations.
+
+### C. Financial Governance & KRA eTIMS V2
+- Automated electronic tax invoice transmission directly to Kenya Revenue Authority (KRA) eTIMS V2.
+- Localized tax compliance including 16% standard VAT, 0% export VAT, exempt items, and withholding VAT/tax.
+- Multi-currency transactions with automated exchange rate updates and realized/unrealized gain/loss calculation.
+- Automated bank reconciliation and direct M-Pesa business integrations (Paybill and Buy Goods).
+
+### D. Procurement & Landed Cost
+- Reorder level automation calculating purchase recommendations based on minimum stock and lead times.
+- Request for Quotation (RFQ) supplier portals with automated side-by-side bid analysis.
+- Landed Cost Vouchers calculating freight, marine insurance, and customs import duty allocated across items.
+
+---
+
+## 3. Supported Industry Verticals
+
+### Plastics & Polymer Manufacturing
+Extrusion, injection molding, and blow molding workflows. Cycle time tracking, regrind and masterbatch ratios, machine hour rates, and mold asset tracking.
+
+### Food & Beverage (FMCG)
+Batch recipe formulation, shelf-life and expiry date tracking, hygiene and QA checkpoints, delivery fleet dispatch, and trade promotions.
+
+### Metal Fabrication & Heavy Engineering
+Custom job-shop fabrication, cutting optimization, steel profile yield management, welding consumable tracking, and project-based progress billing.
+
+### Wholesale & Distribution Logistics
+High-volume multi-warehouse order fulfillment, route planning, salesperson mobile ordering, credit limit enforcement, and automated invoicing.
+
+### Chemicals & Process Manufacturing
+Density/concentration conversions, hazardous material compliance, batch blending records, and quality certificate generation.

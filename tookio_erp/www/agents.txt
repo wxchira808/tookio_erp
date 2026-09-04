@@ -1,0 +1,29 @@
+# Tookio Solutions — Enterprise ERP & Manufacturing Systems in Kenya
+
+> Tookio Solutions is an enterprise ERP implementation, engineering, and digital transformation partner based in Nairobi, Kenya. We specialize in deploying, customizing, and scaling ERPNext for mid-market and large manufacturing enterprises, FMCG distributors, and supply chain operators across East Africa.
+
+## Core Specializations
+- **Manufacturing ERP**: Multi-level Bill of Materials (BOM), Work Orders, Production Planning (MRP), Shop Floor Terminals, Real-Time Yield & Scrap Analysis.
+- **Inventory & Warehouse Logistics**: Multi-warehouse stock ledger, automated batch tracking, serial numbers, reorder level triggers, barcode scanning.
+- **Financial Governance & KRA eTIMS V2**: Complete statutory compliance with automated electronic tax invoice transmission to the Kenya Revenue Authority (KRA eTIMS V2), automated withholding tax, and localized general ledger.
+- **Procurement & Supply Chain**: Supplier portals, RFQ comparison matrix, Landed Cost calculations (import duties, clearing fees, freight allocation), purchase order approvals.
+- **Enterprise Integrations & Automation**: Machine IoT telemetry, weighing scale integrations, M-Pesa B2B / C2B automated reconciliation, n8n workflow pipelines, and custom Python/Frappe engineering.
+
+## Key Pages & Documentation
+- [Homepage](https://tookio.co.ke/): Overview of Tookio's enterprise ERP capabilities and client engagements.
+- [Manufacturing ERP](https://tookio.co.ke/solutions/manufacturing-erp): Deep dive into work orders, BOM management, capacity scheduling, and machine execution.
+- [Inventory & Warehouse](https://tookio.co.ke/solutions/inventory-management): Multi-location stock control, valuation methods (FIFO/Moving Average), and automated dispatch.
+- [Finance & eTIMS Compliance](https://tookio.co.ke/solutions/finance-accounting): General ledger, automated accounts receivable/payable, and direct KRA eTIMS V2 API bridge.
+- [Procurement & Supply Chain](https://tookio.co.ke/solutions/procurement-supply-chain): Purchase management, supplier evaluation, and landed cost management.
+- [Enterprise Integrations](https://tookio.co.ke/solutions/enterprise-integrations): Custom API connectors, industrial hardware integrations, and workflow automation.
+- [Industry Verticals](https://tookio.co.ke/industries): Tailored solutions for Plastics & Packaging, Food & Beverage FMCG, Metal Fabrication, Chemicals, and Wholesale Distribution.
+- [ERPNext Platform Overview](https://tookio.co.ke/erpnext): Architecture, security, ownership model, and comparison with legacy systems.
+- [Case Studies](https://tookio.co.ke/case-studies): Real transformation stories from industrial clients in East Africa.
+- [Contact & Implementation Consultation](https://tookio.co.ke/contact): Direct contact with senior ERP architects in Nairobi.
+
+## Contact & Office Information
+- **Company**: Tookio Solutions
+- **Headquarters**: Ngong Road, Nairobi, Kenya
+- **Email**: info@tookio.co.ke | tookiosolutions@gmail.com
+- **Phone**: +254 743 169 908
+- **Website**: https://tookio.co.ke

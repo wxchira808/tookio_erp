@@ -44,7 +44,10 @@ website_route_rules = [
 	{"from_route": "/terms-of-service", "to_route": "terms"},
 	{"from_route": "/home", "to_route": "index"},
 	{"from_route": "/pricing", "to_route": "contact"},
-	{"from_route": "/automation-hub", "to_route": "solutions/enterprise-integrations"}
+	{"from_route": "/automation-hub", "to_route": "solutions/enterprise-integrations"},
+	{"from_route": "/llms.txt", "to_route": "llms"},
+	{"from_route": "/agents.txt", "to_route": "llms"},
+	{"from_route": "/llms-full.txt", "to_route": "llms_full"}
 ]
 
 # website user home page (by Role)

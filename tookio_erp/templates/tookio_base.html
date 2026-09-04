@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) - Analytics & Indexing -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZQS35TBY1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GZQS35TBY1', {
+      send_page_view: true
+    });
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}Tookio Solutions | Enterprise ERP & Manufacturing Systems Kenya{% endblock %}</title>
@@ -8,6 +19,10 @@
   <meta name="keywords" content="ERPNext Kenya, Manufacturing ERP Nairobi, ERP implementation Kenya, KRA eTIMS V2 ERP, Bill of Materials software Kenya, Inventory management Kenya, Frappe framework developer Nairobi">
   <meta name="author" content="Tookio Solutions">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+  <!-- AI Agent Indexing & LLM Context -->
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt documentation">
+  <link rel="author" href="/humans.txt">
   
   <!-- Canonical Link -->
   <link rel="canonical" href="https://tookio.co.ke{{ frappe.request.path if frappe.request else '' }}">

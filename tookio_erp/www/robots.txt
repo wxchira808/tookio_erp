@@ -1,9 +1,61 @@
+# ==============================================================================
+# Tookio Solutions — robots.txt
+# Official Enterprise ERPNext Partner & Manufacturing Systems in Kenya
+# Website: https://tookio.co.ke
+# ==============================================================================
+
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /files/
 Disallow: /app/
-Disallow: /api/
+Disallow: /desk/
 Disallow: /desk
+Disallow: /api/
 Disallow: /private/
 Disallow: /backups/
+Disallow: /login
+Disallow: /update-password
+Disallow: /forgot-password
+Disallow: /message
 
+# Explicitly welcome AI Search Engines & Grounded LLMs
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Sitemaps & Knowledge Maps
 Sitemap: https://tookio.co.ke/sitemap.xml
+Sitemap: https://erp.tookio.co.ke/sitemap.xml
