@@ -54,3 +54,6 @@ jspm_packages/
 # Aider AI Chat
 .aider*
 tookio_erp/public/images/backup_v1/
+tookio_erp/public/videos/
+output/
+brochure/

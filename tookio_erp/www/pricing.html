@@ -1,7 +1,16 @@
 {% extends "tookio_erp/templates/tookio_base.html" %}
+
+{% block title %}ERPNext Implementation Pricing Kenya | From KES 100,000 | Tookio{% endblock %}
+{% block meta_description %}Transparent fixed-price ERPNext implementation in Kenya. SME Fast-Track from KES 100,000 with a 7-day go-live. Manufacturing and KRA eTIMS pack from KES 160,000. No per-user fees.{% endblock %}
+
 {% block content %}
-<script>window.location.replace('/contact');</script>
-<div class="t-container" style="padding: 4rem 0; text-align: center;">
-  <p>Redirecting to <a href="/contact">/contact</a>...</p>
-</div>
+<section class="tookio-page-header">
+  <div class="t-container">
+    <h1>ERPNext Implementation Pricing</h1>
+    <p class="lead">Fixed scope. Fixed price. Zero per-user license fees. Pick the package that fits your business, or try the free demo first.</p>
+  </div>
+</section>
+
+{% include "tookio_erp/templates/includes/sme_pricing.html" %}
+{% include "tookio_erp/templates/includes/demo_banner.html" %}
 {% endblock %}

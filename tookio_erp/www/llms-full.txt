@@ -8,8 +8,8 @@ Kenya (Headquarters), Uganda, Tanzania, Rwanda, and the greater East African Com
 
 ### Contact Information
 - Website: https://tookio.co.ke
-- Email: info@tookio.co.ke | tookiosolutions@gmail.com
-- Telephone: +254 743 169 908
+- Email: info@tookio.co.ke
+- Telephone: +254 732 662 420
 - Physical Location: Ngong Road, Nairobi, Kenya
 
 ---
@@ -57,3 +57,11 @@ High-volume multi-warehouse order fulfillment, route planning, salesperson mobil
 
 ### Chemicals & Process Manufacturing
 Density/concentration conversions, hazardous material compliance, batch blending records, and quality certificate generation.
+
+## Pricing (Fixed-Price Rapid Implementations, No Per-User Fees)
+- **SME Fast-Track Core, KES 100,000 (about US $780), 7-day go-live**: cloud ERPNext V16, selling, buying, accounting, multi-warehouse inventory (up to 3 locations), AI-assisted master data migration, 2 remote training sessions.
+- **Light Manufacturing & eTIMS Pack, KES 160,000 to 220,000, 14-day go-live**: everything in Fast-Track plus up to 15 multi-level BOMs, scrap/regrind tracking, shop floor workstations, KRA eTIMS V2 and M-Pesa integration.
+- **Custom Enterprise & Multi-Plant**: custom quote for multi-country operations, custom Frappe apps and dedicated SLAs.
+- Free self-serve demo: https://demo.tookio.co.ke/login#signup
+- WhatsApp: https://wa.me/254732662420
+- Pricing page: https://tookio.co.ke/pricing

@@ -1,7 +1,7 @@
 {% extends "tookio_erp/templates/tookio_base.html" %}
 
-{% block title %}ERP Software for Manufacturing & Distribution | Tookio Solutions Kenya{% endblock %}
-{% block meta_description %}Tookio Solutions simplifies manufacturing and distribution with enterprise ERPNext implementations. Master multi-level BOMs, capacity MRP, stock trees, and KRA eTIMS V2 compliance in Kenya.{% endblock %}
+{% block title %}ERPNext Implementation Partner Kenya | All-in-One Business Software | Tookio{% endblock %}
+{% block meta_description %}Unify your business operations on ERPNext. Complete solutions for Accounting, Multi-Warehouse Stock, Selling, Buying, CRM, HR & Payroll, POS, and Manufacturing in Kenya.{% endblock %}
 
 {% block content %}
 <!-- 1. HERO SECTION (Modeled Exactly After SYSPRO with High-Res Photography) -->
@@ -9,23 +9,26 @@
   <div class="t-container">
     <div class="hero-grid">
       <div class="hero-content">
-        <h1>ERP Software Built for Manufacturing & Distribution</h1>
+        <h1>Run Your Entire Business on One Unified ERPNext Platform</h1>
         <p class="lead">
-          Tookio delivers purpose-configured ERPNext implementations for growing manufacturers, distributors, and commercial enterprises across East Africa. Master multi-level BOMs, perpetual multi-warehouse stock, and native KRA eTIMS V2 compliance on a single sovereign platform.
+          From double-entry accounting, multi-warehouse stock transfers, and point of sale to procurement, CRM pipelines, HRMS payroll, and production manufacturing—Tookio delivers fast, AI-accelerated ERPNext implementations with zero per-user licensing fees.
         </p>
         
         <div class="hero-actions">
-          <a href="/demo" class="btn btn-lg btn-primary">Explore ERPNext Live &rarr;</a>
-          <a href="/contact" class="btn btn-lg btn-outline">Schedule Scoping Call</a>
+          <a href="https://demo.tookio.co.ke/login#signup" target="_blank" rel="noopener" class="btn btn-lg btn-primary">Sign Up &amp; Explore Free &rarr;</a>
+          <a href="#sme-pricing" class="btn btn-lg btn-outline">Get the KES 100k Rapid Launch</a>
         </div>
+        <p class="cta-microcopy">No credit card or sales call required. Test Accounting, Stock Transfers, POS, CRM, HR &amp; Manufacturing in 30 seconds.</p>
       </div>
 
       <div class="hero-visual-frame">
-        <img src="/assets/tookio_erp/images/hero/factory-hero.jpg" alt="Industrial Manufacturing Operations ERP" class="hero-visual-img">
+        <img src="/assets/tookio_erp/images/hero/factory-hero.jpg" alt="Tookio ERP Enterprise Operations Platform" class="hero-visual-img">
       </div>
     </div>
   </div>
 </section>
+
+{% include "tookio_erp/templates/includes/demo_banner.html" %}
 
 <!-- 2. TRUST METRICS STRIP -->
 <section class="trust-metrics-strip">
@@ -101,6 +104,8 @@
   </div>
 </section>
 
+{% include "tookio_erp/templates/includes/sme_pricing.html" %}
+
 <!-- 4. OFFICIAL ERPNEXT & FRAPPE ECOSYSTEM TRUST BAR -->
 <section class="erpnext-ecosystem-bar">
   <div class="t-container">
@@ -117,40 +122,244 @@
   </div>
 </section>
 
+<!-- 4B. 12 CORE ERPNEXT MODULES DIRECTORY (Craft Interactive Style) -->
+<section class="section" id="erpnext-modules">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Complete ERPNext Modules for Every Department</h2>
+      <p class="lead">Unlike fragmented point-software or legacy systems charging per seat, ERPNext gives your company all core enterprise modules out of the box on a unified database.</p>
+    </div>
+
+    <div class="modules-showcase-grid">
+      <!-- 1. Accounting -->
+      <div class="module-showcase-card">
+        <div class="module-showcase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3>Accounting &amp; Finance</h3>
+        <p class="module-showcase-desc">Double-entry bookkeeping, multi-currency ledger, bank reconciliation and automated tax accounting.</p>
+        <ul class="module-showcase-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Chart of Accounts:</strong> Hierarchical multi-currency ledger</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Bank Reconciliation:</strong> Auto-matching statement imports</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Journals &amp; Payments:</strong> Multi-cost center dimensions</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Financial Statements:</strong> Real-time Balance Sheet &amp; P&amp;L</span></li>
+        </ul>
+        <a href="/solutions/finance-accounting" class="module-showcase-link">View Accounting Features &amp; Reports &rarr;</a>
+      </div>
+
+      <!-- 2. Stock -->
+      <div class="module-showcase-card">
+        <div class="module-showcase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3>Stock &amp; Inventory</h3>
+        <p class="module-showcase-desc">Perpetual multi-warehouse inventory, inter-depot transfers, batch/serial tracking and FIFO valuation.</p>
+        <ul class="module-showcase-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Inter-Warehouse Transfers:</strong> In-transit dispatch &amp; receipt</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Batch &amp; Serial:</strong> FEFO picking and expiry date alerts</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Landed Cost:</strong> Apportion freight, duties &amp; clearing</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Automated Reordering:</strong> Min/max threshold alerts</span></li>
+        </ul>
+        <a href="/solutions/inventory-management" class="module-showcase-link">View Stock Features &amp; Reports &rarr;</a>
+      </div>
+
+      <!-- 3. Selling -->
+      <div class="module-showcase-card">
+        <div class="module-showcase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>Selling &amp; Quotations</h3>
+        <p class="module-showcase-desc">Manage the sales cycle from quotation to sales order, delivery note, and receivable collection.</p>
+        <ul class="module-showcase-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Customer Quotations:</strong> Branded PDFs with margin alerts</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Sales Orders:</strong> Fulfillment tracking &amp; blanket orders</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Credit Controls:</strong> Hard credit limits &amp; overdue holds</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Price Lists:</strong> Wholesale, retail and tier discounts</span></li>
+        </ul>
+        <a href="/solutions/selling-sales" class="module-showcase-link">View Selling Features &amp; Reports &rarr;</a>
+      </div>
+
+      <!-- 4. Buying -->
+      <div class="module-showcase-card">
+        <div class="module-showcase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <h3>Buying &amp; Procurement</h3>
+        <p class="module-showcase-desc">Execute procurement seamlessly with automated 3-way matching and supplier evaluation.</p>
+        <ul class="module-showcase-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Material Requests:</strong> Requisitions with approval tiers</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>RFQ &amp; Comparison:</strong> Side-by-side vendor rate grids</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>3-Way Matching:</strong> PO &rarr; Goods Receipt &rarr; Invoice</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Supplier Scorecards:</strong> Quality &amp; on-time tracking</span></li>
+        </ul>
+        <a href="/solutions/procurement-supply-chain" class="module-showcase-link">View Buying Features &amp; Reports &rarr;</a>
+      </div>
+
+      <!-- 5. POS -->
+      <div class="module-showcase-card">
+        <div class="module-showcase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Point of Sale (POS)</h3>
+        <p class="module-showcase-desc">Ultra-fast retail counter checkout with offline sync, barcode scanners, and split payment modes.</p>
+        <ul class="module-showcase-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Counter Billing:</strong> Barcode scanning &amp; touch screen UI</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Split Payments:</strong> Cash, M-Pesa STK, card and credit</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Cashier Shifts:</strong> Opening float &amp; closing cash counts</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Live Inventory:</strong> Instant branch stock deduction</span></li>
+        </ul>
+        <a href="/solutions/pos-retail" class="module-showcase-link">View POS Features &amp; Reports &rarr;</a>
+      </div>
+
+      <!-- 6. CRM -->
+      <div class="module-showcase-card">
+        <div class="module-showcase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>CRM &amp; Sales Pipeline</h3>
+        <p class="module-showcase-desc">Gain a 360-degree view of prospect communications, deal stages, and sales team conversions.</p>
+        <ul class="module-showcase-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Lead Management:</strong> Auto-capture from web, email &amp; ads</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Deal Pipelines:</strong> Stage-by-stage Kanban &amp; probability</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Customer 360:</strong> Unified emails, calls, orders &amp; tickets</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Quotation Sync:</strong> One-click deal to quotation</span></li>
+        </ul>
+        <a href="/solutions/crm-pipeline" class="module-showcase-link">View CRM Features &amp; Reports &rarr;</a>
+      </div>
+
+      <!-- 7. HR & Payroll -->
+      <div class="module-showcase-card">
+        <div class="module-showcase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>HRMS &amp; Payroll</h3>
+        <p class="module-showcase-desc">Automate employee lifecycles, biometric attendance, leave approvals, and formula-driven payroll.</p>
+        <ul class="module-showcase-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Employee Master:</strong> Contracts, documents &amp; onboarding</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Attendance &amp; Shifts:</strong> Biometric sync &amp; mobile check-in</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Statutory Payroll:</strong> PAYE, NSSF, SHA, Housing Levy</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Self-Service Portal:</strong> Mobile payslips &amp; leave requests</span></li>
+        </ul>
+        <a href="/solutions/hr-payroll" class="module-showcase-link">View HR &amp; Payroll Features &amp; Reports &rarr;</a>
+      </div>
+
+      <!-- 8. Manufacturing -->
+      <div class="module-showcase-card">
+        <div class="module-showcase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-3 3"/></svg>
+        </div>
+        <h3>Manufacturing &amp; MRP</h3>
+        <p class="module-showcase-desc">Plan production schedules, manage multi-level BOMs, execute work orders, and track scrap costs.</p>
+        <ul class="module-showcase-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Multi-Level BOMs:</strong> Formulas, scrap &amp; substitute items</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Production Plan:</strong> Automated MRP material requisitions</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Job Cards:</strong> Operator tablets &amp; machine hour costing</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Actual vs Standard:</strong> Real-time WIP ledger posting</span></li>
+        </ul>
+        <a href="/solutions/manufacturing-erp" class="module-showcase-link">View Manufacturing Features &amp; Reports &rarr;</a>
+      </div>
+
+      <!-- 9. Projects -->
+      <div class="module-showcase-card">
+        <div class="module-showcase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Projects &amp; Timesheets</h3>
+        <p class="module-showcase-desc">Manage internal and client projects with Gantt charts, timesheet logging, and project profitability.</p>
+        <ul class="module-showcase-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Gantt &amp; Kanban:</strong> Task scheduling &amp; dependencies</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Timesheet Billing:</strong> Billable vs non-billable hours</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Project Costing:</strong> Real-time material, labor &amp; P&amp;L</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Client Portal:</strong> Transparent task &amp; milestone reviews</span></li>
+        </ul>
+        <a href="/solutions/projects-timesheets" class="module-showcase-link">View Projects Features &amp; Reports &rarr;</a>
+      </div>
+
+      <!-- 10. Assets -->
+      <div class="module-showcase-card">
+        <div class="module-showcase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        </div>
+        <h3>Fixed Asset Management</h3>
+        <p class="module-showcase-desc">Track capital assets, calculate automated monthly depreciation schedules, and log maintenance.</p>
+        <ul class="module-showcase-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Asset Register:</strong> Serialized capital asset tracking</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Auto-Depreciation:</strong> Straight line &amp; WDV methods</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>CWIP Accounting:</strong> Capital work in progress tracking</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Maintenance Logs:</strong> Preventive maintenance schedules</span></li>
+        </ul>
+        <a href="/solutions/asset-management" class="module-showcase-link">View Asset Features &amp; Reports &rarr;</a>
+      </div>
+
+      <!-- 11. Quality -->
+      <div class="module-showcase-card">
+        <div class="module-showcase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>Quality Management</h3>
+        <p class="module-showcase-desc">Enforce standard operating procedures, mandatory inspection criteria, and non-conformance logs.</p>
+        <ul class="module-showcase-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>3-Stage Inspection:</strong> Receiving, WIP, and dispatch QA</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Criteria Templates:</strong> Numeric &amp; visual tolerance specs</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Non-Conformance:</strong> Root cause analysis &amp; CAPA</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Certificates of Analysis:</strong> Automatic COA generation</span></li>
+        </ul>
+        <a href="/solutions/quality-management" class="module-showcase-link">View Quality Features &amp; Reports &rarr;</a>
+      </div>
+
+      <!-- 12. Helpdesk -->
+      <div class="module-showcase-card">
+        <div class="module-showcase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <h3>Helpdesk &amp; Support</h3>
+        <p class="module-showcase-desc">Streamline customer ticketing, SLA fulfillment, warranty claims, and field technician dispatch.</p>
+        <ul class="module-showcase-bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Issue Ticketing:</strong> Auto-capture via email &amp; web portal</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>SLA Governance:</strong> Response &amp; resolution time tracking</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Warranty Claims:</strong> Serial number validation &amp; visits</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span><strong>Knowledge Base:</strong> Self-service client help articles</span></li>
+        </ul>
+        <a href="/solutions/helpdesk-support" class="module-showcase-link">View Helpdesk Features &amp; Reports &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- 5. CORE OPERATIONAL SOLUTIONS (Interactive Tabs with Real High-Res Photography) -->
 <section class="section section-alt" id="solutions-tabs">
   <div class="t-container">
     <div class="section-header">
-      <h2>Integrated Enterprise ERP Solutions</h2>
+      <h2>Deep Operational Capabilities &amp; Workflows</h2>
       <p class="lead">From shop floor workstation scheduling to automated general ledger reconciliation, Tookio centralizes your core operations.</p>
     </div>
 
     <!-- Tabs Navigation -->
     <div class="tookio-tabs-header">
-      <button type="button" class="tookio-tab-btn active" data-tab="tab-mfg">Manufacturing (MOM)</button>
-      <button type="button" class="tookio-tab-btn" data-tab="tab-inv">Inventory & Warehousing</button>
-      <button type="button" class="tookio-tab-btn" data-tab="tab-scm">Procurement & SCM</button>
-      <button type="button" class="tookio-tab-btn" data-tab="tab-fin">Financial Governance & eTIMS</button>
+      <button type="button" class="tookio-tab-btn active" data-tab="tab-fin">Accounting &amp; Finance</button>
+      <button type="button" class="tookio-tab-btn" data-tab="tab-inv">Inventory &amp; Warehousing</button>
+      <button type="button" class="tookio-tab-btn" data-tab="tab-scm">Procurement &amp; SCM</button>
+      <button type="button" class="tookio-tab-btn" data-tab="tab-mfg">Manufacturing (MOM)</button>
       <button type="button" class="tookio-tab-btn" data-tab="tab-dev">Custom Frappe Engineering</button>
     </div>
 
-    <!-- Tab 1: Manufacturing -->
-    <div class="tookio-tab-pane active" id="tab-mfg">
+    <!-- Tab 1: Finance -->
+    <div class="tookio-tab-pane active" id="tab-fin">
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
         <div>
-          <h3>Shop Floor Execution & Capacity Planning</h3>
+          <h3>Auditable Double-Entry General Ledger &amp; Cash Flow</h3>
           <p style="margin: 1rem 0 1.5rem; font-size: 1.05rem; line-height: 1.6; color: var(--t-text-secondary);">
-            Maintain complete control over multi-level Bills of Materials (BOMs), workstation machine hours, scrap percentage tracking, and real-time WIP valuation.
+            Close your monthly accounts in record time. Every inventory transfer, sales dispatch, and vendor payment writes immutable journal entries in real time with automated bank reconciliation.
           </p>
           <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
-            <div>&bull; <strong>Nested BOMs:</strong> Formulas, scrap allowances, and alternative raw items.</div>
-            <div>&bull; <strong>Work Orders & Job Cards:</strong> Tablet-friendly operator start/stop tracking.</div>
-            <div>&bull; <strong>Actual vs Standard Costing:</strong> Automatic WIP general ledger updates.</div>
+            <div>&bull; <strong>Multi-Currency &amp; Chart of Accounts:</strong> Hierarchical asset, liability, income, and expense ledgers.</div>
+            <div>&bull; <strong>Multi-Cost Centers:</strong> Granular P&amp;L and balance sheet analysis across branches and divisions.</div>
+            <div>&bull; <strong>Automated Reconciliations:</strong> Auto-match bank statements, payment entries, and M-Pesa rails.</div>
           </div>
-          <a href="/solutions/manufacturing-erp" class="btn btn-primary">Explore Manufacturing ERP &rarr;</a>
+          <a href="/solutions/finance-accounting" class="btn btn-primary">Explore Accounting &amp; Finance &rarr;</a>
         </div>
         <div class="screenshot-frame">
-          <img src="/assets/tookio_erp/images/features/production-line.jpg" alt="Production Line Manufacturing Execution" class="screenshot-frame-img">
+          <img src="/assets/tookio_erp/images/features/finance-operations.jpg" alt="Financial Operations and GL Governance" class="screenshot-frame-img">
         </div>
       </div>
     </div>
@@ -180,7 +389,7 @@
     <div class="tookio-tab-pane" id="tab-scm">
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
         <div>
-          <h3>Automated Procurement & Supplier Governance</h3>
+          <h3>Automated Procurement &amp; Supplier Governance</h3>
           <p style="margin: 1rem 0 1.5rem; font-size: 1.05rem; line-height: 1.6; color: var(--t-text-secondary);">
             Enforce organizational discipline with automated 3-way matching, supplier quotation comparison matrices, minimum reorder thresholds, and vendor lead-time scorecards.
           </p>
@@ -189,7 +398,7 @@
             <div>&bull; <strong>3-Way Matching:</strong> Purchase Order &rarr; Goods Receipt &rarr; Supplier Invoice.</div>
             <div>&bull; <strong>Vendor Scorecards:</strong> Quality defect rates and on-time delivery metrics.</div>
           </div>
-          <a href="/solutions/procurement-supply-chain" class="btn btn-primary">Explore Procurement & SCM &rarr;</a>
+          <a href="/solutions/procurement-supply-chain" class="btn btn-primary">Explore Procurement &amp; SCM &rarr;</a>
         </div>
         <div class="screenshot-frame">
           <img src="/assets/tookio_erp/images/industries/distribution.jpg" alt="Distribution Logistics Supply Chain" class="screenshot-frame-img">
@@ -197,23 +406,23 @@
       </div>
     </div>
 
-    <!-- Tab 4: Finance -->
-    <div class="tookio-tab-pane" id="tab-fin">
+    <!-- Tab 4: Manufacturing -->
+    <div class="tookio-tab-pane" id="tab-mfg">
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
         <div>
-          <h3>Auditable Double-Entry GL & KRA eTIMS V2 Direct API</h3>
+          <h3>Shop Floor Execution &amp; Capacity Planning</h3>
           <p style="margin: 1rem 0 1.5rem; font-size: 1.05rem; line-height: 1.6; color: var(--t-text-secondary);">
-            Close your monthly accounts in record time. Every inventory transfer, production run, and sales dispatch writes immutable journal entries with native cryptographic eTIMS signing.
+            Maintain complete control over multi-level Bills of Materials (BOMs), workstation machine hours, scrap percentage tracking, and real-time WIP valuation.
           </p>
           <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
-            <div>&bull; <strong>Native KRA eTIMS V2:</strong> Automatic cryptographic signing and QR codes.</div>
-            <div>&bull; <strong>Multi-Cost Centers:</strong> Granular P&L analysis across branches and lines.</div>
-            <div>&bull; <strong>Automated Reconciliations:</strong> Instant bank statement and M-Pesa matching.</div>
+            <div>&bull; <strong>Nested BOMs:</strong> Formulas, scrap allowances, and alternative raw items.</div>
+            <div>&bull; <strong>Work Orders &amp; Job Cards:</strong> Tablet-friendly operator start/stop tracking.</div>
+            <div>&bull; <strong>Actual vs Standard Costing:</strong> Automatic WIP general ledger updates.</div>
           </div>
-          <a href="/solutions/finance-accounting" class="btn btn-primary">Explore Finance & eTIMS &rarr;</a>
+          <a href="/solutions/manufacturing-erp" class="btn btn-primary">Explore Manufacturing ERP &rarr;</a>
         </div>
         <div class="screenshot-frame">
-          <img src="/assets/tookio_erp/images/features/finance-operations.jpg" alt="Financial Operations and GL Governance" class="screenshot-frame-img">
+          <img src="/assets/tookio_erp/images/features/production-line.jpg" alt="Production Line Manufacturing Execution" class="screenshot-frame-img">
         </div>
       </div>
     </div>

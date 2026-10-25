@@ -1,0 +1,161 @@
+{% extends "tookio_erp/templates/tookio_base.html" %}
+
+{% block title %}ERPNext Selling & Sales Order Management Module | Tookio ERP{% endblock %}
+{% block meta_description %}Manage the complete sales cycle on ERPNext. Quotations, sales orders, price lists, customer credit limits, product bundles, delivery notes, and sales analytics.{% endblock %}
+
+{% block content %}
+<section class="tookio-page-header">
+  <div class="t-container">
+    <div style="max-width: 860px; margin: 0 auto; text-align: center;">
+      <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--t-cobalt-subtle); color: var(--t-cobalt); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.8125rem; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">
+        Core ERPNext Module
+      </div>
+      <h1>ERPNext Selling, Quotations &amp; Order Fulfillment</h1>
+      <p class="lead">Accelerate your revenue cycle from initial quote to order fulfillment and cash collection. Manage wholesale tier pricing, enforce customer credit limits, track delivery schedules, and analyze gross margins in real time.</p>
+      
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.75rem;">
+        <a href="https://demo.tookio.co.ke/login#signup" target="_blank" rel="noopener" class="btn btn-lg btn-primary">Sign Up &amp; Explore Free &rarr;</a>
+        <a href="/pricing" class="btn btn-lg btn-outline">Get the KES 100k Rapid Launch</a>
+      </div>
+      <p class="cta-microcopy" style="margin-top: 0.75rem;">No credit card or sales call required. Test Quotations, Sales Orders &amp; Price Lists in 30 seconds.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REAL-TIME SELLING CONSOLE SHOWCASE -->
+<section class="section">
+  <div class="t-container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
+      <div>
+        <h2>Streamline the Entire Order-to-Cash Workflow</h2>
+        <p style="margin-top: 1rem; margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.65; color: var(--t-text-secondary);">Give your sales team the tools to quote faster, prevent pricing errors, and track fulfillment without chasing warehouse staff. ERPNext connects customer agreements seamlessly to stock reservation, dispatch packing slips, and accounts receivable.</p>
+        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
+          <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Multi-Tier Price Lists &amp; Promotional Rules:</strong> Automatically apply approved wholesale, distributor, retail, or contract price lists with volume discount rules.</span>
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Automated Customer Credit Limit Holds:</strong> Protect working capital by automatically warning or blocking orders when a customer has overdue invoices or exceeds credit caps.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="screenshot-frame">
+        <img src="/assets/tookio_erp/images/features/command-center.jpg" alt="Sales Order Management and Revenue Analytics" class="screenshot-frame-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3-PILLAR HIGHLIGHT CARDS -->
+<section class="section section-alt">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Built for High-Growth Commercial Teams</h2>
+      <p class="lead">From fast wholesale distributors and B2B traders to direct-to-consumer enterprises.</p>
+    </div>
+
+    <div class="cards-grid-3">
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>One-Click Quote-to-Invoice</h3>
+        <p>Send branded PDF or web quotations with item images, terms, and discounts. Convert winning quotes directly to Sales Orders, Delivery Notes, and Invoices with zero re-typing.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Multi-currency pricing &amp; tax templates</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Partial delivery &amp; split billing workflows</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 7h.01"/><path d="M17 7h.01"/><path d="M7 17h.01"/><path d="M17 17h.01"/></svg>
+        </div>
+        <h3>Product Bundles &amp; Kitting</h3>
+        <p>Sell packaged combos, kits, or product bundles under a single SKU price while ERPNext automatically manages stock reservations and deductions for each component item.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automatic bill of materials for sales kits</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Margin controls &amp; minimum selling price</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+        </div>
+        <h3>Sales Territories &amp; Commissions</h3>
+        <p>Structure your sales organization into regional territories. Assign targets to sales representatives and automate commission calculations based on invoices or payments received.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Target vs actual achievement dashboards</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated commission calculation rules</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXHAUSTIVE CAPABILITIES & REPORTS MATRIX -->
+<section class="section" id="module-specs">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Complete Selling Module Functionality &amp; Standard Reports</h2>
+      <p class="lead">Every sales transaction DocType, credit control, and revenue analytics report in the ERPNext Selling suite.</p>
+    </div>
+
+    <div class="module-capabilities-matrix">
+      <!-- Column 1: Core Transactions & DocTypes -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          Sales DocTypes &amp; Orders
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Customer Quotations:</strong> Generate professional PDF/web quotes with item images, payment terms, and validity expiry dates.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Sales Orders:</strong> Confirmed customer orders with reserved warehouse inventory, expected delivery dates, and shipping terms.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Blanket Orders:</strong> Manage long-term customer volume contracts with fixed negotiated unit rates across staggered delivery orders.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Price Lists &amp; Pricing Rules:</strong> Unlimited price lists (Wholesale, Retail, Export, VIP) with volume tiering, margin rules, and promotions.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Product Bundles (Sales Kits):</strong> Sell multi-item kits under a parent bundle while auto-deducting individual stock items on delivery.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Sales Returns &amp; Credit Notes:</strong> Process returns of delivered goods linked to original delivery notes and invoices with restock tracking.</div></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Governance & Automation Controls -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Credit, Margins &amp; Fulfillment Controls
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Customer Credit Limit Enforcement:</strong> Set total credit amount and credit days per customer; automatically block submission when breached.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Margin &amp; Minimum Selling Price:</strong> Stop sales reps from quoting below cost; require manager overrides for discounts exceeding limits.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Sales Partner &amp; Rep Commissions:</strong> Automatically allocate commissions to internal reps or external referral partners upon payment realization.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Drop Shipping:</strong> Trigger direct-from-vendor Purchase Orders from customer Sales Orders without stocking intermediate warehouse inventory.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Self-Service Customer Portal:</strong> Enable B2B clients to view order status, download invoices, print account statements, and request quotes online.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Dispatch Route Management:</strong> Group sales orders by delivery vehicle and driver route for efficient fleet dispatching.</div></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Built-In Selling Reports -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          Built-In Selling Reports
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Sales Analytics:</strong> Multi-dimensional revenue trends by Item Group, Customer, Territory, Brand, and Sales Person over monthly periods.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Sales Order Analysis:</strong> Track order fulfillment progress (Percent Delivered, Percent Billed, Percent Pending).</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Ordered Items To Be Delivered:</strong> Warehouse dispatch backlog report showing all line items committed to customers.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Delivered Items To Be Billed:</strong> Shipments dispatched to clients that have not yet had accounts receivable invoices generated.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Gross Profit by Sales Person:</strong> Audit net revenue and gross profit margins generated per team member to reward top performers.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Quotation Trends:</strong> Measure quote-to-order win rates, average closing days, and lost reason codes.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Inactive Customers Report:</strong> Identify previously active accounts that have stopped placing orders to trigger proactive outreach.</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "tookio_erp/templates/includes/demo_banner.html" %}
+{% endblock %}

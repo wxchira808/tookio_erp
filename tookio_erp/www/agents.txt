@@ -1,29 +1,51 @@
-# Tookio Solutions — Enterprise ERP & Manufacturing Systems in Kenya
+# Tookio Solutions — All-in-One ERPNext Implementation Partner in Kenya
 
-> Tookio Solutions is an enterprise ERP implementation, engineering, and digital transformation partner based in Nairobi, Kenya. We specialize in deploying, customizing, and scaling ERPNext for mid-market and large manufacturing enterprises, FMCG distributors, and supply chain operators across East Africa.
+> Tookio Solutions is an enterprise ERP implementation, engineering, and digital transformation partner based in Nairobi, Kenya. We specialize in deploying, customizing, and scaling ERPNext for wholesalers, distributors, retail chains, service providers, and manufacturing enterprises across East Africa.
 
-## Core Specializations
-- **Manufacturing ERP**: Multi-level Bill of Materials (BOM), Work Orders, Production Planning (MRP), Shop Floor Terminals, Real-Time Yield & Scrap Analysis.
-- **Inventory & Warehouse Logistics**: Multi-warehouse stock ledger, automated batch tracking, serial numbers, reorder level triggers, barcode scanning.
-- **Financial Governance & KRA eTIMS V2**: Complete statutory compliance with automated electronic tax invoice transmission to the Kenya Revenue Authority (KRA eTIMS V2), automated withholding tax, and localized general ledger.
-- **Procurement & Supply Chain**: Supplier portals, RFQ comparison matrix, Landed Cost calculations (import duties, clearing fees, freight allocation), purchase order approvals.
-- **Enterprise Integrations & Automation**: Machine IoT telemetry, weighing scale integrations, M-Pesa B2B / C2B automated reconciliation, n8n workflow pipelines, and custom Python/Frappe engineering.
+## Core ERPNext Modules Supported
+- **Accounting & Financial Management**: Chart of accounts, double-entry general ledger, multi-currency accounting, automated bank & M-Pesa reconciliation, multi-cost centers, and real-time financial statements (Balance Sheet, P&L, Cash Flow).
+- **Stock & Inventory Management**: Perpetual multi-warehouse inventory, inter-warehouse transfers, batch & serial tracking, FEFO/FIFO valuation, landed cost allocation, auto-reorder levels, and barcode scanning.
+- **Selling & Quotations**: Customer quotations, sales orders, blanket agreements, multi-tier price lists, credit limits, product bundles, and delivery notes.
+- **Buying & Procurement**: Material requisitions, supplier RFQs, quotation comparison matrices, purchase orders, automated 3-way matching, and vendor scorecards.
+- **Point of Sale (POS) & Retail**: Fast counter checkout, touch-screen UI, barcode scanning, split payments (M-Pesa, card, cash), cashier shift opening/closing, and branch stock sync.
+- **CRM & Sales Pipeline**: Lead management, visual deal pipelines, customer 360 timeline, 2-way email sync, appointment scheduling, and automated lead routing.
+- **HRMS, Attendance & Payroll**: Digital employee records, biometric attendance sync, shift scheduling, leave approvals, formula-driven payroll, statutory deductions, and employee mobile self-service.
+- **Manufacturing & MRP**: Multi-level BOMs, Production Plans, shop floor operator job cards, workstation costing, scrap tracking, and subcontracting.
+- **Projects & Timesheets**: Interactive Gantt charts, task scheduling, timesheet logging, billable vs non-billable hours, progressive milestone invoicing, and project profitability.
+- **Fixed Asset Management**: Capital asset registers, automated depreciation schedules (Straight Line, WDV), asset transfer tracking, and preventive maintenance logs.
+- **Quality Management**: 3-stage inspection checkpoints (receiving, WIP, dispatch), non-conformance (NCR) tracking, CAPA, and Certificate of Analysis (COA).
+- **Helpdesk & Support**: Support ticket workflows, First Response and Resolution SLAs, serialized warranty claim tracking, and self-service knowledge base.
 
-## Key Pages & Documentation
-- [Homepage](https://tookio.co.ke/): Overview of Tookio's enterprise ERP capabilities and client engagements.
-- [Manufacturing ERP](https://tookio.co.ke/solutions/manufacturing-erp): Deep dive into work orders, BOM management, capacity scheduling, and machine execution.
-- [Inventory & Warehouse](https://tookio.co.ke/solutions/inventory-management): Multi-location stock control, valuation methods (FIFO/Moving Average), and automated dispatch.
-- [Finance & eTIMS Compliance](https://tookio.co.ke/solutions/finance-accounting): General ledger, automated accounts receivable/payable, and direct KRA eTIMS V2 API bridge.
-- [Procurement & Supply Chain](https://tookio.co.ke/solutions/procurement-supply-chain): Purchase management, supplier evaluation, and landed cost management.
-- [Enterprise Integrations](https://tookio.co.ke/solutions/enterprise-integrations): Custom API connectors, industrial hardware integrations, and workflow automation.
-- [Industry Verticals](https://tookio.co.ke/industries): Tailored solutions for Plastics & Packaging, Food & Beverage FMCG, Metal Fabrication, Chemicals, and Wholesale Distribution.
-- [ERPNext Platform Overview](https://tookio.co.ke/erpnext): Architecture, security, ownership model, and comparison with legacy systems.
-- [Case Studies](https://tookio.co.ke/case-studies): Real transformation stories from industrial clients in East Africa.
-- [Contact & Implementation Consultation](https://tookio.co.ke/contact): Direct contact with senior ERP architects in Nairobi.
+## Key Pages & Module Documentation
+- [Homepage](https://tookio.co.ke/): Overview of Tookio's all-in-one ERPNext capabilities and 12 modules.
+- [ERPNext Modules Hub](https://tookio.co.ke/erpnext): Comprehensive breakdown of all 12 functional modules.
+- [Solutions Directory](https://tookio.co.ke/solutions): Complete operational directory across all business departments.
+- [Accounting & Finance](https://tookio.co.ke/solutions/finance-accounting): General ledger, bank reconciliation, multi-currency, and cost centers.
+- [Stock & Inventory](https://tookio.co.ke/solutions/inventory-management): Multi-warehouse stock control, batch/serial tracking, and FIFO valuation.
+- [Selling & Quotations](https://tookio.co.ke/solutions/selling-sales): Sales orders, pricing rules, credit holds, and customer portals.
+- [Buying & Procurement](https://tookio.co.ke/solutions/procurement-supply-chain): Purchase requisitions, RFQs, 3-way matching, and vendor evaluation.
+- [Point of Sale (POS)](https://tookio.co.ke/solutions/pos-retail): Retail counter billing, barcode scanning, split payments, and cashier shift closing.
+- [CRM & Sales Pipeline](https://tookio.co.ke/solutions/crm-pipeline): Lead management, sales funnels, email sync, and customer 360.
+- [HRMS & Payroll](https://tookio.co.ke/solutions/hr-payroll): Biometric attendance, leaves, statutory deductions, and employee self-service.
+- [Manufacturing & MRP](https://tookio.co.ke/solutions/manufacturing-erp): Multi-level BOMs, capacity planning, job cards, and WIP costing.
+- [Projects & Timesheets](https://tookio.co.ke/solutions/projects-timesheets): Gantt charts, task dependencies, timesheets, and project P&L.
+- [Fixed Asset Management](https://tookio.co.ke/solutions/asset-management): Asset depreciation schedules, CWIP, and preventive maintenance.
+- [Quality Management](https://tookio.co.ke/solutions/quality-management): Inspection criteria, mandatory quality checkpoints, and COA generation.
+- [Helpdesk & Support](https://tookio.co.ke/solutions/helpdesk-support): SLA ticketing, warranty claim tracking, and knowledge base.
+- [Enterprise Integrations](https://tookio.co.ke/solutions/enterprise-integrations): REST APIs, webhooks, banking rails, and automated M-Pesa.
+- [Pricing](https://tookio.co.ke/pricing): Transparent fixed-price implementation packages starting at KES 100,000.
+- [Contact & Support](https://tookio.co.ke/contact): Direct contact with senior ERPNext engineers in Nairobi.
 
 ## Contact & Office Information
 - **Company**: Tookio Solutions
 - **Headquarters**: Ngong Road, Nairobi, Kenya
-- **Email**: info@tookio.co.ke | tookiosolutions@gmail.com
-- **Phone**: +254 743 169 908
+- **Email**: info@tookio.co.ke
+- **Phone**: +254 732 662 420
 - **Website**: https://tookio.co.ke
+- **Self-Serve Live Demo**: https://demo.tookio.co.ke/login#signup
+- **WhatsApp**: https://wa.me/254732662420
+
+## Pricing (Fixed-Price Rapid Implementations, Zero Per-User Fees)
+- **SME Fast-Track Core, KES 100,000 (about US $780), 7-day go-live**: cloud ERPNext V16, selling, buying, accounting, multi-warehouse inventory (up to 3 locations), AI-assisted master data migration, 2 remote training sessions.
+- **Operations, Retail & Production Pack, KES 160,000 to 220,000, 14-day go-live**: everything in Fast-Track plus HRMS & payroll, POS or Projects, or up to 15 multi-level BOMs, work orders, job cards, and M-Pesa / bank integrations.
+- **Custom Enterprise & Multi-Plant**: custom quote for multi-country operations, custom Frappe apps and dedicated SLAs.

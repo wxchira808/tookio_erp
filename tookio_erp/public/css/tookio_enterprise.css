@@ -1509,3 +1509,480 @@ p.lead {
     max-width: 155px;
   }
 }
+
+/* ==========================================================================
+   CONVERSION LAYER: Instant Demo, SME Pricing, WhatsApp, CTA microcopy
+   (Additive. Uses existing design tokens; no changes to enterprise sections.)
+   ========================================================================== */
+
+.cta-microcopy {
+  margin: 0.85rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--t-text-muted);
+  max-width: 34rem;
+}
+
+.cta-microcopy-light {
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 22rem;
+}
+
+/* ---------- Instant Demo banner ---------- */
+.demo-banner-section {
+  padding: 3.5rem 0;
+  background: var(--t-bg-white);
+  overflow-x: clip;
+}
+
+.demo-banner-card {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 3rem;
+  border-radius: var(--t-radius-xl);
+  background: linear-gradient(135deg, var(--t-navy-dark) 0%, var(--t-navy-surface) 100%);
+  color: var(--t-text-inverse);
+  box-shadow: var(--t-shadow-lg);
+}
+
+.demo-banner-copy h2 {
+  color: #ffffff;
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+  margin-bottom: 0.9rem;
+}
+
+.demo-banner-copy p {
+  color: var(--t-text-inverse-muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.demo-banner-points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.75rem;
+}
+
+.demo-banner-points li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.demo-banner-points li svg {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  color: #60a5fa;
+}
+
+.demo-banner-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ---------- SME pricing ---------- */
+.sme-pricing-section {
+  background: var(--t-bg-canvas);
+  overflow-x: clip;
+}
+
+.sme-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+.sme-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--t-bg-white);
+  border: 1px solid var(--t-border);
+  border-radius: var(--t-radius-xl);
+  padding: 2rem;
+  box-shadow: var(--t-shadow-sm);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  min-width: 0;
+}
+
+.sme-card:hover {
+  box-shadow: var(--t-shadow-md);
+  transform: translateY(-2px);
+}
+
+.sme-card-featured {
+  border-color: var(--t-cobalt);
+  border-top: 4px solid var(--t-cobalt);
+  box-shadow: var(--t-shadow-md);
+}
+
+.sme-card-timeline {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--t-cobalt);
+  margin-bottom: 0.6rem;
+}
+
+.sme-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.9rem;
+}
+
+.sme-card-price {
+  font-family: var(--t-font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--t-text-primary);
+  margin-bottom: 1rem;
+}
+
+.sme-price-currency {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--t-text-secondary);
+  margin-right: 0.15rem;
+}
+
+.sme-price-note {
+  display: block;
+  font-family: var(--t-font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--t-text-muted);
+  margin-top: 0.25rem;
+}
+
+.sme-card-best {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--t-text-secondary);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--t-border-subtle);
+}
+
+.sme-card .card-checklist {
+  margin-bottom: 1.75rem;
+  flex: 1 1 auto;
+}
+
+.sme-card .card-checklist a {
+  color: var(--t-cobalt);
+  font-weight: 600;
+}
+
+.sme-card-cta {
+  width: 100%;
+  white-space: normal;
+  text-align: center;
+}
+
+/* ---------- Fast-track callout (services page) ---------- */
+.fasttrack-callout {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1.5rem 1.75rem;
+  background: var(--t-cobalt-light);
+  border: 1px solid var(--t-cobalt-subtle);
+  border-left: 4px solid var(--t-cobalt);
+  border-radius: var(--t-radius-lg);
+  margin-bottom: 0;
+}
+
+.fasttrack-callout p {
+  margin: 0;
+  color: var(--t-text-primary);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.fasttrack-callout a {
+  color: var(--t-cobalt);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ---------- Floating WhatsApp ---------- */
+.whatsapp-float {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.1rem;
+  background: #25d366;
+  color: #ffffff;
+  border-radius: 999px;
+  font-family: var(--t-font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.whatsapp-float svg {
+  flex: 0 0 22px;
+}
+
+@media (max-width: 1024px) {
+  .demo-banner-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.25rem;
+  }
+
+  .sme-pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 38rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .demo-banner-section {
+    padding: 2rem 0;
+  }
+
+  .demo-banner-card {
+    padding: 1.5rem;
+  }
+
+  .demo-banner-action .btn {
+    width: 100%;
+  }
+
+  .sme-card {
+    padding: 1.5rem;
+  }
+
+  .sme-card-price {
+    font-size: 1.6rem;
+  }
+
+  .fasttrack-callout {
+    padding: 1.25rem;
+  }
+
+  .whatsapp-float {
+    padding: 0.85rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .whatsapp-float-label {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   12 ERPNEXT MODULES SHOWCASE (Craft Interactive Inspired Enterprise Grid)
+   ========================================================================== */
+.modules-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+}
+
+.module-showcase-card {
+  background: var(--t-bg-white);
+  border: 1px solid var(--t-border);
+  border-radius: var(--t-radius-lg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: var(--t-shadow-xs);
+  position: relative;
+}
+
+.module-showcase-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--t-border-focus);
+  box-shadow: var(--t-shadow-md);
+}
+
+.module-showcase-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--t-radius-md);
+  background: var(--t-cobalt-subtle);
+  color: var(--t-cobalt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.module-showcase-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.module-showcase-card h3 {
+  font-size: 1.25rem;
+  color: var(--t-navy-primary);
+  margin-bottom: 0.5rem;
+}
+
+.module-showcase-desc {
+  font-size: 0.925rem;
+  color: var(--t-text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.module-showcase-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 1px solid var(--t-border-subtle);
+  padding-top: 1rem;
+}
+
+.module-showcase-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--t-text-secondary);
+  line-height: 1.4;
+}
+
+.module-showcase-bullets li svg {
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  color: var(--t-cobalt);
+  margin-top: 3px;
+}
+
+.module-showcase-bullets li strong {
+  color: var(--t-text-primary);
+}
+
+.module-showcase-link {
+  margin-top: auto;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--t-cobalt);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+}
+
+.module-showcase-link:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   MODULE DEEP-DIVE CAPABILITIES & REPORTS MATRIX (3-Column Dense Layout)
+   ========================================================================== */
+.module-capabilities-matrix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+}
+
+.module-cap-group {
+  background: var(--t-bg-white);
+  border: 1px solid var(--t-border);
+  border-radius: var(--t-radius-lg);
+  padding: 2rem;
+  box-shadow: var(--t-shadow-xs);
+  display: flex;
+  flex-direction: column;
+}
+
+.module-cap-group h3 {
+  font-size: 1.15rem;
+  color: var(--t-navy-primary);
+  padding-bottom: 0.875rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 2px solid var(--t-bg-subtle);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.module-cap-group h3 svg {
+  width: 20px;
+  height: 20px;
+  color: var(--t-cobalt);
+}
+
+.module-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.module-bullet-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.925rem;
+  color: var(--t-text-secondary);
+  line-height: 1.5;
+}
+
+.module-bullet-list li svg {
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+  color: var(--t-cobalt);
+  margin-top: 4px;
+}
+
+.module-bullet-list li strong {
+  color: var(--t-text-primary);
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  .modules-showcase-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .module-capabilities-matrix {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .modules-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+}

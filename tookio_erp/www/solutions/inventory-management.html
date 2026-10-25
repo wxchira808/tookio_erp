@@ -1,13 +1,24 @@
 {% extends "tookio_erp/templates/tookio_base.html" %}
 
-{% block title %}Inventory & Warehouse Management Solutions Kenya | Tookio ERP{% endblock %}
-{% block meta_description %}Multi-warehouse inventory management on ERPNext for Kenyan enterprises. Real-time stock levels, batch & serial tracking, barcode scanning, and landed cost allocation.{% endblock %}
+{% block title %}ERPNext Stock & Inventory Management Module | Tookio ERP{% endblock %}
+{% block meta_description %}Manage multi-warehouse inventory on ERPNext. Inter-warehouse transfers, batch and serial tracking, perpetual FIFO valuation, auto-reorder levels, and landed cost allocation.{% endblock %}
 
 {% block content %}
 <section class="tookio-page-header">
   <div class="t-container">
-    <h1>Multi-Warehouse Inventory & Stock Control</h1>
-    <p class="lead">Achieve 100% real-time stock accuracy across central depots, plant stores, and transit hubs. Prevent stockouts, reduce carrying costs, and eliminate inventory discrepancies.</p>
+    <div style="max-width: 860px; margin: 0 auto; text-align: center;">
+      <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--t-cobalt-subtle); color: var(--t-cobalt); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.8125rem; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">
+        Core ERPNext Module
+      </div>
+      <h1>ERPNext Stock &amp; Multi-Warehouse Inventory Module</h1>
+      <p class="lead">Eliminate stockouts, dead capital, and manual stock count discrepancies. Gain real-time visibility across central depots, plant stores, retail branches, and in-transit transfers with perpetual FIFO valuation.</p>
+      
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.75rem;">
+        <a href="https://demo.tookio.co.ke/login#signup" target="_blank" rel="noopener" class="btn btn-lg btn-primary">Sign Up &amp; Explore Free &rarr;</a>
+        <a href="/pricing" class="btn btn-lg btn-outline">Get the KES 100k Rapid Launch</a>
+      </div>
+      <p class="cta-microcopy" style="margin-top: 0.75rem;">No credit card or sales call required. Test Stock Transfers, Batches &amp; Barcode Pick in 30 seconds.</p>
+    </div>
   </div>
 </section>
 
@@ -16,16 +27,16 @@
   <div class="t-container">
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
       <div>
-        <h2>Real-Time Stock Ledger & Multi-Site Valuation</h2>
-        <p style="margin-top: 1rem; margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.65; color: var(--t-text-secondary);">Never wonder what stock is on the floor versus in-transit. ERPNext maintains an immutable perpetual stock ledger that tracks every unit received, moved, consumed in WIP, or dispatched.</p>
+        <h2>Real-Time Stock Ledger &amp; Multi-Site Valuation</h2>
+        <p style="margin-top: 1rem; margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.65; color: var(--t-text-secondary);">Never wonder what stock is on the floor versus in-transit. ERPNext maintains an immutable perpetual stock ledger that tracks every unit received, moved between depots, consumed in work orders, or dispatched to customers.</p>
         <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
           <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
-            <span><strong>Automated Landed Cost Allocation:</strong> Distribute shipping freight, customs duties, and clearing costs across item valuation rates accurately.</span>
+            <span><strong>Automated Landed Cost Allocation:</strong> Distribute ocean freight, customs duties, clearing fees, and local transport across item valuation rates accurately.</span>
           </div>
           <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
-            <span><strong>Perpetual FIFO & Moving Average:</strong> Automatic inventory valuation synchronized with General Ledger stock asset accounts.</span>
+            <span><strong>Perpetual FIFO &amp; Moving Average:</strong> Automatic inventory valuation synchronized with General Ledger stock asset accounts with zero manual adjustment journals.</span>
           </div>
         </div>
       </div>
@@ -37,12 +48,12 @@
   </div>
 </section>
 
-<!-- CORE INVENTORY CAPABILITIES -->
+<!-- 3-PILLAR HIGHLIGHT CARDS -->
 <section class="section section-alt">
   <div class="t-container">
     <div class="section-header">
-      <h2>Engineered for High-Velocity Warehousing</h2>
-      <p class="lead">Built to eliminate manual count discrepancies and establish total accountability across plant and warehouse operations.</p>
+      <h2>Engineered for High-Velocity Inventory Operations</h2>
+      <p class="lead">Built to eliminate manual count discrepancies and establish total accountability across wholesale, retail, and manufacturing depots.</p>
     </div>
 
     <div class="cards-grid-3">
@@ -51,10 +62,10 @@
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
         </div>
         <h3>Multi-Site Warehouse Hierarchy</h3>
-        <p>Organize warehouses into tree hierarchies (Central Stores, Raw Materials, Finished Goods, Transit, Quarantine) with granular per-location stock valuation.</p>
+        <p>Organize warehouses into tree hierarchies (Central Stores, Plant WIP, Retail Branches, Transit Vans, Quarantine) with location-specific valuation and access control.</p>
         <ul class="card-checklist">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated in-transit stock accounting</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Location-specific access permissions</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> In-transit dispatch &amp; confirmation tracking</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Location-specific security permissions</li>
         </ul>
       </div>
 
@@ -62,11 +73,11 @@
         <div class="card-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>
         </div>
-        <h3>Batch & Serial Number Tracking</h3>
-        <p>Enforce mandatory serial and batch number capture across receiving, internal transfers, manufacturing job cards, and sales dispatches.</p>
+        <h3>Batch &amp; Serial Number Traceability</h3>
+        <p>Enforce mandatory serial and batch number capture across receiving, transfers, manufacturing job cards, and sales dispatches with First-Expired, First-Out (FEFO) rules.</p>
         <ul class="card-checklist">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Expiry dates & automated FEFO rules</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> End-to-end recall audit reports</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Expiry dates &amp; automatic FEFO picking</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> End-to-end recall audit trail</li>
         </ul>
       </div>
 
@@ -74,14 +85,77 @@
         <div class="card-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 7h.01"/><path d="M17 7h.01"/><path d="M7 17h.01"/><path d="M17 17h.01"/></svg>
         </div>
-        <h3>Barcode Scanning & Mobile Pick/Pack</h3>
-        <p>Equip floor staff with mobile scanner terminals for instant GRN verification, pick-list verification, stock transfers, and rapid cycle counts.</p>
+        <h3>Barcode Scanning &amp; Pick Lists</h3>
+        <p>Equip floor staff with mobile scanner terminals for instant GRN verification, pick-list verification, inter-warehouse transfers, and rapid cycle counts.</p>
         <ul class="card-checklist">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> EAN-13, Code 128 & QR code generation</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Zero pick-error dispatch verification</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Code-128, EAN-13 &amp; QR barcode scanning</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Zero pick-error dispatch validation</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
+
+<!-- EXHAUSTIVE CAPABILITIES & REPORTS MATRIX -->
+<section class="section" id="module-specs">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Complete Stock Module Functionality &amp; Standard Reports</h2>
+      <p class="lead">Every stock movement docType, valuation workflow, and built-in inventory report in the ERPNext Stock suite.</p>
+    </div>
+
+    <div class="module-capabilities-matrix">
+      <!-- Column 1: Core Transactions & DocTypes -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          Stock Transactions &amp; DocTypes
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Inter-Warehouse Stock Transfers:</strong> Material Transfer entries between local stores and multi-step In-Transit Transfers with sender dispatch and receiver sign-off.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Stock Entry Types:</strong> Material Receipt, Material Issue, Material Transfer for Manufacture, Repack/Kitting, Subcontractor transfers, and Scrap entries.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Purchase Receipt (GRN):</strong> Verify vendor shipments against open POs, inspect accepted vs rejected quantities, and assign warehouse bins.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Delivery Notes &amp; Pick Lists:</strong> Auto-generate warehouse pick lists grouped by aisle/bin and generate packing slips with gross/net weight.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Item Master &amp; Item Variants:</strong> Multi-dimensional variants (Size, Color, Brand, Grade) with custom UOM conversions (e.g. Boxes to Units, Tonnes to Kg).</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Stock Reconciliation:</strong> Upload cycle-count CSV sheets to instantly balance physical counts against system ledger with automatic variance write-offs.</div></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Valuation, Traceability & Controls -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Valuation &amp; Replenishment Controls
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Perpetual Inventory Engine:</strong> Automatic real-time accounting synchronization; every physical stock movement writes corresponding GL asset updates.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Valuation Methods:</strong> Choose between First-In First-Out (FIFO) and Moving Average valuation per item or warehouse category.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Landed Cost Allocation:</strong> Post customs duties, freight, insurance, and port handling charges across item purchase batches to capture real cost of goods sold.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Batch &amp; Serial Number Tracking:</strong> Maintain complete lifecycle tracking for serialized equipment, electronics, pharmaceutical, and food batches.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Automated Reorder Levels:</strong> Configure minimum inventory safety stock per warehouse; system auto-triggers Material Requests before stock runs out.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Negative Stock Controls:</strong> Restrict negative inventory dispatches to enforce operational discipline and prevent distorted valuation rates.</div></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Built-In Stock Reports -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          Built-In Stock Reports
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Stock Balance Report:</strong> Real-time available quantity and total valuation across each individual warehouse or company-wide.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Stock Ledger:</strong> Complete chronological log of every inbound, transfer, manufacturing issue, and dispatch movement with running balance.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Stock Projected Quantity:</strong> Calculate true stock availability (Actual Qty + Planned Incoming Purchase Orders - Reserved Sales Orders).</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Stock Ageing Report:</strong> Identify slow-moving items and dead capital by age bracket (0-30, 31-60, 61-90, 90+ days) to optimize cash flow.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Batch-Wise Balance History &amp; Expiry:</strong> Track inventory balance by batch, monitor upcoming expiry dates, and conduct fast recalls.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Item Shortage &amp; Reorder Report:</strong> Instant view of all items currently below safety stock thresholds across warehouses.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Stock Variance Report:</strong> Audit differences between recorded book stock and physical reconciliation counts.</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "tookio_erp/templates/includes/demo_banner.html" %}
 {% endblock %}

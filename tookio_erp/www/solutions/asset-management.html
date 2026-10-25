@@ -1,0 +1,160 @@
+{% extends "tookio_erp/templates/tookio_base.html" %}
+
+{% block title %}ERPNext Fixed Asset & Maintenance Module | Tookio ERP{% endblock %}
+{% block meta_description %}Manage capital asset lifecycles on ERPNext. Automated monthly depreciation schedules, asset transfers, CWIP capitalization, and preventive machine maintenance logs.{% endblock %}
+
+{% block content %}
+<section class="tookio-page-header">
+  <div class="t-container">
+    <div style="max-width: 860px; margin: 0 auto; text-align: center;">
+      <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--t-cobalt-subtle); color: var(--t-cobalt); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.8125rem; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">
+        Core ERPNext Module
+      </div>
+      <h1>ERPNext Fixed Asset Lifecycle, Depreciation &amp; Maintenance</h1>
+      <p class="lead">Track your capital investments from initial purchase to retirement. Calculate automated monthly depreciation schedules, track asset custodian movements across branches, and manage preventive machine maintenance logs.</p>
+      
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.75rem;">
+        <a href="https://demo.tookio.co.ke/login#signup" target="_blank" rel="noopener" class="btn btn-lg btn-primary">Sign Up &amp; Explore Free &rarr;</a>
+        <a href="/pricing" class="btn btn-lg btn-outline">Get the KES 100k Rapid Launch</a>
+      </div>
+      <p class="cta-microcopy" style="margin-top: 0.75rem;">No credit card or sales call required. Test Asset Registers, Depreciation &amp; Maintenance in 30 seconds.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REAL-TIME ASSET SHOWCASE -->
+<section class="section">
+  <div class="t-container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
+      <div>
+        <h2>Complete Capital Asset Visibility &amp; Balance Sheet Integrity</h2>
+        <p style="margin-top: 1rem; margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.65; color: var(--t-text-secondary);">Tracking machinery, fleet vehicles, IT computers, and factory plant equipment across multiple locations on spreadsheets results in unrecorded disposals and incorrect depreciation calculations. ERPNext maintains an immutable audit trail of every capital asset.</p>
+        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
+          <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Automated Monthly Depreciation:</strong> Automatically post monthly depreciation journal entries to your General Ledger based on Straight Line or Written Down Value (WDV) methods.</span>
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Preventive Maintenance Calendars:</strong> Schedule recurring servicing, calibration tasks, and oil changes with automated technician notifications to prevent catastrophic equipment breakdowns.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="screenshot-frame">
+        <img src="/assets/tookio_erp/images/features/plant-workstation.jpg" alt="Capital Asset Tracking and Plant Maintenance" class="screenshot-frame-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3-PILLAR HIGHLIGHT CARDS -->
+<section class="section section-alt">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Complete Fixed Asset Architecture</h2>
+      <p class="lead">Built to ensure statutory compliance with IFRS accounting standards and tax authorities.</p>
+    </div>
+
+    <div class="cards-grid-3">
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        </div>
+        <h3>Capital Work in Progress (CWIP)</h3>
+        <p>Accumulate machine fabrication, building construction, and plant equipment installation costs in CWIP ledgers before capitalizing them into active depreciable assets.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Accumulate procurement &amp; installation invoices</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> One-click capitalization to fixed asset ledger</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3>Multi-Finance Books</h3>
+        <p>Maintain parallel depreciation schedules for the same asset: corporate financial reporting depreciation (e.g. Straight Line) and statutory tax depreciation (e.g. Wear and Tear allowances).</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Separate commercial vs tax finance books</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Fully compliant with IFRS asset accounting</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+        </div>
+        <h3>Custodian &amp; Location Tracking</h3>
+        <p>Log physical transfers of laptops, company vehicles, and specialized tools between employees, departments, and branch facilities with digital sign-offs.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Barcode / QR tag label printing for assets</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Custodian handover history and audit trail</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXHAUSTIVE CAPABILITIES & REPORTS MATRIX -->
+<section class="section" id="module-specs">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Complete Asset Module Functionality &amp; Standard Reports</h2>
+      <p class="lead">Every asset DocType, depreciation rule, and maintenance report available in the ERPNext Asset suite.</p>
+    </div>
+
+    <div class="module-capabilities-matrix">
+      <!-- Column 1: Core Transactions & DocTypes -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          Asset DocTypes &amp; Movements
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Asset Master:</strong> Detailed capital asset profile with purchase date, gross purchase amount, salvage value, and serial numbers.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Asset Categories:</strong> Group assets by class (Plant &amp; Machinery, Vehicles, IT Hardware, Office Furniture) with pre-set GL accounts.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Asset Movement:</strong> Record physical custody transfers between staff, departments, or geographic branch offices.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Asset Value Adjustment:</strong> Revalue assets upwards or downwards based on formal valuation appraisals or impairment losses.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Asset Sale:</strong> Sell assets through a standard Sales Invoice with automated gain/loss on disposal calculations.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Asset Scrapping:</strong> Write off broken, obsolete, or damaged equipment with automated scrapping journal postings.</div></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Depreciation & Maintenance Controls -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Depreciation &amp; Maintenance Rules
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Depreciation Methods:</strong> Support for Straight Line, Double Declining Balance, Written Down Value (WDV), and Manual entry.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Automated Monthly GL Posting:</strong> System scheduler automatically calculates and posts monthly depreciation entries without manual intervention.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Preventive Maintenance Tasks:</strong> Define maintenance checklists, service frequencies (Monthly, 500 operating hours), and maintenance teams.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Maintenance Logs &amp; Repair Capitalization:</strong> Record technician inspection logs and capitalize major engine overhauls that extend useful asset life.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Asset Auto-Creation:</strong> Auto-create asset records directly upon submitting a Purchase Receipt for capital item groups.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Asset Insurance &amp; Warranty Tracking:</strong> Log insurance policies, policy renewal dates, insurer contact, and warranty expiration.</div></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Built-In Asset Reports -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          Built-In Fixed Asset Reports
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Fixed Asset Register:</strong> Complete statutory asset inventory showing item code, category, purchase date, cost, and net book value.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Asset Depreciation Ledger:</strong> Historical log of every depreciation journal entry posted per asset and accumulated depreciation balance.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Asset Depreciations and Balances:</strong> Summary of opening balance, additions, disposals, depreciation, and closing balance for financial audit.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Asset Maintenance Schedule:</strong> Overview of upcoming machine maintenance and calibration dates to avoid factory downtime.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Asset Maintenance Log Summary:</strong> Track maintenance expenditure, spare parts consumed, and technician labor per machine.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Asset Custodian Summary:</strong> Report of all company equipment assigned to each staff member for exit clearance.</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "tookio_erp/templates/includes/demo_banner.html" %}
+{% endblock %}

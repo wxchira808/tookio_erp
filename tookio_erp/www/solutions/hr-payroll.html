@@ -1,0 +1,161 @@
+{% extends "tookio_erp/templates/tookio_base.html" %}
+
+{% block title %}ERPNext HR, Attendance & Payroll Module | Tookio ERP{% endblock %}
+{% block meta_description %}Automate human resources and payroll on ERPNext (Frappe HRMS). Biometric attendance sync, shift scheduling, leave approvals, statutory deductions, and mobile self-service.{% endblock %}
+
+{% block content %}
+<section class="tookio-page-header">
+  <div class="t-container">
+    <div style="max-width: 860px; margin: 0 auto; text-align: center;">
+      <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--t-cobalt-subtle); color: var(--t-cobalt); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.8125rem; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">
+        Core ERPNext Module
+      </div>
+      <h1>ERPNext Human Resources, Attendance &amp; Payroll Management</h1>
+      <p class="lead">Unify employee records, biometric attendance, shift scheduling, expense claims, and automated payroll on one compliant system. Eliminate payroll errors and give staff mobile self-service access to payslips and leave approvals.</p>
+      
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.75rem;">
+        <a href="https://demo.tookio.co.ke/login#signup" target="_blank" rel="noopener" class="btn btn-lg btn-primary">Sign Up &amp; Explore Free &rarr;</a>
+        <a href="/pricing" class="btn btn-lg btn-outline">Get the KES 100k Rapid Launch</a>
+      </div>
+      <p class="cta-microcopy" style="margin-top: 0.75rem;">No credit card or sales call required. Test Biometric Attendance, Salary Slips &amp; Leaves in 30 seconds.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REAL-TIME HR SHOWCASE -->
+<section class="section">
+  <div class="t-container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
+      <div>
+        <h2>Automate Month-End Payroll from Shift Punch to Bank File</h2>
+        <p style="margin-top: 1rem; margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.65; color: var(--t-text-secondary);">Manual attendance spreadsheets and payroll formulas lead to costly payment errors and compliance penalties. ERPNext HRMS syncs directly with biometric hardware, computes overtime, applies statutory deductions, and generates individual payslips in one bulk run.</p>
+        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
+          <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Biometric Device Integration:</strong> Auto-sync clock-ins and clock-outs from ZKTeco, Suprema, and RFID devices directly into employee shift logs.</span>
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Formula-Driven Statutory Deductions:</strong> Automatically calculate PAYE tax bands, NSSF tiers, SHA/NHIF, Housing Levy, NITA, and pension with exportable bank EFT remittance files.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="screenshot-frame">
+        <img src="/assets/tookio_erp/images/features/finance-operations.jpg" alt="Human Resources and Payroll Management System" class="screenshot-frame-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3-PILLAR HIGHLIGHT CARDS -->
+<section class="section section-alt">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Complete People Operations Suite</h2>
+      <p class="lead">Built to scale with growing companies, multi-branch commercial networks, and factory shift workforces.</p>
+    </div>
+
+    <div class="cards-grid-3">
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Digital Personnel Records</h3>
+        <p>Maintain centralized digital employee profiles, contracts, ID copies, education certificates, emergency contacts, disciplinary logs, and performance appraisals.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Job offers &amp; onboarding task checklists</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Document expiration alerts for work permits &amp; insurance</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h3>Shift &amp; Leave Management</h3>
+        <p>Configure rotating day/night shifts, grace periods, and leave types (Annual, Sick, Maternity, Paternity) with mobile leave approval workflows.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Multi-level manager leave approvals</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automatic annual leave accrual &amp; carry-forward</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Employee Self-Service (ESS)</h3>
+        <p>Empower staff with a mobile and desktop self-service portal where they can clock in, request leave, submit expense receipts, and download monthly payslips.</p>
+        <ul class="card-checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Mobile expense claims with receipt camera upload</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Password-protected PDF payslips via email</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXHAUSTIVE CAPABILITIES & REPORTS MATRIX -->
+<section class="section" id="module-specs">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Complete HRMS &amp; Payroll Functionality &amp; Standard Reports</h2>
+      <p class="lead">Every HR DocType, statutory payroll engine feature, and attendance report available in the ERPNext HRMS suite.</p>
+    </div>
+
+    <div class="module-capabilities-matrix">
+      <!-- Column 1: Core Transactions & DocTypes -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          HR Operations DocTypes
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Employee Master:</strong> Unified personnel profile with personal info, emergency contacts, bank details, and digital contract uploads.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Job Openings &amp; Recruitment:</strong> Post job openings, track applicant resumes, schedule interviews, and issue job offers.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Shift Types &amp; Assignments:</strong> Day, night, and rotational shift schedules with grace period tolerances and auto-shift allocation.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Attendance Records:</strong> Automated check-ins from biometric machines, mobile geolocation punches, or manual daily bulk sheets.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Leave Applications &amp; Allocations:</strong> Multi-tier approval workflows for annual, sick, maternity, study, and compassionate leaves.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Expense Claims:</strong> Mobile receipt submission for travel, fuel, or petty cash expenses with direct reimbursement through payroll or bank.</div></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Payroll Engine & Statutory Rules -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Payroll Engine &amp; Statutory Compliance
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Formula-Driven Salary Structures:</strong> Build flexible salary components for Basic Pay, House Allowance, Transport, Overtime, and Bonuses.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>One-Click Bulk Payroll Processing:</strong> Process payroll for hundreds of staff by department or branch, generating individual Salary Slips and consolidated GL journals.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Statutory Tax Calculations:</strong> Built-in formulas for graduated PAYE income tax, NSSF Tier 1 &amp; 2, SHA/NHIF, Housing Levy, and NITA contributions.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Employee Loans &amp; Advances:</strong> Manage company staff loans with automated monthly repayment deductions amortized across salary slips.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Bank EFT File Generation:</strong> Export payroll payment files formatted for major banks for instant bulk electronic salary disbursement.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Timesheet-Based Payroll:</strong> Calculate hourly wages for contractors and factory staff based on verified job card or timesheet hours logged.</div></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Built-In HR Reports -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          Built-In HR &amp; Payroll Reports
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Salary Register:</strong> Complete payroll breakdown showing earnings, statutory deductions, loan recoveries, and net pay per employee.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Bank Remittance Advice:</strong> Bank account numbers, employee names, and net salary figures for bulk transfer authorization.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Monthly Attendance Sheet:</strong> Calendar grid showing Present, Absent, Half-Day, Late-In, and On-Leave status per employee.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Employee Leave Balance Summary:</strong> Available, taken, and carried-forward leave balances across departments.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Income Tax Deductions Report:</strong> Summary of taxable pay, personal relief, insurance relief, and total PAYE withheld for tax filing.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Payroll Cost by Department:</strong> Analyze personnel expenditure trends across departments, cost centers, and branch locations.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Employee Loan Summary:</strong> Track principal disbursed, total repayments collected to date, and outstanding loan balances.</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "tookio_erp/templates/includes/demo_banner.html" %}
+{% endblock %}

@@ -1,55 +1,161 @@
 {% extends "tookio_erp/templates/tookio_base.html" %}
 
-{% block title %}Procurement & Supply Chain Management Solutions Kenya | Tookio ERP{% endblock %}
-{% block meta_description %}Automate purchase requisitions, RFQs, 3-way matching, and landed cost tracking on ERPNext for Kenyan enterprises.{% endblock %}
+{% block title %}ERPNext Buying & Procurement Management Module | Tookio ERP{% endblock %}
+{% block meta_description %}Automate purchasing on ERPNext. Material requests, supplier RFQs, quotation comparison matrices, purchase orders, automated 3-way matching, and vendor scorecards.{% endblock %}
 
 {% block content %}
 <section class="tookio-page-header">
   <div class="t-container">
-    <h1>Procurement & Supply Chain Management</h1>
-    <p class="lead">Establish airtight financial control over every purchase. From automated purchase requisitions to 3-way matching and landed cost capitalization, Tookio prevents payment leakage.</p>
+    <div style="max-width: 860px; margin: 0 auto; text-align: center;">
+      <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--t-cobalt-subtle); color: var(--t-cobalt); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.8125rem; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">
+        Core ERPNext Module
+      </div>
+      <h1>ERPNext Buying, Procurement &amp; Supplier Management</h1>
+      <p class="lead">Gain control over your entire procurement lifecycle. Enforce departmental spending discipline with automated 3-way matching, side-by-side vendor quotation comparisons, approval tiers, and real-time vendor lead-time scorecards.</p>
+      
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.75rem;">
+        <a href="https://demo.tookio.co.ke/login#signup" target="_blank" rel="noopener" class="btn btn-lg btn-primary">Sign Up &amp; Explore Free &rarr;</a>
+        <a href="/pricing" class="btn btn-lg btn-outline">Get the KES 100k Rapid Launch</a>
+      </div>
+      <p class="cta-microcopy" style="margin-top: 0.75rem;">No credit card or sales call required. Test RFQs, POs &amp; 3-Way Matching in 30 seconds.</p>
+    </div>
   </div>
 </section>
 
+<!-- REAL-TIME PROCUREMENT CONSOLE SHOWCASE -->
 <section class="section">
   <div class="t-container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;">
+      <div>
+        <h2>Enforce Organizational Spending Discipline</h2>
+        <p style="margin-top: 1rem; margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.65; color: var(--t-text-secondary);">Stop rogue spending and duplicate vendor payments. ERPNext connects internal department requests directly to supplier bids, purchase orders, physical receiving at the gate, and final invoice approval with automated 3-way matching.</p>
+        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
+          <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Automated 3-Way Matching:</strong> Never pay for goods not delivered or invoiced above PO agreed rates. The system matches PO quantities and rates against GRN receipts and supplier bills automatically.</span>
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--t-navy-primary)" stroke-width="2.5" style="margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Supplier Quotation Comparison Grid:</strong> Compare bids across multiple vendors side-by-side by unit rate, delivery lead time, and payment terms before awarding orders.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="screenshot-frame">
+        <img src="/assets/tookio_erp/images/industries/distribution.jpg" alt="Procurement and Supply Chain Operations" class="screenshot-frame-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3-PILLAR HIGHLIGHT CARDS -->
+<section class="section section-alt">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Complete Procurement Governance</h2>
+      <p class="lead">Built to handle local and international procurement for trading, wholesale, and production enterprises.</p>
+    </div>
+
     <div class="cards-grid-3">
       <div class="feature-card">
         <div class="card-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
         </div>
-        <h3>Purchase Requisitions & Approvals</h3>
-        <p>Enforce departmental spending limits with multi-tier approval hierarchies before purchase orders are issued to external vendors.</p>
+        <h3>Automated Purchase Requisitions</h3>
+        <p>Consolidate material requests from inventory auto-reorder triggers, production MRP runs, or departmental staff with multi-tier approval routing.</p>
         <ul class="card-checklist">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated requisition creation from MRP</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Threshold-based escalation rules</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Budget variance check before PO submission</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Auto-convert requests into RFQs or POs</li>
         </ul>
       </div>
 
       <div class="feature-card">
         <div class="card-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         </div>
-        <h3>Strict 3-Way Invoice Matching</h3>
-        <p>Match Purchase Orders against Goods Received Notes (GRN) and Vendor Invoices before financial approval, eliminating over-billing and missing stock.</p>
+        <h3>Supplier Portal &amp; RFQs</h3>
+        <p>Send RFQs to multiple vendors simultaneously. Suppliers can submit bids directly through their dedicated portal or via email replies.</p>
         <ul class="card-checklist">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated quantity & price tolerance checks</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Return to Supplier (RTS) debit notes</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Automated rate comparison matrices</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Secure self-service supplier portal</li>
         </ul>
       </div>
 
       <div class="feature-card">
         <div class="card-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
         </div>
-        <h3>Landed Cost Capitalization</h3>
-        <p>Distribute shipping freight, customs duties, port handling, and insurance fees directly across item inventory valuation for true cost transparency.</p>
+        <h3>Vendor Scorecards &amp; SLAs</h3>
+        <p>Track vendor performance automatically across on-time delivery rates, product defect percentages, and price consistency.</p>
         <ul class="card-checklist">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Multi-currency exchange rate adjustments</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Accurate cost-of-goods-sold (COGS)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Real-time supplier grading &amp; KPIs</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Contracted price lists and blanket orders</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
+
+<!-- EXHAUSTIVE CAPABILITIES & REPORTS MATRIX -->
+<section class="section" id="module-specs">
+  <div class="t-container">
+    <div class="section-header">
+      <h2>Complete Buying Module Functionality &amp; Standard Reports</h2>
+      <p class="lead">Every procurement transaction type, governance control, and vendor report available in the ERPNext Buying module.</p>
+    </div>
+
+    <div class="module-capabilities-matrix">
+      <!-- Column 1: Core Transactions & DocTypes -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          Procurement DocTypes &amp; Transactions
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Material Requests (Requisitions):</strong> Internal requests for Purchase, Transfer, Issue, or Manufacture with departmental approvals.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Request for Quotation (RFQ):</strong> Broadcast item requests to multiple vendors simultaneously with customizable delivery dates.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Supplier Quotation:</strong> Log vendor price bids, lead times, tax terms, and discounts with one-click conversion to Purchase Orders.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Purchase Orders &amp; Blanket Orders:</strong> Create multi-currency POs with agreed delivery schedules, terms templates, and partial receipts.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Purchase Receipts (Goods Received Notes):</strong> Warehouse receiving against POs with accepted vs rejected quantities and quality sign-off.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Purchase Returns &amp; Debit Notes:</strong> Return defective items back to vendors with direct debit note posting against payables.</div></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Governance & Controls -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Governance, Controls &amp; Subcontracting
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Automated 3-Way Matching:</strong> System matches PO items, quantities, and rates against physical GRN receipts and supplier invoices before payment release.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Multi-Level Approval Workflows:</strong> Route POs based on monetary thresholds (e.g. Dept Head &lt; KES 50k, CFO &lt; KES 500k, CEO &gt; KES 500k).</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Supplier Scorecard &amp; Grading:</strong> Automatically score vendors on on-time delivery percentages, defect rates, and billing accuracy.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Subcontracting Workflow:</strong> Issue raw materials from inventory to third-party processors and receive finished goods with labor service costing.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Supplier Item Price Lists:</strong> Contracted vendor pricing rules that automatically lock unit costs on new Purchase Orders.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Purchase Budget Enforcement:</strong> Prevent departments from creating POs that exceed allocated monthly or quarterly project budgets.</div></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Built-In Procurement Reports -->
+      <div class="module-cap-group">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          Built-In Buying Reports
+        </h3>
+        <ul class="module-bullet-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Purchase Analytics:</strong> Comprehensive spending breakdown by Supplier, Item Group, Brand, Cost Center, and Monthly trends.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Supplier Quotation Comparison:</strong> Side-by-side bid analysis matrix showing price variance, lead days, and terms.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Procurement Tracker:</strong> Real-time pipeline showing status from Material Request &rarr; RFQ &rarr; PO &rarr; Receipt &rarr; Invoice.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>PO Items To Be Received:</strong> Open purchase order quantities still pending warehouse delivery by scheduled date.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Received Items To Be Billed:</strong> Physical GRNs accepted into inventory that have not yet had supplier bills posted.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Item-wise Purchase History:</strong> Historical price purchase trend per SKU across different vendors to optimize purchasing terms.</div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <div><strong>Subcontracted Items Status:</strong> Track raw materials held by external processors and pending finished deliveries.</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "tookio_erp/templates/includes/demo_banner.html" %}
 {% endblock %}
